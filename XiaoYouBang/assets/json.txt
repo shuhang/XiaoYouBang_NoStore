@@ -1,0 +1,6806 @@
+{
+  "id": 2,
+  "name": "三星堆博物馆",
+  "description": "",
+  "picture": "/data/places/2/三星堆博物馆.jpg",
+  "guide_info": "有麦婷等2位导游",
+  "guides": [
+    {
+      "id": 11,
+      "name": "麦婷",
+      "description": "三星堆明星讲解员",
+      "quote": "青铜神树常让我想起《阿凡达》中的奇幻场景。",
+      "guide_type": "亲切版",
+      "picture": "/data/places/2/guides/11/麦婷照片.jpg",
+      "total_audio_length": "86'49\"",
+      "hidden": false,
+      "keywords_": [
+        "通俗易懂",
+        "甜美"
+      ],
+      "introductions": [
+        {
+          "id": 22,
+          "name": "综合馆序厅",
+          "audio": "/data/places/2/guides/11/introductions/22/序展厅.mp3",
+          "length": "4'27\"",
+          "area_code": "A",
+          "segments": [
+            {
+              "id": 84,
+              "name": "综合馆门口",
+              "start": 0,
+              "position_": "A1",
+              "pictures_": [
+                "/data/places/2/positions/1/综合馆门口A01.JPG"
+              ],
+              "tags_": [
+                "三星堆概况"
+              ]
+            },
+            {
+              "id": 83,
+              "name": "地理位置图",
+              "start": 15,
+              "position_": "A3",
+              "pictures_": [
+                "/data/places/2/positions/6/序厅A03地形图.JPG"
+              ],
+              "tags_": [
+                "地形"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "综合馆一展厅-雄踞西南",
+          "audio": "/data/places/2/guides/11/introductions/23/蜀字屏雄踞西南.mp3",
+          "length": "9'47\"",
+          "area_code": "B",
+          "segments": [
+            {
+              "id": 85,
+              "name": "蜀字屏",
+              "start": 0,
+              "position_": "B1",
+              "pictures_": [
+                "/data/places/2/positions/7/蜀字屏.jpg"
+              ],
+              "tags_": [
+                "蜀字屏"
+              ]
+            },
+            {
+              "id": 86,
+              "name": "蜀王谱系",
+              "start": 56,
+              "position_": "B2",
+              "pictures_": [
+                "/data/places/2/positions/8/B02蜀王谱系.JPG"
+              ],
+              "tags_": [
+                "地层"
+              ]
+            },
+            {
+              "id": 87,
+              "name": "萌芽时期",
+              "start": 145,
+              "position_": "B3",
+              "pictures_": [
+                "/data/places/2/positions/9/B03萌芽时期器物.JPG"
+              ],
+              "tags_": [
+                "一期陶器"
+              ]
+            },
+            {
+              "id": 89,
+              "name": "鼎盛时期",
+              "start": 313,
+              "position_": "B4",
+              "pictures_": [
+                "/data/places/2/positions/10/B05二期陶器.JPG"
+              ],
+              "tags_": [
+                "二三期陶器"
+              ]
+            },
+            {
+              "id": 155,
+              "name": "四期陶器",
+              "start": 490,
+              "position_": "B5",
+              "pictures_": [
+                "/data/places/2/positions/11/B08四期陶器.JPG"
+              ],
+              "tags_": [
+                "四期陶器"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "综合馆二展厅-物华天府",
+          "audio": "/data/places/2/guides/11/introductions/24/二展厅物华天府.mp3",
+          "length": "5'13\"",
+          "area_code": "C",
+          "segments": [
+            {
+              "id": 92,
+              "name": "粮具酒具",
+              "start": 0,
+              "position_": "C1",
+              "pictures_": [
+                "/data/places/2/positions/12/C01农业区.JPG"
+              ],
+              "tags_": [
+                "农业器具"
+              ]
+            },
+            {
+              "id": 94,
+              "name": "象牙",
+              "start": 90,
+              "position_": "C2",
+              "pictures_": [
+                "/data/places/2/positions/13/C02象牙.JPG"
+              ],
+              "tags_": [
+                "象牙"
+              ]
+            },
+            {
+              "id": 95,
+              "name": "手工业制品",
+              "start": 151,
+              "position_": "C3",
+              "pictures_": [
+                "/data/places/2/positions/14/C03商贸.JPG"
+              ],
+              "tags_": [
+                "手工业"
+              ]
+            },
+            {
+              "id": 242,
+              "name": "海贝与南丝路",
+              "start": 247,
+              "position_": "C4",
+              "pictures_": [
+                "/data/places/2/positions/15/C04海贝与南丝路.JPG"
+              ],
+              "tags_": [
+                "海贝"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "综合馆三展厅-化土成器",
+          "audio": "/data/places/2/guides/11/introductions/25/三展厅化土成器三足器.mp3",
+          "length": "5'31\"",
+          "area_code": "D",
+          "segments": [
+            {
+              "id": 96,
+              "name": "陶器",
+              "start": 0,
+              "position_": "D1",
+              "pictures_": [
+                "/data/places/2/positions/16/D01 第二张陶器.JPG"
+              ],
+              "tags_": [
+                "陶器"
+              ]
+            },
+            {
+              "id": 98,
+              "name": "生活器皿",
+              "start": 85,
+              "position_": "D3",
+              "pictures_": [
+                "/data/places/2/positions/18/D03 三足炊.JPG"
+              ],
+              "tags_": [
+                "生活用具"
+              ]
+            },
+            {
+              "id": 158,
+              "name": "动物盖钮把勺",
+              "start": 194,
+              "position_": "D4",
+              "pictures_": [
+                "/data/places/2/positions/19/D04 陶附件动物.JPG"
+              ],
+              "tags_": [
+                "陶器"
+              ]
+            },
+            {
+              "id": 159,
+              "name": "过道地层展示",
+              "start": 255,
+              "position_": null,
+              "pictures_": [
+                "/data/places/2/guides/11/introductions/25/segments/159/城墙剖面.jpg"
+              ],
+              "tags_": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "name": "综合馆四展厅-以玉通神",
+          "audio": "/data/places/2/guides/11/introductions/26/四展厅以玉通神.mp3",
+          "length": "13'31\"",
+          "area_code": "E",
+          "segments": [
+            {
+              "id": 100,
+              "name": "玉石原料",
+              "start": 0,
+              "position_": "E2",
+              "pictures_": [
+                "/data/places/2/positions/21/E03玉石原料.JPG"
+              ],
+              "tags_": [
+                "玉石原料"
+              ]
+            },
+            {
+              "id": 243,
+              "name": "制玉工艺",
+              "start": 166,
+              "position_": "E1",
+              "pictures_": [
+                "/data/places/2/positions/20/E02制玉图及制玉工艺.JPG"
+              ],
+              "tags_": [
+                "玉磨石"
+              ]
+            },
+            {
+              "id": 245,
+              "name": "玉琮，玉璧",
+              "start": 302,
+              "position_": "E4",
+              "pictures_": [
+                "/data/places/2/positions/23/E05玉璧环区.JPG"
+              ],
+              "tags_": [
+                "玉琮"
+              ]
+            },
+            {
+              "id": 246,
+              "name": "大石璧",
+              "start": 414,
+              "position_": "E5",
+              "pictures_": [
+                "/data/places/2/positions/24/E06大石璧独立.JPG"
+              ],
+              "tags_": [
+                "大石璧"
+              ]
+            },
+            {
+              "id": 248,
+              "name": "玉璋礼南方",
+              "start": 453,
+              "position_": "E6",
+              "pictures_": [
+                "/data/places/2/positions/25/E07玉璋合区3.JPG"
+              ],
+              "tags_": [
+                "巨型玉璋"
+              ]
+            },
+            {
+              "id": 249,
+              "name": "大玉牙璋",
+              "start": 581,
+              "position_": "E7",
+              "pictures_": [
+                "/data/places/2/positions/26/E08大玉璋独立.JPG"
+              ],
+              "tags_": [
+                "大玉璋"
+              ]
+            },
+            {
+              "id": 250,
+              "name": "玉兵器",
+              "start": 628,
+              "position_": "E8",
+              "pictures_": [
+                "/data/places/2/positions/27/E09 玉戈区1.JPG"
+              ],
+              "tags_": [
+                "玉兵器"
+              ]
+            },
+            {
+              "id": 251,
+              "name": "玉工具",
+              "start": 729,
+              "position_": "E9",
+              "pictures_": [
+                "/data/places/2/positions/28/E10 玉饰工具区1.JPG"
+              ],
+              "tags_": [
+                "工具"
+              ]
+            },
+            {
+              "id": 252,
+              "name": "玉装饰",
+              "start": 759,
+              "position_": "E10",
+              "pictures_": [
+                "/data/places/2/positions/29/E10 玉饰工具区.JPG"
+              ],
+              "tags_": [
+                "玉装饰"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "name": "综合馆五展厅-烈火熔金",
+          "audio": "/data/places/2/guides/11/introductions/27/五展厅烈火熔金.mp3",
+          "length": "8'5\"",
+          "area_code": "F",
+          "segments": [
+            {
+              "id": 110,
+              "name": "陶范炼铜工具",
+              "start": 0,
+              "position_": "F1",
+              "pictures_": [
+                "/data/places/2/positions/30/F01 炼铜工具.JPG"
+              ],
+              "tags_": [
+                "陶范"
+              ]
+            },
+            {
+              "id": 111,
+              "name": "青铜挂件",
+              "start": 69,
+              "position_": "F2",
+              "pictures_": [
+                "/data/places/2/positions/31/F02 铜牌铜铃挂饰.JPG"
+              ],
+              "tags_": [
+                "青铜铃"
+              ]
+            },
+            {
+              "id": 253,
+              "name": "金器：金面罩",
+              "start": 133,
+              "position_": "F3",
+              "pictures_": [
+                "/data/places/2/positions/32/F03金面罩.JPG"
+              ],
+              "tags_": [
+                "金面罩"
+              ]
+            },
+            {
+              "id": 254,
+              "name": "金杖",
+              "start": 235,
+              "position_": "F4",
+              "pictures_": [
+                "/data/places/2/positions/33/F04 金杖.JPG"
+              ],
+              "tags_": [
+                "金杖"
+              ]
+            },
+            {
+              "id": 255,
+              "name": "各地区杖文化",
+              "start": 380,
+              "position_": "F5",
+              "pictures_": [
+                "/data/places/2/positions/34/F05 各地杖对比图.JPG"
+              ],
+              "tags_": [
+                "杖"
+              ]
+            },
+            {
+              "id": 256,
+              "name": "青铜礼器",
+              "start": 406,
+              "position_": "F6",
+              "pictures_": [
+                "/data/places/2/positions/35/F06 青铜器一组合.JPG"
+              ],
+              "tags_": [
+                "青铜礼器"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "name": "综合馆六展厅-通天神树",
+          "audio": "/data/places/2/guides/11/introductions/28/六展厅神树.mp3",
+          "length": "6'46\"",
+          "area_code": "G",
+          "segments": [
+            {
+              "id": 116,
+              "name": "通天神树原件",
+              "start": 0,
+              "position_": "G1",
+              "pictures_": [
+                "/data/places/2/positions/36/G01 神树原件.JPG"
+              ],
+              "tags_": [
+                "青铜神树"
+              ]
+            },
+            {
+              "id": 117,
+              "name": "二号小神树",
+              "start": 214,
+              "position_": "G2",
+              "pictures_": [
+                "/data/places/2/positions/37/G02 二号小树.JPG"
+              ],
+              "tags_": [
+                "二号神树"
+              ]
+            },
+            {
+              "id": 154,
+              "name": "摇钱树",
+              "start": 280,
+              "position_": "G3",
+              "pictures_": [
+                "/data/places/2/positions/38/G03 摇钱树.JPG"
+              ],
+              "tags_": [
+                "摇钱树"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "青铜馆序展厅",
+          "audio": "/data/places/2/guides/11/introductions/50/青铜馆序厅.mp3",
+          "length": "0'50\"",
+          "area_code": "H",
+          "segments": [
+            {
+              "id": 259,
+              "name": "青铜馆外形",
+              "start": 0,
+              "position_": "H1",
+              "pictures_": [
+                "/data/places/2/positions/40/H01 门口.JPG"
+              ],
+              "tags_": [
+                "青铜馆"
+              ]
+            },
+            {
+              "id": 260,
+              "name": "人面鸟身像",
+              "start": 17,
+              "position_": "H2",
+              "pictures_": [
+                "/data/places/2/positions/41/H02 人面鸟身.JPG"
+              ],
+              "tags_": [
+                "人面鸟身像"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "name": "青铜馆一楼-大厅",
+          "audio": "/data/places/2/guides/11/introductions/29/青铜馆一楼大厅.mp3",
+          "length": "10'18\"",
+          "area_code": "I",
+          "segments": [
+            {
+              "id": 121,
+              "name": "最大的面具",
+              "start": 0,
+              "position_": "I01",
+              "pictures_": [
+                "/data/places/2/positions/42/H03 大面具.JPG"
+              ],
+              "tags_": [
+                "大面具"
+              ]
+            },
+            {
+              "id": 122,
+              "name": "青铜兽面具",
+              "start": 30,
+              "position_": "I03",
+              "pictures_": [
+                "/data/places/2/positions/44/H05 平面兽面具1.JPG"
+              ],
+              "tags_": [
+                "青铜兽面具"
+              ]
+            },
+            {
+              "id": 125,
+              "name": "戴冠纵目面具",
+              "start": 130,
+              "position_": "I04",
+              "pictures_": [
+                "/data/places/2/positions/45/H06 立体威严纵目面具.JPG"
+              ],
+              "tags_": [
+                "戴冠纵目面具"
+              ]
+            },
+            {
+              "id": 127,
+              "name": "纵目面具",
+              "start": 175,
+              "position_": "I06",
+              "pictures_": [
+                "/data/places/2/positions/46/H07 千里眼顺风耳.JPG"
+              ],
+              "tags_": [
+                "纵目面具"
+              ]
+            },
+            {
+              "id": 126,
+              "name": "眼形器",
+              "start": 235,
+              "position_": "I05",
+              "pictures_": [
+                "/data/places/2/positions/47/H08 眼形器.JPG"
+              ],
+              "tags_": [
+                "眼形器"
+              ]
+            },
+            {
+              "id": 128,
+              "name": "两排铜人头像",
+              "start": 323,
+              "position_": "I7",
+              "pictures_": [
+                "/data/places/2/positions/48/I01 左右两排人像.JPG"
+              ],
+              "tags_": [
+                "铜人头像"
+              ]
+            },
+            {
+              "id": 131,
+              "name": "金面铜人头像",
+              "start": 384,
+              "position_": "I8",
+              "pictures_": [
+                "/data/places/2/positions/49/I02 贴金面具.JPG"
+              ],
+              "tags_": [
+                "金面铜人头像"
+              ]
+            },
+            {
+              "id": 130,
+              "name": "祭祀大典",
+              "start": 537,
+              "position_": "I9",
+              "pictures_": [
+                "/data/places/2/positions/50/I03 祭祀大典.JPG"
+              ],
+              "tags_": [
+                "祭祀神坛"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "青铜馆一楼-王者之尊",
+          "audio": "/data/places/2/guides/11/introductions/30/王者之尊.mp3",
+          "length": "5'4\"",
+          "area_code": "J",
+          "segments": [
+            {
+              "id": 133,
+              "name": "青铜大立人",
+              "start": 0,
+              "position_": "J1",
+              "pictures_": [
+                "/data/places/2/positions/51/J01 青铜大立人1.JPG"
+              ],
+              "tags_": [
+                "青铜立人"
+              ]
+            },
+            {
+              "id": 134,
+              "name": "兽首冠人像",
+              "start": 177,
+              "position_": "J2",
+              "pictures_": [
+                "/data/places/2/positions/52/J02 三冠人.JPG"
+              ],
+              "tags_": [
+                "兽首冠人像"
+              ]
+            },
+            {
+              "id": 136,
+              "name": "其它青铜人像",
+              "start": 234,
+              "position_": "J3",
+              "pictures_": [
+                "/data/places/2/positions/53/J03 其它青铜造型.jpg"
+              ],
+              "tags_": [
+                "跪坐人像"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "青铜馆楼梯",
+          "audio": "/data/places/2/guides/11/introductions/49/楼梯.mp3",
+          "length": "0'45\"",
+          "area_code": "K",
+          "segments": [
+            {
+              "id": 258,
+              "name": "神树复制品",
+              "start": 0,
+              "position_": "K1",
+              "pictures_": [
+                "/data/places/2/positions/54/楼梯神树.jpg"
+              ],
+              "tags_": [
+                "青铜神树"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "青铜馆二楼-青铜重器",
+          "audio": "/data/places/2/guides/11/introductions/31/青铜馆二楼.mp3",
+          "length": "9'21\"",
+          "area_code": "L",
+          "segments": [
+            {
+              "id": 257,
+              "name": "酒器之尊，罍",
+              "start": 0,
+              "position_": "L1",
+              "pictures_": [
+                "/data/places/2/positions/55/K01 酒器.JPG"
+              ],
+              "tags_": [
+                "青铜酒器"
+              ]
+            },
+            {
+              "id": 139,
+              "name": "鸟脚人像",
+              "start": 75,
+              "position_": "L2",
+              "pictures_": [
+                "/data/places/2/positions/56/K02 鸟脚人像1.JPG"
+              ],
+              "tags_": [
+                "鸟脚人像"
+              ]
+            },
+            {
+              "id": 140,
+              "name": "人身型器",
+              "start": 118,
+              "position_": "L3",
+              "pictures_": [
+                "/data/places/2/positions/57/K03 人身形器.JPG"
+              ],
+              "tags_": [
+                "人身型器"
+              ]
+            },
+            {
+              "id": 141,
+              "name": "青铜太阳轮",
+              "start": 168,
+              "position_": "L4",
+              "pictures_": [
+                "/data/places/2/positions/58/K04 太阳轮.JPG"
+              ],
+              "tags_": [
+                "青铜太阳轮"
+              ]
+            },
+            {
+              "id": 142,
+              "name": "凤鸟型青铜器",
+              "start": 210,
+              "position_": "L5",
+              "pictures_": [
+                "/data/places/2/positions/59/K05 凤鸟形组图1.JPG"
+              ],
+              "tags_": [
+                "凤鸟型青铜器"
+              ]
+            },
+            {
+              "id": 143,
+              "name": "青铜大鹰头",
+              "start": 271,
+              "position_": "L6",
+              "pictures_": [
+                "/data/places/2/positions/60/K06 青铜大鹰头.JPG"
+              ],
+              "tags_": [
+                "青铜大鹰头"
+              ]
+            },
+            {
+              "id": 144,
+              "name": "青铜雄鸡",
+              "start": 345,
+              "position_": "L7",
+              "pictures_": [
+                "/data/places/2/positions/61/K07 青铜雄鸡.JPG"
+              ],
+              "tags_": [
+                "青铜雄鸡"
+              ]
+            },
+            {
+              "id": 145,
+              "name": "祭祀神坛",
+              "start": 386,
+              "position_": "L8",
+              "pictures_": [
+                "/data/places/2/positions/62/K08 祭祀神坛.JPG"
+              ],
+              "tags_": [
+                "祭祀神坛"
+              ]
+            },
+            {
+              "id": 146,
+              "name": "青铜蛇",
+              "start": 453,
+              "position_": "L9",
+              "pictures_": [
+                "/data/places/2/positions/63/K09 青铜蛇.JPG"
+              ],
+              "tags_": [
+                "青铜蛇"
+              ]
+            },
+            {
+              "id": 147,
+              "name": "青铜龙",
+              "start": 475,
+              "position_": "L10",
+              "pictures_": [
+                "/data/places/2/positions/64/K10 青铜龙羊.JPG"
+              ],
+              "tags_": [
+                "龙形饰"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "青铜馆三楼-发现之路",
+          "audio": "/data/places/2/guides/11/introductions/32/青铜馆三楼.mp3",
+          "length": "7'11\"",
+          "area_code": "M",
+          "segments": [
+            {
+              "id": 149,
+              "name": "神龙初显",
+              "start": 0,
+              "position_": "M1",
+              "pictures_": [
+                "/data/places/2/positions/65/L01 神龙初显.JPG"
+              ],
+              "tags_": [
+                "神龙初显"
+              ]
+            },
+            {
+              "id": 150,
+              "name": "迷雾寻踪",
+              "start": 95,
+              "position_": "M2",
+              "pictures_": [
+                "/data/places/2/positions/66/L02 迷雾寻踪.JPG"
+              ],
+              "tags_": [
+                "迷雾寻踪"
+              ]
+            },
+            {
+              "id": 151,
+              "name": "重军出击",
+              "start": 217,
+              "position_": "M3",
+              "pictures_": [
+                "/data/places/2/positions/67/L04 重军出击.JPG"
+              ],
+              "tags_": [
+                "重军出击"
+              ]
+            },
+            {
+              "id": 152,
+              "name": "2000年之后",
+              "start": 296,
+              "position_": null,
+              "pictures_": [
+                "/data/places/2/guides/11/introductions/32/segments/152/IMG_7148_调整大小.JPG"
+              ],
+              "tags_": [
+
+              ]
+            },
+            {
+              "id": 165,
+              "name": "上下求索",
+              "start": 313,
+              "position_": "M4",
+              "pictures_": [
+                "/data/places/2/positions/68/上下求索"
+              ],
+              "tags_": [
+                "上下求索"
+              ]
+            },
+            {
+              "id": 153,
+              "name": "千古之谜",
+              "start": 354,
+              "position_": "M5",
+              "pictures_": [
+                "/data/places/2/positions/69/L06 千古之谜.JPG"
+              ],
+              "tags_": [
+                "千古之谜"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "唐敏",
+      "description": "观众最喜爱讲解员",
+      "quote": "青铜神树在三星堆人看来是宇宙飞船，上天下地无所不能。",
+      "guide_type": "诙谐幽默有深度",
+      "picture": "/data/places/2/guides/13/唐敏.jpg",
+      "total_audio_length": "87'10\"",
+      "hidden": null,
+      "keywords_": [
+        "幽默轻松版"
+      ],
+      "introductions": [
+        {
+          "id": 33,
+          "name": "综合馆序展厅",
+          "audio": "/data/places/2/guides/13/introductions/33/综合序展厅--441  32.mp3",
+          "length": "5'36\"",
+          "area_code": "A",
+          "segments": [
+            {
+              "id": 167,
+              "name": "综合馆门口",
+              "start": 0,
+              "position_": "A1",
+              "pictures_": [
+                "/data/places/2/positions/1/综合馆门口A01.JPG"
+              ],
+              "tags_": [
+                "三星堆概况"
+              ]
+            },
+            {
+              "id": 168,
+              "name": "长江文明之源",
+              "start": 60,
+              "position_": "A2",
+              "pictures_": [
+                "/data/places/2/positions/5/长江之源.JPG"
+              ],
+              "tags_": [
+
+              ]
+            },
+            {
+              "id": 176,
+              "name": "地理位置图",
+              "start": 128,
+              "position_": "A3",
+              "pictures_": [
+                "/data/places/2/positions/6/序厅A03地形图.JPG"
+              ],
+              "tags_": [
+                "地形"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "综合馆一展厅-雄踞西南",
+          "audio": "/data/places/2/guides/13/introductions/34/综合一展厅-雄踞西南--441 32.mp3",
+          "length": "12'15\"",
+          "area_code": "B",
+          "segments": [
+            {
+              "id": 171,
+              "name": "蜀字屏",
+              "start": 0,
+              "position_": "B1",
+              "pictures_": [
+                "/data/places/2/positions/7/蜀字屏.jpg"
+              ],
+              "tags_": [
+                "蜀字屏"
+              ]
+            },
+            {
+              "id": 172,
+              "name": "蜀王谱系",
+              "start": 94,
+              "position_": "B2",
+              "pictures_": [
+                "/data/places/2/positions/8/B02蜀王谱系.JPG"
+              ],
+              "tags_": [
+                "地层"
+              ]
+            },
+            {
+              "id": 173,
+              "name": "萌芽时期",
+              "start": 264,
+              "position_": "B3",
+              "pictures_": [
+                "/data/places/2/positions/9/B03萌芽时期器物.JPG"
+              ],
+              "tags_": [
+                "一期陶器"
+              ]
+            },
+            {
+              "id": 174,
+              "name": "鼎盛时期",
+              "start": 391,
+              "position_": "B4",
+              "pictures_": [
+                "/data/places/2/positions/10/B05二期陶器.JPG"
+              ],
+              "tags_": [
+                "二三期陶器"
+              ]
+            },
+            {
+              "id": 175,
+              "name": "四期陶器",
+              "start": 592,
+              "position_": "B5",
+              "pictures_": [
+                "/data/places/2/positions/11/B08四期陶器.JPG"
+              ],
+              "tags_": [
+                "四期陶器"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "name": "综合馆二展厅-物华天府",
+          "audio": "/data/places/2/guides/13/introductions/35/综合二展厅-物华天府--441 32.mp3",
+          "length": "3'28\"",
+          "area_code": "C",
+          "segments": [
+            {
+              "id": 177,
+              "name": "粮具酒具",
+              "start": 0,
+              "position_": "C1",
+              "pictures_": [
+                "/data/places/2/positions/12/C01农业区.JPG"
+              ],
+              "tags_": [
+                "农业器具"
+              ]
+            },
+            {
+              "id": 178,
+              "name": "象牙",
+              "start": 49,
+              "position_": "C2",
+              "pictures_": [
+                "/data/places/2/positions/13/C02象牙.JPG"
+              ],
+              "tags_": [
+                "象牙"
+              ]
+            },
+            {
+              "id": 180,
+              "name": "手工业制品",
+              "start": 86,
+              "position_": "C3",
+              "pictures_": [
+                "/data/places/2/positions/14/C03商贸.JPG"
+              ],
+              "tags_": [
+                "手工业"
+              ]
+            },
+            {
+              "id": 179,
+              "name": "海贝与南丝路",
+              "start": 130,
+              "position_": "C4",
+              "pictures_": [
+                "/data/places/2/positions/15/C04海贝与南丝路.JPG"
+              ],
+              "tags_": [
+                "海贝"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "name": "综合馆三展厅-化土成器",
+          "audio": "/data/places/2/guides/13/introductions/36/综合三展厅-化土成器--441 32.mp3",
+          "length": "2'52\"",
+          "area_code": "D",
+          "segments": [
+            {
+              "id": 181,
+              "name": "陶器",
+              "start": 0,
+              "position_": "D1",
+              "pictures_": [
+                "/data/places/2/positions/16/D01 第二张陶器.JPG"
+              ],
+              "tags_": [
+                "陶器"
+              ]
+            },
+            {
+              "id": 183,
+              "name": "陶瓦宫殿建筑",
+              "start": 28,
+              "position_": "D2",
+              "pictures_": [
+                "/data/places/2/positions/17/D02 陶瓦.JPG"
+              ],
+              "tags_": [
+                "陶瓦"
+              ]
+            },
+            {
+              "id": 184,
+              "name": "生活器皿",
+              "start": 59,
+              "position_": "D3",
+              "pictures_": [
+                "/data/places/2/positions/18/D03 三足炊.JPG"
+              ],
+              "tags_": [
+                "生活用具"
+              ]
+            },
+            {
+              "id": 185,
+              "name": "动物盖钮把勺",
+              "start": 126,
+              "position_": "D4",
+              "pictures_": [
+                "/data/places/2/positions/19/D04 陶附件动物.JPG"
+              ],
+              "tags_": [
+                "陶器"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "综合馆四展厅-以玉通神",
+          "audio": "/data/places/2/guides/13/introductions/37/综合四展厅-以玉通神--441 32.mp3",
+          "length": "12'41\"",
+          "area_code": "E",
+          "segments": [
+            {
+              "id": 186,
+              "name": "制玉工艺",
+              "start": 0,
+              "position_": "E1",
+              "pictures_": [
+                "/data/places/2/positions/20/E02制玉图及制玉工艺.JPG"
+              ],
+              "tags_": [
+                "玉磨石"
+              ]
+            },
+            {
+              "id": 187,
+              "name": "玉石原料",
+              "start": 194,
+              "position_": "E2",
+              "pictures_": [
+                "/data/places/2/positions/21/E03玉石原料.JPG"
+              ],
+              "tags_": [
+                "玉石原料"
+              ]
+            },
+            {
+              "id": 188,
+              "name": "玉器功用展板",
+              "start": 301,
+              "position_": "E3",
+              "pictures_": [
+                "/data/places/2/positions/22/周礼.jpg"
+              ],
+              "tags_": [
+                "神玉"
+              ]
+            },
+            {
+              "id": 189,
+              "name": "玉琮，玉璧",
+              "start": 331,
+              "position_": "E4",
+              "pictures_": [
+                "/data/places/2/positions/23/E05玉璧环区.JPG"
+              ],
+              "tags_": [
+                "玉琮"
+              ]
+            },
+            {
+              "id": 190,
+              "name": "大石璧",
+              "start": 462,
+              "position_": "E5",
+              "pictures_": [
+                "/data/places/2/positions/24/E06大石璧独立.JPG"
+              ],
+              "tags_": [
+                "大石璧"
+              ]
+            },
+            {
+              "id": 191,
+              "name": "玉璋礼南方",
+              "start": 502,
+              "position_": "E6",
+              "pictures_": [
+                "/data/places/2/positions/25/E07玉璋合区3.JPG"
+              ],
+              "tags_": [
+                "巨型玉璋"
+              ]
+            },
+            {
+              "id": 192,
+              "name": "大玉牙璋",
+              "start": 578,
+              "position_": "E7",
+              "pictures_": [
+                "/data/places/2/positions/26/E08大玉璋独立.JPG"
+              ],
+              "tags_": [
+                "大玉璋"
+              ]
+            },
+            {
+              "id": 193,
+              "name": "玉兵器",
+              "start": 608,
+              "position_": "E8",
+              "pictures_": [
+                "/data/places/2/positions/27/E09 玉戈区1.JPG"
+              ],
+              "tags_": [
+                "玉兵器"
+              ]
+            },
+            {
+              "id": 241,
+              "name": "玉工具",
+              "start": 668,
+              "position_": "E9",
+              "pictures_": [
+                "/data/places/2/positions/28/E10 玉饰工具区1.JPG"
+              ],
+              "tags_": [
+                "工具"
+              ]
+            },
+            {
+              "id": 194,
+              "name": "玉装饰",
+              "start": 690,
+              "position_": "E10",
+              "pictures_": [
+                "/data/places/2/positions/29/E10 玉饰工具区.JPG"
+              ],
+              "tags_": [
+                "玉装饰"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "综合馆五展厅-烈火熔金",
+          "audio": "/data/places/2/guides/13/introductions/38/综合五展厅-烈火熔金--441 32.mp3",
+          "length": "7'9\"",
+          "area_code": "F",
+          "segments": [
+            {
+              "id": 195,
+              "name": "陶范炼铜工具",
+              "start": 0,
+              "position_": "F1",
+              "pictures_": [
+                "/data/places/2/positions/30/F01 炼铜工具.JPG"
+              ],
+              "tags_": [
+                "陶范"
+              ]
+            },
+            {
+              "id": 196,
+              "name": "青铜挂件",
+              "start": 102,
+              "position_": "F2",
+              "pictures_": [
+                "/data/places/2/positions/31/F02 铜牌铜铃挂饰.JPG"
+              ],
+              "tags_": [
+                "青铜铃"
+              ]
+            },
+            {
+              "id": 197,
+              "name": "金器：金面罩",
+              "start": 117,
+              "position_": "F3",
+              "pictures_": [
+                "/data/places/2/positions/32/F03金面罩.JPG"
+              ],
+              "tags_": [
+                "金面罩"
+              ]
+            },
+            {
+              "id": 198,
+              "name": "金杖",
+              "start": 196,
+              "position_": "F4",
+              "pictures_": [
+                "/data/places/2/positions/33/F04 金杖.JPG"
+              ],
+              "tags_": [
+                "金杖"
+              ]
+            },
+            {
+              "id": 199,
+              "name": "各地区杖文化",
+              "start": 299,
+              "position_": "F5",
+              "pictures_": [
+                "/data/places/2/positions/34/F05 各地杖对比图.JPG"
+              ],
+              "tags_": [
+                "杖"
+              ]
+            },
+            {
+              "id": 200,
+              "name": "青铜礼器",
+              "start": 319,
+              "position_": "F6",
+              "pictures_": [
+                "/data/places/2/positions/35/F06 青铜器一组合.JPG"
+              ],
+              "tags_": [
+                "青铜礼器"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "name": "综合馆六展厅-通天神树",
+          "audio": "/data/places/2/guides/13/introductions/39/综合六展厅-通天神树--441 32.mp3",
+          "length": "7'31\"",
+          "area_code": "G",
+          "segments": [
+            {
+              "id": 201,
+              "name": "通天神树原件",
+              "start": 0,
+              "position_": "G1",
+              "pictures_": [
+                "/data/places/2/positions/36/G01 神树原件.JPG"
+              ],
+              "tags_": [
+                "青铜神树"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "二号小神树",
+              "start": 178,
+              "position_": "G2",
+              "pictures_": [
+                "/data/places/2/positions/37/G02 二号小树.JPG"
+              ],
+              "tags_": [
+                "二号神树"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "摇钱树",
+              "start": 274,
+              "position_": "G3",
+              "pictures_": [
+                "/data/places/2/positions/38/G03 摇钱树.JPG"
+              ],
+              "tags_": [
+                "摇钱树"
+              ]
+            },
+            {
+              "id": 204,
+              "name": "神树残件",
+              "start": 383,
+              "position_": "G4",
+              "pictures_": [
+                "/data/places/2/positions/39/G04 神树鸟形残件.JPG"
+              ],
+              "tags_": [
+                "神树残件"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "name": "青铜馆一楼序厅",
+          "audio": "/data/places/2/guides/13/introductions/40/青铜馆一楼-序厅--441 32.mp3",
+          "length": "1'47\"",
+          "area_code": "H",
+          "segments": [
+            {
+              "id": 205,
+              "name": "青铜馆外形",
+              "start": 0,
+              "position_": "H1",
+              "pictures_": [
+                "/data/places/2/positions/40/H01 门口.JPG"
+              ],
+              "tags_": [
+                "青铜馆"
+              ]
+            },
+            {
+              "id": 206,
+              "name": "人面鸟身像",
+              "start": 52,
+              "position_": "H2",
+              "pictures_": [
+                "/data/places/2/positions/41/H02 人面鸟身.JPG"
+              ],
+              "tags_": [
+                "人面鸟身像"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "青铜馆一楼",
+          "audio": "/data/places/2/guides/13/introductions/41/青铜馆一楼--441 32.mp3",
+          "length": "11'35\"",
+          "area_code": "I",
+          "segments": [
+            {
+              "id": 207,
+              "name": "最大的面具",
+              "start": 0,
+              "position_": "I01",
+              "pictures_": [
+                "/data/places/2/positions/42/H03 大面具.JPG"
+              ],
+              "tags_": [
+                "大面具"
+              ]
+            },
+            {
+              "id": 208,
+              "name": "世界各地面具",
+              "start": 92,
+              "position_": "I02",
+              "pictures_": [
+                "/data/places/2/positions/43/H04 各地面具1.JPG"
+              ],
+              "tags_": [
+                "各地面具"
+              ]
+            },
+            {
+              "id": 209,
+              "name": "青铜兽面具",
+              "start": 177,
+              "position_": "I03",
+              "pictures_": [
+                "/data/places/2/positions/44/H05 平面兽面具1.JPG"
+              ],
+              "tags_": [
+                "青铜兽面具"
+              ]
+            },
+            {
+              "id": 210,
+              "name": "戴冠纵目面具",
+              "start": 226,
+              "position_": "I04",
+              "pictures_": [
+                "/data/places/2/positions/45/H06 立体威严纵目面具.JPG"
+              ],
+              "tags_": [
+                "戴冠纵目面具"
+              ]
+            },
+            {
+              "id": 213,
+              "name": "眼形器",
+              "start": 308,
+              "position_": "I05",
+              "pictures_": [
+                "/data/places/2/positions/47/H08 眼形器.JPG"
+              ],
+              "tags_": [
+                "眼形器"
+              ]
+            },
+            {
+              "id": 214,
+              "name": "纵目面具",
+              "start": 370,
+              "position_": "I06",
+              "pictures_": [
+                "/data/places/2/positions/46/H07 千里眼顺风耳.JPG"
+              ],
+              "tags_": [
+                "纵目面具"
+              ]
+            },
+            {
+              "id": 216,
+              "name": "金面铜人头像",
+              "start": 495,
+              "position_": "I8",
+              "pictures_": [
+                "/data/places/2/positions/49/I02 贴金面具.JPG"
+              ],
+              "tags_": [
+                "金面铜人头像"
+              ]
+            },
+            {
+              "id": 217,
+              "name": "祭祀大典",
+              "start": 569,
+              "position_": "I9",
+              "pictures_": [
+                "/data/places/2/positions/50/I03 祭祀大典.JPG"
+              ],
+              "tags_": [
+                "祭祀神坛"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "name": "青铜馆一楼-王者之尊",
+          "audio": "/data/places/2/guides/13/introductions/44/青铜馆一楼-王者之尊--441 32.mp3",
+          "length": "2'58\"",
+          "area_code": "J",
+          "segments": [
+            {
+              "id": 218,
+              "name": "青铜大立人",
+              "start": 0,
+              "position_": "J1",
+              "pictures_": [
+                "/data/places/2/positions/51/J01 青铜大立人1.JPG"
+              ],
+              "tags_": [
+                "青铜立人"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "青铜馆-楼梯",
+          "audio": "/data/places/2/guides/13/introductions/48/青铜馆-楼梯--441 32.mp3",
+          "length": "1'16\"",
+          "area_code": "K",
+          "segments": [
+            {
+              "id": 240,
+              "name": "神树复制品",
+              "start": 0,
+              "position_": "K1",
+              "pictures_": [
+                "/data/places/2/positions/54/楼梯神树.jpg"
+              ],
+              "tags_": [
+                "青铜神树"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "青铜馆二楼-青铜重器",
+          "audio": "/data/places/2/guides/13/introductions/42/青铜馆二楼-青铜重器--441 32.mp3",
+          "length": "11'29\"",
+          "area_code": "L",
+          "segments": [
+            {
+              "id": 220,
+              "name": "酒器之尊，罍",
+              "start": 0,
+              "position_": "L1",
+              "pictures_": [
+                "/data/places/2/positions/55/K01 酒器.JPG"
+              ],
+              "tags_": [
+                "青铜酒器"
+              ]
+            },
+            {
+              "id": 221,
+              "name": "鸟脚人像",
+              "start": 60,
+              "position_": "L2",
+              "pictures_": [
+                "/data/places/2/positions/56/K02 鸟脚人像1.JPG"
+              ],
+              "tags_": [
+                "鸟脚人像"
+              ]
+            },
+            {
+              "id": 223,
+              "name": "人身型器",
+              "start": 126,
+              "position_": "L3",
+              "pictures_": [
+                "/data/places/2/positions/57/K03 人身形器.JPG"
+              ],
+              "tags_": [
+                "人身型器"
+              ]
+            },
+            {
+              "id": 224,
+              "name": "青铜太阳轮",
+              "start": 168,
+              "position_": "L4",
+              "pictures_": [
+                "/data/places/2/positions/58/K04 太阳轮.JPG"
+              ],
+              "tags_": [
+                "青铜太阳轮"
+              ]
+            },
+            {
+              "id": 226,
+              "name": "凤鸟型青铜器",
+              "start": 232,
+              "position_": "L5",
+              "pictures_": [
+                "/data/places/2/positions/59/K05 凤鸟形组图1.JPG"
+              ],
+              "tags_": [
+                "凤鸟型青铜器"
+              ]
+            },
+            {
+              "id": 227,
+              "name": "青铜大鹰头",
+              "start": 244,
+              "position_": "L6",
+              "pictures_": [
+                "/data/places/2/positions/60/K06 青铜大鹰头.JPG"
+              ],
+              "tags_": [
+                "青铜大鹰头"
+              ]
+            },
+            {
+              "id": 228,
+              "name": "青铜雄鸡",
+              "start": 328,
+              "position_": "L7",
+              "pictures_": [
+                "/data/places/2/positions/61/K07 青铜雄鸡.JPG"
+              ],
+              "tags_": [
+                "青铜雄鸡"
+              ]
+            },
+            {
+              "id": 229,
+              "name": "祭祀神坛",
+              "start": 398,
+              "position_": "L8",
+              "pictures_": [
+                "/data/places/2/positions/62/K08 祭祀神坛.JPG"
+              ],
+              "tags_": [
+                "祭祀神坛"
+              ]
+            },
+            {
+              "id": 231,
+              "name": "青铜蛇",
+              "start": 482,
+              "position_": "L9",
+              "pictures_": [
+                "/data/places/2/positions/63/K09 青铜蛇.JPG"
+              ],
+              "tags_": [
+                "青铜蛇"
+              ]
+            },
+            {
+              "id": 232,
+              "name": "青铜龙",
+              "start": 621,
+              "position_": "L10",
+              "pictures_": [
+                "/data/places/2/positions/64/K10 青铜龙羊.JPG"
+              ],
+              "tags_": [
+                "龙形饰"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "青铜馆三楼-发现之路",
+          "audio": "/data/places/2/guides/13/introductions/43/青铜馆三楼-发现之路--441 32.mp3",
+          "length": "6'33\"",
+          "area_code": "M",
+          "segments": [
+            {
+              "id": 233,
+              "name": "神龙初显",
+              "start": 0,
+              "position_": "M1",
+              "pictures_": [
+                "/data/places/2/positions/65/L01 神龙初显.JPG"
+              ],
+              "tags_": [
+                "神龙初显"
+              ]
+            },
+            {
+              "id": 234,
+              "name": "迷雾寻踪",
+              "start": 95,
+              "position_": "M2",
+              "pictures_": [
+                "/data/places/2/positions/66/L02 迷雾寻踪.JPG"
+              ],
+              "tags_": [
+                "迷雾寻踪"
+              ]
+            },
+            {
+              "id": 235,
+              "name": "重军出击",
+              "start": 164,
+              "position_": "M3",
+              "pictures_": [
+                "/data/places/2/positions/67/L04 重军出击.JPG"
+              ],
+              "tags_": [
+                "重军出击"
+              ]
+            },
+            {
+              "id": 236,
+              "name": "上下求索",
+              "start": 191,
+              "position_": "M4",
+              "pictures_": [
+                "/data/places/2/positions/68/上下求索"
+              ],
+              "tags_": [
+                "上下求索"
+              ]
+            },
+            {
+              "id": 238,
+              "name": "千古之谜",
+              "start": 295,
+              "position_": "M5",
+              "pictures_": [
+                "/data/places/2/positions/69/L06 千古之谜.JPG"
+              ],
+              "tags_": [
+                "千古之谜"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": 138,
+      "name": "一期陶器",
+      "explainations": [
+        {
+          "id": 78,
+          "name": "一期器物的典型特征",
+          "audio": "/data/places/2/explainations/78/三星堆一期典型的陶器和玉石器特征，邹鹏.mp3",
+          "length": "1'3\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "name": "三星堆概况",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 144,
+      "name": "三足炊器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 236,
+      "name": "上下求索",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 98,
+      "name": "两河流域",
+      "explainations": [
+        {
+          "id": 56,
+          "name": "世界其他地区的眼睛崇拜",
+          "audio": "/data/places/2/explainations/56/同时期世界其他区域的眼睛崇拜，周一兵，人类学家，探索发现.mp3",
+          "length": "1'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 15,
+            "name": "周一兵",
+            "title": "人类学家",
+            "picture": "/data/speakers/15/捕获.JPG"
+          }
+        },
+        {
+          "id": 70,
+          "name": "金杖图案有哪些解读？",
+          "audio": "/data/places/2/explainations/70/金杖的图案有哪些解读？邹鹏.mp3",
+          "length": "2'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "中原文化",
+      "explainations": [
+        {
+          "id": 1,
+          "name": "烛龙张眼就是白天的传说",
+          "audio": "/data/places/2/explainations/1/（音效）眼形器与烛龙传说有关，象征太阳崇拜，孙华（音质差）.mp3",
+          "length": "1'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 5,
+          "name": "玉璋从龙山文化向南传",
+          "audio": "/data/places/2/explainations/5/玉璋：最早见于龙山文化，由北向南传；李学勤，探索发现.mp3",
+          "length": "1'0\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 4,
+            "name": "李学勤",
+            "title": "清华大学历史系教授",
+            "picture": "/data/speakers/4/捕获.JPG"
+          }
+        },
+        {
+          "id": 9,
+          "name": "三星堆是独立文明",
+          "audio": "/data/places/2/explainations/9/三星堆是中原之外的文明体系，段渝.mp3",
+          "length": "0'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 16,
+          "name": "中原的鼎，三星堆的杖",
+          "audio": "/data/places/2/explainations/16/以杖、面具、头像为权力体系代表，与中原文明不同-崔巍，杖、面具、头像.mp3",
+          "length": "0'29\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 18,
+            "name": "霍巍",
+            "title": "四川大学博物馆馆长",
+            "picture": "/data/speakers/18/捕获.JPG"
+          }
+        },
+        {
+          "id": 19,
+          "name": "中国也会以杖表示权力",
+          "audio": "/data/places/2/explainations/19/中国也有以杖表示权力的传统-孙华.mp3",
+          "length": "0'56\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 39,
+          "name": "人与自然和谐相融",
+          "audio": "/data/places/2/explainations/39/青铜神树，人鸟合体：自然条件好的地方才能产生与自然相融的神话主题，赵殿增.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 43,
+          "name": "为什么中原没有神树",
+          "audio": "/data/places/2/explainations/43/青铜神树：为什么中原没有神树，孙华，探索发现，三星堆把祭祀对象都铸造出来了.mp3",
+          "length": "1'5\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 80,
+          "name": "三星堆玉戈比中原的大",
+          "audio": "/data/places/2/explainations/80/三星堆玉戈比中原同时期的更大；邹鹏.mp3",
+          "length": "0'19\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "二三期陶器",
+      "explainations": [
+        {
+          "id": 75,
+          "name": "由图案推测属于鱼凫时期",
+          "audio": "/data/places/2/explainations/75/三星堆二三期陶器，推测是鱼凫王时期的；邹鹏.mp3",
+          "length": "0'46\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "name": "二号神树",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 154,
+      "name": "二里头文化",
+      "explainations": [
+        {
+          "id": 84,
+          "name": "二里头也出土过",
+          "audio": "/data/places/2/explainations/84/铜饰牌只在三星堆和二里头发现过.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "name": "亚洲象",
+      "explainations": [
+        {
+          "id": 58,
+          "name": "来自南亚的亚洲象象牙",
+          "audio": "/data/places/2/explainations/58/象牙：亚洲象在本地出没？来自南亚，段渝，探索发现.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "交流",
+      "explainations": [
+        {
+          "id": 11,
+          "name": "古蜀人的国际贸易路线",
+          "audio": "/data/places/2/explainations/11/南丝绸之路：古蜀人的国际交通线，段渝，探索发现.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "name": "人身型器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 204,
+      "name": "人面鸟身像",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 82,
+      "name": "仪式",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 105,
+      "name": "仿生学",
+      "explainations": [
+        {
+          "id": 59,
+          "name": "凸目是节肢动物仿生造型",
+          "audio": "/data/places/2/explainations/59/纵目面具：凸目是节肢动物放生造型，钱玉趾，探索发现.mp3",
+          "length": "1'17\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "兵器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 153,
+      "name": "兽面纹",
+      "explainations": [
+        {
+          "id": 84,
+          "name": "二里头也出土过",
+          "audio": "/data/places/2/explainations/84/铜饰牌只在三星堆和二里头发现过.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 211,
+      "name": "兽首冠人像",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 214,
+      "name": "农业",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 240,
+      "name": "农业器具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 149,
+      "name": "几何",
+      "explainations": [
+        {
+          "id": 82,
+          "name": "了不起的精确五等分",
+          "audio": "/data/places/2/explainations/82/太阳轮：精确的五等分；邹鹏.mp3",
+          "length": "1'22\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "name": "凤鸟型青铜器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 242,
+      "name": "制玉工艺",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 218,
+      "name": "动物",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 134,
+      "name": "区域",
+      "explainations": [
+        {
+          "id": 76,
+          "name": "功能区划表明有劳动分工",
+          "audio": "/data/places/2/explainations/76/三星堆古城有功能区划，说明劳动分工的存在；邹鹏.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "千古之谜",
+      "explainations": [
+        {
+          "id": 23,
+          "name": "宝物的砸和埋都是刻意的",
+          "audio": "/data/places/2/explainations/23/宝物的砸和埋都是精心刻意的；孙华-百家讲堂.mp3",
+          "length": "2'10\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 24,
+          "name": "对器物坑用途的五种猜想",
+          "audio": "/data/places/2/explainations/24/对器物坑用途的五种猜想，孙华，百家讲坛.mp3",
+          "length": "3'51\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 25,
+          "name": "遵循祖训，面向岷山祭拜",
+          "audio": "/data/places/2/explainations/25/祭祀坑：砸碎宝物是一种仪式；陈显丹，探索发现.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 26,
+          "name": "城与坑的偏转方向之谜",
+          "audio": "/data/places/2/explainations/26/坑与城朝同一个方向倾斜，是否对准某个天象？孙华，探索发现.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "name": "升仙说\r\n",
+      "explainations": [
+        {
+          "id": 67,
+          "name": "表达登天成仙的愿望",
+          "audio": "/data/places/2/explainations/67/东汉摇钱树表达升天成仙的愿望.mp3",
+          "length": "0'47\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "升天",
+      "explainations": [
+        {
+          "id": 40,
+          "name": "古蜀人幻想的登天之树",
+          "audio": "/data/places/2/explainations/40/青铜神树：古蜀人幻想的登天之树，谭继和，探索发现.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 12,
+            "name": "谭继和",
+            "title": "巴蜀文化研究专家",
+            "picture": "/data/speakers/12/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "南亚",
+      "explainations": [
+        {
+          "id": 11,
+          "name": "古蜀人的国际贸易路线",
+          "audio": "/data/places/2/explainations/11/南丝绸之路：古蜀人的国际交通线，段渝，探索发现.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 58,
+          "name": "来自南亚的亚洲象象牙",
+          "audio": "/data/places/2/explainations/58/象牙：亚洲象在本地出没？来自南亚，段渝，探索发现.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "印度",
+      "explainations": [
+        {
+          "id": 58,
+          "name": "来自南亚的亚洲象象牙",
+          "audio": "/data/places/2/explainations/58/象牙：亚洲象在本地出没？来自南亚，段渝，探索发现.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "name": "印度佛教",
+      "explainations": [
+        {
+          "id": 52,
+          "name": "手势是一种形体语言",
+          "audio": "/data/places/2/explainations/52/青铜大立人：是一种手势，一种形体语言；赵殿增，探索发现.mp3",
+          "length": "1'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "发型",
+      "explainations": [
+        {
+          "id": 45,
+          "name": "推测三星堆毁于内斗",
+          "audio": "/data/places/2/explainations/45/青铜头像：两种发式，推测三星堆毁于内斗，孙华，百家讲坛.mp3",
+          "length": "7'10\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "发掘故事",
+      "explainations": [
+        {
+          "id": 14,
+          "name": "刚挖出来时以为是金腰带",
+          "audio": "/data/places/2/explainations/14/一开始以为是金腰带-探索发现，陈显丹.mp3",
+          "length": "0'46\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 18,
+          "name": "挖到宝贝赶紧兵分三路",
+          "audio": "/data/places/2/explainations/18/知道是宝贝，赶紧停止挖掘兵分三路.mp3",
+          "length": "2'31\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 44,
+          "name": "修复时用铜杆加固过",
+          "audio": "/data/places/2/explainations/44/青铜神树：修复时用铜管加固过，陈显丹，探索发现.mp3",
+          "length": "0'20\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 61,
+          "name": "出土时被当成座椅靠背",
+          "audio": "/data/places/2/explainations/61/纵目面具出土时倒置，被当做座椅靠背，陈显丹.mp3",
+          "length": "0'20\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "name": "发掘故事\r\n",
+      "explainations": [
+        {
+          "id": 57,
+          "name": "二号坑出土六十多根象牙",
+          "audio": "/data/places/2/explainations/57/象牙：二号坑出土了60多枚象牙，陈显丹，亲历现场，探索发现 .mp3",
+          "length": "0'13\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "name": "发饰",
+      "explainations": [
+        {
+          "id": 92,
+          "name": "长得像相扑",
+          "audio": "/data/places/2/explainations/92/跪坐人像：长得像相扑，在日本展出时引起轰动；邹鹏.mp3",
+          "length": "1'21\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "name": "各地面具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 129,
+      "name": "周文化",
+      "explainations": [
+        {
+          "id": 74,
+          "name": "《周礼》六器",
+          "audio": "/data/places/2/explainations/74/三星堆的玉是礼玉，跟后来《周礼》的六器对应；邹鹏.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "name": "周礼",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 189,
+      "name": "周礼 ",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 46,
+      "name": "商品贸易",
+      "explainations": [
+        {
+          "id": 11,
+          "name": "古蜀人的国际贸易路线",
+          "audio": "/data/places/2/explainations/11/南丝绸之路：古蜀人的国际交通线，段渝，探索发现.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "商品贸易\r\n",
+      "explainations": [
+        {
+          "id": 69,
+          "name": "海贝可能来自南丝绸之路",
+          "audio": "/data/places/2/explainations/69/海贝展现活跃的商贸活动，可能来自南方丝绸之路.mp3",
+          "length": "1'11\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "name": "商贸",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 246,
+      "name": "器物坑",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 110,
+      "name": "四期陶器",
+      "explainations": [
+        {
+          "id": 65,
+          "name": "四期时古城已废弃",
+          "audio": "/data/places/2/explainations/65/从四期陶器种类来看，到西周以后，三星堆古城已经废弃了；邹鹏.mp3",
+          "length": "0'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "name": "国王",
+      "explainations": [
+        {
+          "id": 55,
+          "name": "古蜀国政教合一的大首领",
+          "audio": "/data/places/2/explainations/55/青铜大立人是古蜀国政教合一的首领-黄剑华，探索发现.mp3",
+          "length": "0'32\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "name": "圆锥",
+      "explainations": [
+        {
+          "id": 75,
+          "name": "由图案推测属于鱼凫时期",
+          "audio": "/data/places/2/explainations/75/三星堆二三期陶器，推测是鱼凫王时期的；邹鹏.mp3",
+          "length": "0'46\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "name": "土堆",
+      "explainations": [
+        {
+          "id": 77,
+          "name": "三星堆名字的由来",
+          "audio": "/data/places/2/explainations/77/三星堆名字由来，邹鹏.mp3",
+          "length": "0'59\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "name": "地层",
+      "explainations": [
+        {
+          "id": 73,
+          "name": "地层沉积了2000多年历史",
+          "audio": "/data/places/2/explainations/73/三星堆2000多年历史包含在16个地层当中；邹鹏.mp3",
+          "length": "0'55\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "name": "地形",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 174,
+      "name": "地形 ",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 136,
+      "name": "城墙",
+      "explainations": [
+        {
+          "id": 77,
+          "name": "三星堆名字的由来",
+          "audio": "/data/places/2/explainations/77/三星堆名字由来，邹鹏.mp3",
+          "length": "0'59\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "name": "城市",
+      "explainations": [
+        {
+          "id": 76,
+          "name": "功能区划表明有劳动分工",
+          "audio": "/data/places/2/explainations/76/三星堆古城有功能区划，说明劳动分工的存在；邹鹏.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "城市方向",
+      "explainations": [
+        {
+          "id": 26,
+          "name": "城与坑的偏转方向之谜",
+          "audio": "/data/places/2/explainations/26/坑与城朝同一个方向倾斜，是否对准某个天象？孙华，探索发现.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "name": "外形",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 143,
+      "name": "大器型",
+      "explainations": [
+        {
+          "id": 80,
+          "name": "三星堆玉戈比中原的大",
+          "audio": "/data/places/2/explainations/80/三星堆玉戈比中原同时期的更大；邹鹏.mp3",
+          "length": "0'19\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 193,
+      "name": "大玉璋",
+      "explainations": [
+        {
+          "id": 5,
+          "name": "玉璋从龙山文化向南传",
+          "audio": "/data/places/2/explainations/5/玉璋：最早见于龙山文化，由北向南传；李学勤，探索发现.mp3",
+          "length": "1'0\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 4,
+            "name": "李学勤",
+            "title": "清华大学历史系教授",
+            "picture": "/data/speakers/4/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "name": "大石璧",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 192,
+      "name": "大边璋",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 205,
+      "name": "大面具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 162,
+      "name": "天圆地方",
+      "explainations": [
+        {
+          "id": 89,
+          "name": "通天地的法器",
+          "audio": "/data/places/2/explainations/89/玉琮为通天地的法器，三星堆与良渚的玉器相似，有交流；邹鹏.mp3",
+          "length": "0'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "name": "天地",
+      "explainations": [
+        {
+          "id": 49,
+          "name": "注意材质、祭台和赤脚",
+          "audio": "/data/places/2/explainations/49/青铜大立人：材质、祭台、赤脚：身份最高的大巫师，赵增殿.mp3",
+          "length": "1'28\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 74,
+          "name": "《周礼》六器",
+          "audio": "/data/places/2/explainations/74/三星堆的玉是礼玉，跟后来《周礼》的六器对应；邹鹏.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "name": "天地\r\n",
+      "explainations": [
+        {
+          "id": 64,
+          "name": "三星堆特色的有领璧",
+          "audio": "/data/places/2/explainations/64/璧中间有一圈突起，叫有领璧，如何使用呢；邹鹏.mp3",
+          "length": "0'33\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "天象",
+      "explainations": [
+        {
+          "id": 26,
+          "name": "城与坑的偏转方向之谜",
+          "audio": "/data/places/2/explainations/26/坑与城朝同一个方向倾斜，是否对准某个天象？孙华，探索发现.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "name": "太阳形器",
+      "explainations": [
+        {
+          "id": 82,
+          "name": "了不起的精确五等分",
+          "audio": "/data/places/2/explainations/82/太阳轮：精确的五等分；邹鹏.mp3",
+          "length": "1'22\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "name": "女性",
+      "explainations": [
+        {
+          "id": 90,
+          "name": "女性，或者没戴面具的脸",
+          "audio": "/data/places/2/explainations/90/圆脸头像：女性，或者没戴面具的人像.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "name": "奴隶",
+      "explainations": [
+        {
+          "id": 92,
+          "name": "长得像相扑",
+          "audio": "/data/places/2/explainations/92/跪坐人像：长得像相扑，在日本展出时引起轰动；邹鹏.mp3",
+          "length": "1'21\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "宇宙观",
+      "explainations": [
+        {
+          "id": 26,
+          "name": "城与坑的偏转方向之谜",
+          "audio": "/data/places/2/explainations/26/坑与城朝同一个方向倾斜，是否对准某个天象？孙华，探索发现.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "宗教信仰",
+      "explainations": [
+        {
+          "id": 39,
+          "name": "人与自然和谐相融",
+          "audio": "/data/places/2/explainations/39/青铜神树，人鸟合体：自然条件好的地方才能产生与自然相融的神话主题，赵殿增.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 40,
+          "name": "古蜀人幻想的登天之树",
+          "audio": "/data/places/2/explainations/40/青铜神树：古蜀人幻想的登天之树，谭继和，探索发现.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 12,
+            "name": "谭继和",
+            "title": "巴蜀文化研究专家",
+            "picture": "/data/speakers/12/捕获.JPG"
+          }
+        },
+        {
+          "id": 41,
+          "name": "龙树造型表达建木崇拜",
+          "audio": "/data/places/2/explainations/41/青铜神树：龙树造型表达西南地区的建木崇拜，林向，探索发现.mp3",
+          "length": "0'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        },
+        {
+          "id": 42,
+          "name": "不是停靠太阳的扶桑",
+          "audio": "/data/places/2/explainations/42/青铜神树：是建木，不是停靠太阳的扶桑，段渝，探索发现 .mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 43,
+          "name": "为什么中原没有神树",
+          "audio": "/data/places/2/explainations/43/青铜神树：为什么中原没有神树，孙华，探索发现，三星堆把祭祀对象都铸造出来了.mp3",
+          "length": "1'5\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 52,
+          "name": "手势是一种形体语言",
+          "audio": "/data/places/2/explainations/52/青铜大立人：是一种手势，一种形体语言；赵殿增，探索发现.mp3",
+          "length": "1'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 53,
+          "name": "手里拿的是彝族签筒",
+          "audio": "/data/places/2/explainations/53/青铜大立人：手里拿的是彝族签筒，钱玉趾，探索发现.mp3",
+          "length": "0'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        },
+        {
+          "id": 91,
+          "name": "悬挂起来的神明的象征",
+          "audio": "/data/places/2/explainations/91/最大的青铜面具应该是挂起来，神明的象征；邹鹏.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "name": "宗教活动",
+      "explainations": [
+        {
+          "id": 51,
+          "name": "什么也没拿，是一种手势",
+          "audio": "/data/places/2/explainations/51/青铜大立人：什么也没拿，就是一种手势，陈显丹，探索发现.mp3",
+          "length": "0'18\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "name": "尖底",
+      "explainations": [
+        {
+          "id": 75,
+          "name": "由图案推测属于鱼凫时期",
+          "audio": "/data/places/2/explainations/75/三星堆二三期陶器，推测是鱼凫王时期的；邹鹏.mp3",
+          "length": "0'46\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "山神崇拜",
+      "explainations": [
+        {
+          "id": 21,
+          "name": "图案是通往天国的神山",
+          "audio": "/data/places/2/explainations/21/图案画的是通往天国的神山，黄剑华，探索发现.mp3",
+          "length": "0'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "name": "工具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 57,
+      "name": "工艺",
+      "explainations": [
+        {
+          "id": 22,
+          "name": "两米多长，已残缺",
+          "audio": "/data/places/2/explainations/22/2米多长，已残缺，持璋铜人显示璋用法；邹鹏.mp3",
+          "length": "0'43\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 36,
+          "name": "额头方孔表明面具转过手",
+          "audio": "/data/places/2/explainations/36/青铜面具：方孔是后来凿的，说明铸造好以后转过手；苏荣誉，探索发现.mp3",
+          "length": "1'18\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 14,
+            "name": "苏荣誉",
+            "title": "中科院文物科技专家",
+            "picture": "/data/speakers/14/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "巨型玉璋",
+      "explainations": [
+        {
+          "id": 21,
+          "name": "图案是通往天国的神山",
+          "audio": "/data/places/2/explainations/21/图案画的是通往天国的神山，黄剑华，探索发现.mp3",
+          "length": "0'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        },
+        {
+          "id": 22,
+          "name": "两米多长，已残缺",
+          "audio": "/data/places/2/explainations/22/2米多长，已残缺，持璋铜人显示璋用法；邹鹏.mp3",
+          "length": "0'43\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "巫师",
+      "explainations": [
+        {
+          "id": 55,
+          "name": "古蜀国政教合一的大首领",
+          "audio": "/data/places/2/explainations/55/青铜大立人是古蜀国政教合一的首领-黄剑华，探索发现.mp3",
+          "length": "0'32\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "建木",
+      "explainations": [
+        {
+          "id": 41,
+          "name": "龙树造型表达建木崇拜",
+          "audio": "/data/places/2/explainations/41/青铜神树：龙树造型表达西南地区的建木崇拜，林向，探索发现.mp3",
+          "length": "0'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        },
+        {
+          "id": 42,
+          "name": "不是停靠太阳的扶桑",
+          "audio": "/data/places/2/explainations/42/青铜神树：是建木，不是停靠太阳的扶桑，段渝，探索发现 .mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "彝族",
+      "explainations": [
+        {
+          "id": 53,
+          "name": "手里拿的是彝族签筒",
+          "audio": "/data/places/2/explainations/53/青铜大立人：手里拿的是彝族签筒，钱玉趾，探索发现.mp3",
+          "length": "0'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "name": "微笑铜立人",
+      "explainations": [
+        {
+          "id": 90,
+          "name": "女性，或者没戴面具的脸",
+          "audio": "/data/places/2/explainations/90/圆脸头像：女性，或者没戴面具的人像.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "怪兽",
+      "explainations": [
+        {
+          "id": 72,
+          "name": "应该是钉在墙上驱邪的",
+          "audio": "/data/places/2/explainations/72/青铜兽面具钉在墙上驱邪；邹鹏.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "name": "戴冠纵目面具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 87,
+      "name": "手势",
+      "explainations": [
+        {
+          "id": 49,
+          "name": "注意材质、祭台和赤脚",
+          "audio": "/data/places/2/explainations/49/青铜大立人：材质、祭台、赤脚：身份最高的大巫师，赵增殿.mp3",
+          "length": "1'28\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 51,
+          "name": "什么也没拿，是一种手势",
+          "audio": "/data/places/2/explainations/51/青铜大立人：什么也没拿，就是一种手势，陈显丹，探索发现.mp3",
+          "length": "0'18\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "手势 服饰",
+      "explainations": [
+        {
+          "id": 4,
+          "name": "巨人的手势、服饰与身份",
+          "audio": "/data/places/2/explainations/4/详解东方巨人：手势、服饰与身份；邹鹏.mp3",
+          "length": "3'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "name": "手工业",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 76,
+      "name": "扶桑",
+      "explainations": [
+        {
+          "id": 42,
+          "name": "不是停靠太阳的扶桑",
+          "audio": "/data/places/2/explainations/42/青铜神树：是建木，不是停靠太阳的扶桑，段渝，探索发现 .mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "持璋铜人",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 220,
+      "name": "挂件",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 151,
+      "name": "挂饰",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 114,
+      "name": "摇钱树",
+      "explainations": [
+        {
+          "id": 67,
+          "name": "表达登天成仙的愿望",
+          "audio": "/data/places/2/explainations/67/东汉摇钱树表达升天成仙的愿望.mp3",
+          "length": "0'47\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "政体",
+      "explainations": [
+        {
+          "id": 45,
+          "name": "推测三星堆毁于内斗",
+          "audio": "/data/places/2/explainations/45/青铜头像：两种发式，推测三星堆毁于内斗，孙华，百家讲坛.mp3",
+          "length": "7'10\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 55,
+          "name": "古蜀国政教合一的大首领",
+          "audio": "/data/places/2/explainations/55/青铜大立人是古蜀国政教合一的首领-黄剑华，探索发现.mp3",
+          "length": "0'32\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "name": "数学",
+      "explainations": [
+        {
+          "id": 82,
+          "name": "了不起的精确五等分",
+          "audio": "/data/places/2/explainations/82/太阳轮：精确的五等分；邹鹏.mp3",
+          "length": "1'22\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "name": "文化中心",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 212,
+      "name": "文化交流",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 86,
+      "name": "文字",
+      "explainations": [
+        {
+          "id": 48,
+          "name": "陶盉上的符号是文字吗",
+          "audio": "/data/places/2/explainations/48/陶器上的符号：巴蜀图语很可能是一种文字，李学勤，探索发现.mp3",
+          "length": "0'48\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 4,
+            "name": "李学勤",
+            "title": "清华大学历史系教授",
+            "picture": "/data/speakers/4/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "name": "文字 ",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 209,
+      "name": "文明",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 173,
+      "name": "文明 起源",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 171,
+      "name": "日本",
+      "explainations": [
+        {
+          "id": 92,
+          "name": "长得像相扑",
+          "audio": "/data/places/2/explainations/92/跪坐人像：长得像相扑，在日本展出时引起轰动；邹鹏.mp3",
+          "length": "1'21\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "name": "服饰",
+      "explainations": [
+        {
+          "id": 50,
+          "name": "穿的是特殊的法服",
+          "audio": "/data/places/2/explainations/50/青铜大立人：穿的是特殊的法服，孙华，探索发现.mp3",
+          "length": "0'37\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "name": "未戴面具",
+      "explainations": [
+        {
+          "id": 90,
+          "name": "女性，或者没戴面具的脸",
+          "audio": "/data/places/2/explainations/90/圆脸头像：女性，或者没戴面具的人像.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 237,
+      "name": "未解之谜",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 44,
+      "name": "权力",
+      "explainations": [
+        {
+          "id": 9,
+          "name": "三星堆是独立文明",
+          "audio": "/data/places/2/explainations/9/三星堆是中原之外的文明体系，段渝.mp3",
+          "length": "0'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "权威",
+      "explainations": [
+        {
+          "id": 16,
+          "name": "中原的鼎，三星堆的杖",
+          "audio": "/data/places/2/explainations/16/以杖、面具、头像为权力体系代表，与中原文明不同-崔巍，杖、面具、头像.mp3",
+          "length": "0'29\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 18,
+            "name": "霍巍",
+            "title": "四川大学博物馆馆长",
+            "picture": "/data/speakers/18/捕获.JPG"
+          }
+        },
+        {
+          "id": 17,
+          "name": "以杖表示权力源于西亚",
+          "audio": "/data/places/2/explainations/17/用杖代表权力的传统源自西亚-段渝，探索发现.mp3",
+          "length": "0'58\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 19,
+          "name": "中国也会以杖表示权力",
+          "audio": "/data/places/2/explainations/19/中国也有以杖表示权力的传统-孙华.mp3",
+          "length": "0'56\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "name": "杖",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 157,
+      "name": "杖首",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 158,
+      "name": "杖首\r\n",
+      "explainations": [
+        {
+          "id": 87,
+          "name": "龙的形象中出现羊的局部",
+          "audio": "/data/places/2/explainations/87/羊头龙：龙的形象中第一次出现羊的局部形象.mp3",
+          "length": "1'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "楚文化",
+      "explainations": [
+        {
+          "id": 42,
+          "name": "不是停靠太阳的扶桑",
+          "audio": "/data/places/2/explainations/42/青铜神树：是建木，不是停靠太阳的扶桑，段渝，探索发现 .mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "name": "殷墟",
+      "explainations": [
+        {
+          "id": 92,
+          "name": "长得像相扑",
+          "audio": "/data/places/2/explainations/92/跪坐人像：长得像相扑，在日本展出时引起轰动；邹鹏.mp3",
+          "length": "1'21\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "法器",
+      "explainations": [
+        {
+          "id": 21,
+          "name": "图案是通往天国的神山",
+          "audio": "/data/places/2/explainations/21/图案画的是通往天国的神山，黄剑华，探索发现.mp3",
+          "length": "0'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        },
+        {
+          "id": 64,
+          "name": "三星堆特色的有领璧",
+          "audio": "/data/places/2/explainations/64/璧中间有一圈突起，叫有领璧，如何使用呢；邹鹏.mp3",
+          "length": "0'33\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "name": "法袍",
+      "explainations": [
+        {
+          "id": 50,
+          "name": "穿的是特殊的法服",
+          "audio": "/data/places/2/explainations/50/青铜大立人：穿的是特殊的法服，孙华，探索发现.mp3",
+          "length": "0'37\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "海贝",
+      "explainations": [
+        {
+          "id": 11,
+          "name": "古蜀人的国际贸易路线",
+          "audio": "/data/places/2/explainations/11/南丝绸之路：古蜀人的国际交通线，段渝，探索发现.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 69,
+          "name": "海贝可能来自南丝绸之路",
+          "audio": "/data/places/2/explainations/69/海贝展现活跃的商贸活动，可能来自南方丝绸之路.mp3",
+          "length": "1'11\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "name": "火锅",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 59,
+      "name": "灭亡之谜",
+      "explainations": [
+        {
+          "id": 23,
+          "name": "宝物的砸和埋都是刻意的",
+          "audio": "/data/places/2/explainations/23/宝物的砸和埋都是精心刻意的；孙华-百家讲堂.mp3",
+          "length": "2'10\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 24,
+          "name": "对器物坑用途的五种猜想",
+          "audio": "/data/places/2/explainations/24/对器物坑用途的五种猜想，孙华，百家讲坛.mp3",
+          "length": "3'51\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "name": "灰陶",
+      "explainations": [
+        {
+          "id": 78,
+          "name": "一期器物的典型特征",
+          "audio": "/data/places/2/explainations/78/三星堆一期典型的陶器和玉石器特征，邹鹏.mp3",
+          "length": "1'3\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "name": "炊器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 160,
+      "name": "牙璋",
+      "explainations": [
+        {
+          "id": 88,
+          "name": "未展出的鱼嘴含鸟璋",
+          "audio": "/data/places/2/explainations/88/鱼形璋和一件未展出的鱼嘴含鸟璋；邹鹏.mp3",
+          "length": "0'59\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "特权身份",
+      "explainations": [
+        {
+          "id": 3,
+          "name": "金箔不是面具是皮肤",
+          "audio": "/data/places/2/explainations/3/不是黄金面具，而是黄金皮肤-探索发现，孙华，青铜头像.mp3",
+          "length": "1'11\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 4,
+          "name": "巨人的手势、服饰与身份",
+          "audio": "/data/places/2/explainations/4/详解东方巨人：手势、服饰与身份；邹鹏.mp3",
+          "length": "3'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 45,
+          "name": "推测三星堆毁于内斗",
+          "audio": "/data/places/2/explainations/45/青铜头像：两种发式，推测三星堆毁于内斗，孙华，百家讲坛.mp3",
+          "length": "7'10\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 47,
+          "name": "一个瞎眼阶层",
+          "audio": "/data/places/2/explainations/47/青铜头像都是瞎子？-探索发现，孙华等.mp3",
+          "length": "0'49\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "name": "玉兵器",
+      "explainations": [
+        {
+          "id": 80,
+          "name": "三星堆玉戈比中原的大",
+          "audio": "/data/places/2/explainations/80/三星堆玉戈比中原同时期的更大；邹鹏.mp3",
+          "length": "0'19\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "name": "玉兵器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 108,
+      "name": "玉器",
+      "explainations": [
+        {
+          "id": 63,
+          "name": "璧、环、瑗名字由来",
+          "audio": "/data/places/2/explainations/63/璧、环、瑗名字由来.mp3",
+          "length": "1'32\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 74,
+          "name": "《周礼》六器",
+          "audio": "/data/places/2/explainations/74/三星堆的玉是礼玉，跟后来《周礼》的六器对应；邹鹏.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "name": "玉器制作",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 161,
+      "name": "玉琮",
+      "explainations": [
+        {
+          "id": 89,
+          "name": "通天地的法器",
+          "audio": "/data/places/2/explainations/89/玉琮为通天地的法器，三星堆与良渚的玉器相似，有交流；邹鹏.mp3",
+          "length": "0'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "玉璋流传",
+      "explainations": [
+        {
+          "id": 5,
+          "name": "玉璋从龙山文化向南传",
+          "audio": "/data/places/2/explainations/5/玉璋：最早见于龙山文化，由北向南传；李学勤，探索发现.mp3",
+          "length": "1'0\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 4,
+            "name": "李学勤",
+            "title": "清华大学历史系教授",
+            "picture": "/data/speakers/4/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "玉璧",
+      "explainations": [
+        {
+          "id": 63,
+          "name": "璧、环、瑗名字由来",
+          "audio": "/data/places/2/explainations/63/璧、环、瑗名字由来.mp3",
+          "length": "1'32\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 64,
+          "name": "三星堆特色的有领璧",
+          "audio": "/data/places/2/explainations/64/璧中间有一圈突起，叫有领璧，如何使用呢；邹鹏.mp3",
+          "length": "0'33\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "name": "玉石原料",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 241,
+      "name": "玉磨石",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 196,
+      "name": "玉装饰",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 217,
+      "name": "生活用具",
+      "explainations": [
+        {
+          "id": 81,
+          "name": "三足炊器，火锅之源",
+          "audio": "/data/places/2/explainations/81/三足炊器，火锅之源；邹鹏.mp3",
+          "length": "0'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "用途",
+      "explainations": [
+        {
+          "id": 36,
+          "name": "额头方孔表明面具转过手",
+          "audio": "/data/places/2/explainations/36/青铜面具：方孔是后来凿的，说明铸造好以后转过手；苏荣誉，探索发现.mp3",
+          "length": "1'18\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 14,
+            "name": "苏荣誉",
+            "title": "中科院文物科技专家",
+            "picture": "/data/speakers/14/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "name": "用途\r\n",
+      "explainations": [
+        {
+          "id": 66,
+          "name": "出土时贴在青铜头像上",
+          "audio": "/data/places/2/explainations/66/黄金面罩发现时贴在青铜头像上面，独特文化现象.mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "眼形器",
+      "explainations": [
+        {
+          "id": 1,
+          "name": "烛龙张眼就是白天的传说",
+          "audio": "/data/places/2/explainations/1/（音效）眼形器与烛龙传说有关，象征太阳崇拜，孙华（音质差）.mp3",
+          "length": "1'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 56,
+          "name": "世界其他地区的眼睛崇拜",
+          "audio": "/data/places/2/explainations/56/同时期世界其他区域的眼睛崇拜，周一兵，人类学家，探索发现.mp3",
+          "length": "1'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 15,
+            "name": "周一兵",
+            "title": "人类学家",
+            "picture": "/data/speakers/15/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "眼睛崇拜",
+      "explainations": [
+        {
+          "id": 1,
+          "name": "烛龙张眼就是白天的传说",
+          "audio": "/data/places/2/explainations/1/（音效）眼形器与烛龙传说有关，象征太阳崇拜，孙华（音质差）.mp3",
+          "length": "1'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 56,
+          "name": "世界其他地区的眼睛崇拜",
+          "audio": "/data/places/2/explainations/56/同时期世界其他区域的眼睛崇拜，周一兵，人类学家，探索发现.mp3",
+          "length": "1'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 15,
+            "name": "周一兵",
+            "title": "人类学家",
+            "picture": "/data/speakers/15/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "name": "瞎眼知识分子",
+      "explainations": [
+        {
+          "id": 47,
+          "name": "一个瞎眼阶层",
+          "audio": "/data/places/2/explainations/47/青铜头像都是瞎子？-探索发现，孙华等.mp3",
+          "length": "0'49\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "name": "礼器",
+      "explainations": [
+        {
+          "id": 78,
+          "name": "一期器物的典型特征",
+          "audio": "/data/places/2/explainations/78/三星堆一期典型的陶器和玉石器特征，邹鹏.mp3",
+          "length": "1'3\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "name": "礼器\r\n",
+      "explainations": [
+        {
+          "id": 68,
+          "name": "高柄豆应该是祭祀用品",
+          "audio": "/data/places/2/explainations/68/高柄豆不实用，可能是祭祀用品；邹鹏.mp3",
+          "length": "0'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "祖先崇拜",
+      "explainations": [
+        {
+          "id": 25,
+          "name": "遵循祖训，面向岷山祭拜",
+          "audio": "/data/places/2/explainations/25/祭祀坑：砸碎宝物是一种仪式；陈显丹，探索发现.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 43,
+          "name": "为什么中原没有神树",
+          "audio": "/data/places/2/explainations/43/青铜神树：为什么中原没有神树，孙华，探索发现，三星堆把祭祀对象都铸造出来了.mp3",
+          "length": "1'5\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 70,
+          "name": "金杖图案有哪些解读？",
+          "audio": "/data/places/2/explainations/70/金杖的图案有哪些解读？邹鹏.mp3",
+          "length": "2'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 85,
+          "name": "对纵目蚕丛王的祖先崇拜",
+          "audio": "/data/places/2/explainations/85/凸目面具也可能表现古蜀人对纵目蚕丛王的祖先崇拜；邹鹏.mp3",
+          "length": "1'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "神坛 东巴文化",
+      "explainations": [
+        {
+          "id": 38,
+          "name": "古蜀人如何祭祀",
+          "audio": "/data/places/2/explainations/38/青铜神树，祭坛：古蜀人的祭祀活动是什么样的？赵殿增，探索发现.mp3",
+          "length": "1'12\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "name": "神树残件",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 167,
+      "name": "神灵象征",
+      "explainations": [
+        {
+          "id": 91,
+          "name": "悬挂起来的神明的象征",
+          "audio": "/data/places/2/explainations/91/最大的青铜面具应该是挂起来，神明的象征；邹鹏.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "name": "神玉",
+      "explainations": [
+        {
+          "id": 74,
+          "name": "《周礼》六器",
+          "audio": "/data/places/2/explainations/74/三星堆的玉是礼玉，跟后来《周礼》的六器对应；邹鹏.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "神筒",
+      "explainations": [
+        {
+          "id": 53,
+          "name": "手里拿的是彝族签筒",
+          "audio": "/data/places/2/explainations/53/青铜大立人：手里拿的是彝族签筒，钱玉趾，探索发现.mp3",
+          "length": "0'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "name": "神龙初显",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 118,
+      "name": "祭祀作具",
+      "explainations": [
+        {
+          "id": 68,
+          "name": "高柄豆应该是祭祀用品",
+          "audio": "/data/places/2/explainations/68/高柄豆不实用，可能是祭祀用品；邹鹏.mp3",
+          "length": "0'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "name": "祭祀区\r\n",
+      "explainations": [
+        {
+          "id": 76,
+          "name": "功能区划表明有劳动分工",
+          "audio": "/data/places/2/explainations/76/三星堆古城有功能区划，说明劳动分工的存在；邹鹏.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "祭祀活动",
+      "explainations": [
+        {
+          "id": 38,
+          "name": "古蜀人如何祭祀",
+          "audio": "/data/places/2/explainations/38/青铜神树，祭坛：古蜀人的祭祀活动是什么样的？赵殿增，探索发现.mp3",
+          "length": "1'12\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 49,
+          "name": "注意材质、祭台和赤脚",
+          "audio": "/data/places/2/explainations/49/青铜大立人：材质、祭台、赤脚：身份最高的大巫师，赵增殿.mp3",
+          "length": "1'28\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 52,
+          "name": "手势是一种形体语言",
+          "audio": "/data/places/2/explainations/52/青铜大立人：是一种手势，一种形体语言；赵殿增，探索发现.mp3",
+          "length": "1'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "name": "祭祀神坛",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 232,
+      "name": "祭祀神坛",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 52,
+      "name": "等级",
+      "explainations": [
+        {
+          "id": 16,
+          "name": "中原的鼎，三星堆的杖",
+          "audio": "/data/places/2/explainations/16/以杖、面具、头像为权力体系代表，与中原文明不同-崔巍，杖、面具、头像.mp3",
+          "length": "0'29\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 18,
+            "name": "霍巍",
+            "title": "四川大学博物馆馆长",
+            "picture": "/data/speakers/18/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "name": "纵目面具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 106,
+      "name": "羌族",
+      "explainations": [
+        {
+          "id": 62,
+          "name": "羌族传说中的戈基人",
+          "audio": "/data/places/2/explainations/62/纵目人是不是羌族传说中的戈基人？林向，眼形器，纵目面具.mp3",
+          "length": "2'2\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "自然",
+      "explainations": [
+        {
+          "id": 74,
+          "name": "《周礼》六器",
+          "audio": "/data/places/2/explainations/74/三星堆的玉是礼玉，跟后来《周礼》的六器对应；邹鹏.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "自然环境",
+      "explainations": [
+        {
+          "id": 39,
+          "name": "人与自然和谐相融",
+          "audio": "/data/places/2/explainations/39/青铜神树，人鸟合体：自然条件好的地方才能产生与自然相融的神话主题，赵殿增.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 60,
+          "name": "希望看得远、听得远",
+          "audio": "/data/places/2/explainations/60/纵目面具：希望看得远，听得远，段渝，探索发现.mp3",
+          "length": "1'3\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "节肢动物",
+      "explainations": [
+        {
+          "id": 59,
+          "name": "凸目是节肢动物仿生造型",
+          "audio": "/data/places/2/explainations/59/纵目面具：凸目是节肢动物放生造型，钱玉趾，探索发现.mp3",
+          "length": "1'17\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "name": "蚕丛",
+      "explainations": [
+        {
+          "id": 85,
+          "name": "对纵目蚕丛王的祖先崇拜",
+          "audio": "/data/places/2/explainations/85/凸目面具也可能表现古蜀人对纵目蚕丛王的祖先崇拜；邹鹏.mp3",
+          "length": "1'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "name": "蜀字屏",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 53,
+      "name": "西亚文化",
+      "explainations": [
+        {
+          "id": 17,
+          "name": "以杖表示权力源于西亚",
+          "audio": "/data/places/2/explainations/17/用杖代表权力的传统源自西亚-段渝，探索发现.mp3",
+          "length": "0'58\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "name": "西王母",
+      "explainations": [
+        {
+          "id": 67,
+          "name": "表达登天成仙的愿望",
+          "audio": "/data/places/2/explainations/67/东汉摇钱树表达升天成仙的愿望.mp3",
+          "length": "0'47\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "象牙",
+      "explainations": [
+        {
+          "id": 57,
+          "name": "二号坑出土六十多根象牙",
+          "audio": "/data/places/2/explainations/57/象牙：二号坑出土了60多枚象牙，陈显丹，亲历现场，探索发现 .mp3",
+          "length": "0'13\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 58,
+          "name": "来自南亚的亚洲象象牙",
+          "audio": "/data/places/2/explainations/58/象牙：亚洲象在本地出没？来自南亚，段渝，探索发现.mp3",
+          "length": "0'52\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 54,
+          "name": "站在象头上，拿的是象牙",
+          "audio": "/data/places/2/explainations/54/青铜大立人：站在象头上，手里拿的是象牙，段渝，探索发现.mp3",
+          "length": "0'29\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "name": "起源",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 60,
+      "name": "起源传说",
+      "explainations": [
+        {
+          "id": 25,
+          "name": "遵循祖训，面向岷山祭拜",
+          "audio": "/data/places/2/explainations/25/祭祀坑：砸碎宝物是一种仪式；陈显丹，探索发现.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 62,
+          "name": "羌族传说中的戈基人",
+          "audio": "/data/places/2/explainations/62/纵目人是不是羌族传说中的戈基人？林向，眼形器，纵目面具.mp3",
+          "length": "2'2\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        },
+        {
+          "id": 77,
+          "name": "三星堆名字的由来",
+          "audio": "/data/places/2/explainations/77/三星堆名字由来，邹鹏.mp3",
+          "length": "0'59\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 79,
+          "name": "遗址证明古蜀国史是信史",
+          "audio": "/data/places/2/explainations/79/三星堆遗址证明了关于古蜀国的文字记载是信史，邹鹏.mp3",
+          "length": "2'4\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "name": "跪坐人像",
+      "explainations": [
+        {
+          "id": 92,
+          "name": "长得像相扑",
+          "audio": "/data/places/2/explainations/92/跪坐人像：长得像相扑，在日本展出时引起轰动；邹鹏.mp3",
+          "length": "1'21\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "迁都原因\r\n",
+      "explainations": [
+        {
+          "id": 65,
+          "name": "四期时古城已废弃",
+          "audio": "/data/places/2/explainations/65/从四期陶器种类来看，到西周以后，三星堆古城已经废弃了；邹鹏.mp3",
+          "length": "0'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "过道地层",
+      "explainations": [
+        {
+          "id": 73,
+          "name": "地层沉积了2000多年历史",
+          "audio": "/data/places/2/explainations/73/三星堆2000多年历史包含在16个地层当中；邹鹏.mp3",
+          "length": "0'55\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "name": "迷雾寻踪",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 163,
+      "name": "通神",
+      "explainations": [
+        {
+          "id": 89,
+          "name": "通天地的法器",
+          "audio": "/data/places/2/explainations/89/玉琮为通天地的法器，三星堆与良渚的玉器相似，有交流；邹鹏.mp3",
+          "length": "0'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "部落联盟",
+      "explainations": [
+        {
+          "id": 8,
+          "name": "鱼凫是两个部落的联盟",
+          "audio": "/data/places/2/explainations/8/胡昌钰，鱼凫是两个部落组成的联盟，川话，探索发现.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 13,
+            "name": "胡昌钰",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/13/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "都城",
+      "explainations": [
+        {
+          "id": 9,
+          "name": "三星堆是独立文明",
+          "audio": "/data/places/2/explainations/9/三星堆是中原之外的文明体系，段渝.mp3",
+          "length": "0'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 86,
+          "name": "三星堆是中心城邑",
+          "audio": "/data/places/2/explainations/86/新石器时代成都平原古城遗址当中，三星堆规模最大，是中心城邑；邹鹏.mp3",
+          "length": "1'1\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "name": "重军出击",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 49,
+      "name": "金杖",
+      "explainations": [
+        {
+          "id": 14,
+          "name": "刚挖出来时以为是金腰带",
+          "audio": "/data/places/2/explainations/14/一开始以为是金腰带-探索发现，陈显丹.mp3",
+          "length": "0'46\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 16,
+          "name": "中原的鼎，三星堆的杖",
+          "audio": "/data/places/2/explainations/16/以杖、面具、头像为权力体系代表，与中原文明不同-崔巍，杖、面具、头像.mp3",
+          "length": "0'29\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 18,
+            "name": "霍巍",
+            "title": "四川大学博物馆馆长",
+            "picture": "/data/speakers/18/捕获.JPG"
+          }
+        },
+        {
+          "id": 17,
+          "name": "以杖表示权力源于西亚",
+          "audio": "/data/places/2/explainations/17/用杖代表权力的传统源自西亚-段渝，探索发现.mp3",
+          "length": "0'58\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 18,
+          "name": "挖到宝贝赶紧兵分三路",
+          "audio": "/data/places/2/explainations/18/知道是宝贝，赶紧停止挖掘兵分三路.mp3",
+          "length": "2'31\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 19,
+          "name": "中国也会以杖表示权力",
+          "audio": "/data/places/2/explainations/19/中国也有以杖表示权力的传统-孙华.mp3",
+          "length": "0'56\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 70,
+          "name": "金杖图案有哪些解读？",
+          "audio": "/data/places/2/explainations/70/金杖的图案有哪些解读？邹鹏.mp3",
+          "length": "2'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "name": "金面罩",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 34,
+      "name": "金面铜人头像",
+      "explainations": [
+        {
+          "id": 3,
+          "name": "金箔不是面具是皮肤",
+          "audio": "/data/places/2/explainations/3/不是黄金面具，而是黄金皮肤-探索发现，孙华，青铜头像.mp3",
+          "length": "1'11\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 45,
+          "name": "推测三星堆毁于内斗",
+          "audio": "/data/places/2/explainations/45/青铜头像：两种发式，推测三星堆毁于内斗，孙华，百家讲坛.mp3",
+          "length": "7'10\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 46,
+          "name": "人戴着面具参加祭祀",
+          "audio": "/data/places/2/explainations/46/青铜头像表现人戴着面具参加祭祀的习俗-林向，探索发现 .mp3",
+          "length": "1'1\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "铜人头像",
+      "explainations": [
+        {
+          "id": 47,
+          "name": "一个瞎眼阶层",
+          "audio": "/data/places/2/explainations/47/青铜头像都是瞎子？-探索发现，孙华等.mp3",
+          "length": "0'49\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "铜杆加固",
+      "explainations": [
+        {
+          "id": 44,
+          "name": "修复时用铜杆加固过",
+          "audio": "/data/places/2/explainations/44/青铜神树：修复时用铜管加固过，陈显丹，探索发现.mp3",
+          "length": "0'20\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "name": "铜牌饰",
+      "explainations": [
+        {
+          "id": 84,
+          "name": "二里头也出土过",
+          "audio": "/data/places/2/explainations/84/铜饰牌只在三星堆和二里头发现过.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "铜纵目面具",
+      "explainations": [
+        {
+          "id": 59,
+          "name": "凸目是节肢动物仿生造型",
+          "audio": "/data/places/2/explainations/59/纵目面具：凸目是节肢动物放生造型，钱玉趾，探索发现.mp3",
+          "length": "1'17\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        },
+        {
+          "id": 60,
+          "name": "希望看得远、听得远",
+          "audio": "/data/places/2/explainations/60/纵目面具：希望看得远，听得远，段渝，探索发现.mp3",
+          "length": "1'3\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 61,
+          "name": "出土时被当成座椅靠背",
+          "audio": "/data/places/2/explainations/61/纵目面具出土时倒置，被当做座椅靠背，陈显丹.mp3",
+          "length": "0'20\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 62,
+          "name": "羌族传说中的戈基人",
+          "audio": "/data/places/2/explainations/62/纵目人是不是羌族传说中的戈基人？林向，眼形器，纵目面具.mp3",
+          "length": "2'2\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        },
+        {
+          "id": 85,
+          "name": "对纵目蚕丛王的祖先崇拜",
+          "audio": "/data/places/2/explainations/85/凸目面具也可能表现古蜀人对纵目蚕丛王的祖先崇拜；邹鹏.mp3",
+          "length": "1'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 36,
+          "name": "额头方孔表明面具转过手",
+          "audio": "/data/places/2/explainations/36/青铜面具：方孔是后来凿的，说明铸造好以后转过手；苏荣誉，探索发现.mp3",
+          "length": "1'18\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 14,
+            "name": "苏荣誉",
+            "title": "中科院文物科技专家",
+            "picture": "/data/speakers/14/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "name": "铜铃",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 140,
+      "name": "镂空",
+      "explainations": [
+        {
+          "id": 78,
+          "name": "一期器物的典型特征",
+          "audio": "/data/places/2/explainations/78/三星堆一期典型的陶器和玉石器特征，邹鹏.mp3",
+          "length": "1'3\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "name": "陶器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 184,
+      "name": "陶瓦",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 85,
+      "name": "陶盉",
+      "explainations": [
+        {
+          "id": 48,
+          "name": "陶盉上的符号是文字吗",
+          "audio": "/data/places/2/explainations/48/陶器上的符号：巴蜀图语很可能是一种文字，李学勤，探索发现.mp3",
+          "length": "0'48\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 4,
+            "name": "李学勤",
+            "title": "清华大学历史系教授",
+            "picture": "/data/speakers/4/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "陶范",
+      "explainations": [
+        {
+          "id": 71,
+          "name": "模与范",
+          "audio": "/data/places/2/explainations/71/青铜器采用了范铸法，不会出现两件一模一样的；邹鹏.mp3",
+          "length": "1'1\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "name": "青铜兵器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 122,
+      "name": "青铜兽面具",
+      "explainations": [
+        {
+          "id": 72,
+          "name": "应该是钉在墙上驱邪的",
+          "audio": "/data/places/2/explainations/72/青铜兽面具钉在墙上驱邪；邹鹏.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "青铜大面具",
+      "explainations": [
+        {
+          "id": 91,
+          "name": "悬挂起来的神明的象征",
+          "audio": "/data/places/2/explainations/91/最大的青铜面具应该是挂起来，神明的象征；邹鹏.mp3",
+          "length": "1'15\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "name": "青铜大鹰头",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 226,
+      "name": "青铜太阳轮",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 200,
+      "name": "青铜礼器",
+      "explainations": [
+        {
+          "id": 37,
+          "name": "武器含锡量高于礼器",
+          "audio": "/data/places/2/explainations/37/青铜器铸造：青铜武器含锡量比礼器高，三星堆人也重视战争；段渝，探索发现.mp3",
+          "length": "0'48\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "青铜神树",
+      "explainations": [
+        {
+          "id": 38,
+          "name": "古蜀人如何祭祀",
+          "audio": "/data/places/2/explainations/38/青铜神树，祭坛：古蜀人的祭祀活动是什么样的？赵殿增，探索发现.mp3",
+          "length": "1'12\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 39,
+          "name": "人与自然和谐相融",
+          "audio": "/data/places/2/explainations/39/青铜神树，人鸟合体：自然条件好的地方才能产生与自然相融的神话主题，赵殿增.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 40,
+          "name": "古蜀人幻想的登天之树",
+          "audio": "/data/places/2/explainations/40/青铜神树：古蜀人幻想的登天之树，谭继和，探索发现.mp3",
+          "length": "0'41\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 12,
+            "name": "谭继和",
+            "title": "巴蜀文化研究专家",
+            "picture": "/data/speakers/12/捕获.JPG"
+          }
+        },
+        {
+          "id": 41,
+          "name": "龙树造型表达建木崇拜",
+          "audio": "/data/places/2/explainations/41/青铜神树：龙树造型表达西南地区的建木崇拜，林向，探索发现.mp3",
+          "length": "0'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 9,
+            "name": "林向",
+            "title": "四川大学历史系教授",
+            "picture": "/data/speakers/9/捕获.JPG"
+          }
+        },
+        {
+          "id": 42,
+          "name": "不是停靠太阳的扶桑",
+          "audio": "/data/places/2/explainations/42/青铜神树：是建木，不是停靠太阳的扶桑，段渝，探索发现 .mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 43,
+          "name": "为什么中原没有神树",
+          "audio": "/data/places/2/explainations/43/青铜神树：为什么中原没有神树，孙华，探索发现，三星堆把祭祀对象都铸造出来了.mp3",
+          "length": "1'5\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 44,
+          "name": "修复时用铜杆加固过",
+          "audio": "/data/places/2/explainations/44/青铜神树：修复时用铜管加固过，陈显丹，探索发现.mp3",
+          "length": "0'20\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "青铜立人",
+      "explainations": [
+        {
+          "id": 4,
+          "name": "巨人的手势、服饰与身份",
+          "audio": "/data/places/2/explainations/4/详解东方巨人：手势、服饰与身份；邹鹏.mp3",
+          "length": "3'57\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 49,
+          "name": "注意材质、祭台和赤脚",
+          "audio": "/data/places/2/explainations/49/青铜大立人：材质、祭台、赤脚：身份最高的大巫师，赵增殿.mp3",
+          "length": "1'28\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 50,
+          "name": "穿的是特殊的法服",
+          "audio": "/data/places/2/explainations/50/青铜大立人：穿的是特殊的法服，孙华，探索发现.mp3",
+          "length": "0'37\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 3,
+            "name": "孙华",
+            "title": "北京大学考古系教授",
+            "picture": "/data/speakers/3/孙华.jpg"
+          }
+        },
+        {
+          "id": 51,
+          "name": "什么也没拿，是一种手势",
+          "audio": "/data/places/2/explainations/51/青铜大立人：什么也没拿，就是一种手势，陈显丹，探索发现.mp3",
+          "length": "0'18\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 6,
+            "name": "陈显丹",
+            "title": "三星堆两坑发掘者",
+            "picture": "/data/speakers/6/捕获.JPG"
+          }
+        },
+        {
+          "id": 52,
+          "name": "手势是一种形体语言",
+          "audio": "/data/places/2/explainations/52/青铜大立人：是一种手势，一种形体语言；赵殿增，探索发现.mp3",
+          "length": "1'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 10,
+            "name": "赵殿增",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/10/捕获.JPG"
+          }
+        },
+        {
+          "id": 53,
+          "name": "手里拿的是彝族签筒",
+          "audio": "/data/places/2/explainations/53/青铜大立人：手里拿的是彝族签筒，钱玉趾，探索发现.mp3",
+          "length": "0'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 7,
+            "name": "钱玉趾",
+            "title": "巴蜀古文字研究专家",
+            "picture": "/data/speakers/7/捕获.JPG"
+          }
+        },
+        {
+          "id": 54,
+          "name": "站在象头上，拿的是象牙",
+          "audio": "/data/places/2/explainations/54/青铜大立人：站在象头上，手里拿的是象牙，段渝，探索发现.mp3",
+          "length": "0'29\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 8,
+            "name": "段渝",
+            "title": "四川省社科院研究员",
+            "picture": "/data/speakers/8/捕获.JPG"
+          }
+        },
+        {
+          "id": 55,
+          "name": "古蜀国政教合一的大首领",
+          "audio": "/data/places/2/explainations/55/青铜大立人是古蜀国政教合一的首领-黄剑华，探索发现.mp3",
+          "length": "0'32\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 11,
+            "name": "黄剑华",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/11/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 231,
+      "name": "青铜蛇",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 223,
+      "name": "青铜酒器",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 219,
+      "name": "青铜铃",
+      "explainations": [
+        {
+          "id": 83,
+          "name": "出土时还可以摇响",
+          "audio": "/data/places/2/explainations/83/铜铃出土时都是可以摇响的.mp3",
+          "length": "0'27\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "青铜铸造",
+      "explainations": [
+        {
+          "id": 71,
+          "name": "模与范",
+          "audio": "/data/places/2/explainations/71/青铜器采用了范铸法，不会出现两件一模一样的；邹鹏.mp3",
+          "length": "1'1\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "name": "青铜雄鸡",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 221,
+      "name": "青铜馆",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 206,
+      "name": "面具",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 97,
+      "name": "驱邪",
+      "explainations": [
+        {
+          "id": 56,
+          "name": "世界其他地区的眼睛崇拜",
+          "audio": "/data/places/2/explainations/56/同时期世界其他区域的眼睛崇拜，周一兵，人类学家，探索发现.mp3",
+          "length": "1'34\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 15,
+            "name": "周一兵",
+            "title": "人类学家",
+            "picture": "/data/speakers/15/捕获.JPG"
+          }
+        },
+        {
+          "id": 72,
+          "name": "应该是钉在墙上驱邪的",
+          "audio": "/data/places/2/explainations/72/青铜兽面具钉在墙上驱邪；邹鹏.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 84,
+          "name": "二里头也出土过",
+          "audio": "/data/places/2/explainations/84/铜饰牌只在三星堆和二里头发现过.mp3",
+          "length": "1'8\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "name": "高柄豆",
+      "explainations": [
+        {
+          "id": 68,
+          "name": "高柄豆应该是祭祀用品",
+          "audio": "/data/places/2/explainations/68/高柄豆不实用，可能是祭祀用品；邹鹏.mp3",
+          "length": "0'26\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "鱼凫",
+      "explainations": [
+        {
+          "id": 8,
+          "name": "鱼凫是两个部落的联盟",
+          "audio": "/data/places/2/explainations/8/胡昌钰，鱼凫是两个部落组成的联盟，川话，探索发现.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 13,
+            "name": "胡昌钰",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/13/捕获.JPG"
+          }
+        },
+        {
+          "id": 70,
+          "name": "金杖图案有哪些解读？",
+          "audio": "/data/places/2/explainations/70/金杖的图案有哪些解读？邹鹏.mp3",
+          "length": "2'39\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 75,
+          "name": "由图案推测属于鱼凫时期",
+          "audio": "/data/places/2/explainations/75/三星堆二三期陶器，推测是鱼凫王时期的；邹鹏.mp3",
+          "length": "0'46\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 79,
+          "name": "遗址证明古蜀国史是信史",
+          "audio": "/data/places/2/explainations/79/三星堆遗址证明了关于古蜀国的文字记载是信史，邹鹏.mp3",
+          "length": "2'4\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        },
+        {
+          "id": 88,
+          "name": "未展出的鱼嘴含鸟璋",
+          "audio": "/data/places/2/explainations/88/鱼形璋和一件未展出的鱼嘴含鸟璋；邹鹏.mp3",
+          "length": "0'59\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "name": "鱼形璋",
+      "explainations": [
+        {
+          "id": 88,
+          "name": "未展出的鱼嘴含鸟璋",
+          "audio": "/data/places/2/explainations/88/鱼形璋和一件未展出的鱼嘴含鸟璋；邹鹏.mp3",
+          "length": "0'59\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "鱼鸟崇拜",
+      "explainations": [
+        {
+          "id": 8,
+          "name": "鱼凫是两个部落的联盟",
+          "audio": "/data/places/2/explainations/8/胡昌钰，鱼凫是两个部落组成的联盟，川话，探索发现.mp3",
+          "length": "0'42\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 13,
+            "name": "胡昌钰",
+            "title": "四川省文物考古研究院",
+            "picture": "/data/speakers/13/捕获.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "name": "鸟脚人像",
+      "explainations": [
+
+      ]
+    },
+    {
+      "id": 112,
+      "name": "黄金面罩",
+      "explainations": [
+        {
+          "id": 66,
+          "name": "出土时贴在青铜头像上",
+          "audio": "/data/places/2/explainations/66/黄金面罩发现时贴在青铜头像上面，独特文化现象.mp3",
+          "length": "0'45\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "name": "龙形饰",
+      "explainations": [
+        {
+          "id": 87,
+          "name": "龙的形象中出现羊的局部",
+          "audio": "/data/places/2/explainations/87/羊头龙：龙的形象中第一次出现羊的局部形象.mp3",
+          "length": "1'38\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "龙纹",
+      "explainations": [
+        {
+          "id": 72,
+          "name": "应该是钉在墙上驱邪的",
+          "audio": "/data/places/2/explainations/72/青铜兽面具钉在墙上驱邪；邹鹏.mp3",
+          "length": "0'36\"",
+          "like": null,
+          "_type": "expert",
+          "speaker": {
+            "id": 2,
+            "name": "邹鹏",
+            "title": "三星堆讲解部主任",
+            "picture": "/data/speakers/2/news_201161501155.jpg"
+          }
+        }
+      ]
+    }
+  ],
+  "positions": [
+    [
+      {
+        "id": 1,
+        "name": "A1",
+        "description": "综合馆门口",
+        "pictures": "/data/places/2/positions/1/综合馆门口A01.JPG,",
+        "tags_": [
+          "三星堆概况"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "A2",
+        "description": "长江文明之源",
+        "pictures": "/data/places/2/positions/5/长江之源.JPG,",
+        "tags_": [
+
+        ]
+      },
+      {
+        "id": 6,
+        "name": "A3",
+        "description": "地理位置图",
+        "pictures": "/data/places/2/positions/6/序厅A03地形图.JPG,",
+        "tags_": [
+          "地形",
+          "都城"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 7,
+        "name": "B1",
+        "description": "蜀字屏",
+        "pictures": "/data/places/2/positions/7/蜀字屏.jpg,",
+        "tags_": [
+          "蜀字屏",
+          "文字"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "B2",
+        "description": "蜀王谱系",
+        "pictures": "/data/places/2/positions/8/B02蜀王谱系.JPG,",
+        "tags_": [
+          "地层"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "B3",
+        "description": "萌芽时期",
+        "pictures": "/data/places/2/positions/9/B03萌芽时期器物.JPG,",
+        "tags_": [
+          "一期陶器"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "B4",
+        "description": "鼎盛时期",
+        "pictures": "/data/places/2/positions/10/B05二期陶器.JPG,",
+        "tags_": [
+          "二三期陶器"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "B5",
+        "description": "四期陶器",
+        "pictures": "/data/places/2/positions/11/B08四期陶器.JPG,",
+        "tags_": [
+          "四期陶器",
+          "文化中心"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 12,
+        "name": "C1",
+        "description": "粮具酒具",
+        "pictures": "/data/places/2/positions/12/C01农业区.JPG,",
+        "tags_": [
+          "农业器具"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "C2",
+        "description": "象牙",
+        "pictures": "/data/places/2/positions/13/C02象牙.JPG,",
+        "tags_": [
+          "象牙"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "C3",
+        "description": "手工业制品",
+        "pictures": "/data/places/2/positions/14/C03商贸.JPG,",
+        "tags_": [
+          "手工业",
+          "商贸"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "C4",
+        "description": "海贝与南丝路",
+        "pictures": "/data/places/2/positions/15/C04海贝与南丝路.JPG,",
+        "tags_": [
+          "海贝",
+          "商贸"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 16,
+        "name": "D1",
+        "description": "陶器",
+        "pictures": "/data/places/2/positions/16/D01 第二张陶器.JPG,",
+        "tags_": [
+          "陶器"
+        ]
+      },
+      {
+        "id": 17,
+        "name": "D2",
+        "description": "陶瓦宫殿建筑",
+        "pictures": "/data/places/2/positions/17/D02 陶瓦.JPG,",
+        "tags_": [
+          "陶瓦"
+        ]
+      },
+      {
+        "id": 18,
+        "name": "D3",
+        "description": "生活器皿",
+        "pictures": "/data/places/2/positions/18/D03 三足炊.JPG,",
+        "tags_": [
+          "生活用具",
+          "礼器"
+        ]
+      },
+      {
+        "id": 19,
+        "name": "D4",
+        "description": "动物盖钮把勺",
+        "pictures": "/data/places/2/positions/19/D04 陶附件动物.JPG,",
+        "tags_": [
+          "陶器",
+          "动物"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 20,
+        "name": "E1",
+        "description": "制玉工艺",
+        "pictures": "/data/places/2/positions/20/E02制玉图及制玉工艺.JPG,",
+        "tags_": [
+          "玉磨石",
+          "制玉工艺"
+        ]
+      },
+      {
+        "id": 29,
+        "name": "E10",
+        "description": "玉装饰",
+        "pictures": "/data/places/2/positions/29/E10 玉饰工具区.JPG,",
+        "tags_": [
+          "玉装饰"
+        ]
+      },
+      {
+        "id": 21,
+        "name": "E2",
+        "description": "玉石原料",
+        "pictures": "/data/places/2/positions/21/E03玉石原料.JPG,",
+        "tags_": [
+          "玉石原料"
+        ]
+      },
+      {
+        "id": 22,
+        "name": "E3",
+        "description": "玉器功用展板",
+        "pictures": "/data/places/2/positions/22/周礼.jpg,",
+        "tags_": [
+          "神玉",
+          "周礼"
+        ]
+      },
+      {
+        "id": 23,
+        "name": "E4",
+        "description": "玉琮，玉璧",
+        "pictures": "/data/places/2/positions/23/E05玉璧环区.JPG,",
+        "tags_": [
+          "玉琮",
+          "玉璧",
+          "玉器"
+        ]
+      },
+      {
+        "id": 24,
+        "name": "E5",
+        "description": "大石璧",
+        "pictures": "/data/places/2/positions/24/E06大石璧独立.JPG,",
+        "tags_": [
+          "大石璧"
+        ]
+      },
+      {
+        "id": 25,
+        "name": "E6",
+        "description": "玉璋礼南方",
+        "pictures": "/data/places/2/positions/25/E07玉璋合区3.JPG,",
+        "tags_": [
+          "巨型玉璋"
+        ]
+      },
+      {
+        "id": 26,
+        "name": "E7",
+        "description": "大玉牙璋",
+        "pictures": "/data/places/2/positions/26/E08大玉璋独立.JPG,",
+        "tags_": [
+          "大玉璋",
+          "牙璋"
+        ]
+      },
+      {
+        "id": 27,
+        "name": "E8",
+        "description": "玉兵器",
+        "pictures": "/data/places/2/positions/27/E09 玉戈区1.JPG,",
+        "tags_": [
+          "玉兵器"
+        ]
+      },
+      {
+        "id": 28,
+        "name": "E9",
+        "description": "玉工具",
+        "pictures": "/data/places/2/positions/28/E10 玉饰工具区1.JPG,",
+        "tags_": [
+          "工具"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 30,
+        "name": "F1",
+        "description": "陶范炼铜工具",
+        "pictures": "/data/places/2/positions/30/F01 炼铜工具.JPG,",
+        "tags_": [
+          "陶范"
+        ]
+      },
+      {
+        "id": 31,
+        "name": "F2",
+        "description": "青铜挂件",
+        "pictures": "/data/places/2/positions/31/F02 铜牌铜铃挂饰.JPG,",
+        "tags_": [
+          "青铜铃",
+          "挂件"
+        ]
+      },
+      {
+        "id": 32,
+        "name": "F3",
+        "description": "金器：金面罩",
+        "pictures": "/data/places/2/positions/32/F03金面罩.JPG,",
+        "tags_": [
+          "金面罩"
+        ]
+      },
+      {
+        "id": 33,
+        "name": "F4",
+        "description": "金杖",
+        "pictures": "/data/places/2/positions/33/F04 金杖.JPG,",
+        "tags_": [
+          "金杖"
+        ]
+      },
+      {
+        "id": 34,
+        "name": "F5",
+        "description": "各地区杖文化",
+        "pictures": "/data/places/2/positions/34/F05 各地杖对比图.JPG,",
+        "tags_": [
+          "杖"
+        ]
+      },
+      {
+        "id": 35,
+        "name": "F6",
+        "description": "青铜礼器",
+        "pictures": "/data/places/2/positions/35/F06 青铜器一组合.JPG,",
+        "tags_": [
+          "青铜礼器"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 36,
+        "name": "G1",
+        "description": "通天神树原件",
+        "pictures": "/data/places/2/positions/36/G01 神树原件.JPG,",
+        "tags_": [
+          "青铜神树"
+        ]
+      },
+      {
+        "id": 37,
+        "name": "G2",
+        "description": "二号小神树",
+        "pictures": "/data/places/2/positions/37/G02 二号小树.JPG,",
+        "tags_": [
+          "二号神树"
+        ]
+      },
+      {
+        "id": 38,
+        "name": "G3",
+        "description": "摇钱树",
+        "pictures": "/data/places/2/positions/38/G03 摇钱树.JPG,",
+        "tags_": [
+          "摇钱树"
+        ]
+      },
+      {
+        "id": 39,
+        "name": "G4",
+        "description": "神树残件",
+        "pictures": "/data/places/2/positions/39/G04 神树鸟形残件.JPG,",
+        "tags_": [
+          "神树残件",
+          "人面鸟身像"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 40,
+        "name": "H1",
+        "description": "青铜馆外形",
+        "pictures": "/data/places/2/positions/40/H01 门口.JPG,",
+        "tags_": [
+          "青铜馆",
+          "外形"
+        ]
+      },
+      {
+        "id": 41,
+        "name": "H2",
+        "description": "人面鸟身像",
+        "pictures": "/data/places/2/positions/41/H02 人面鸟身.JPG,",
+        "tags_": [
+          "人面鸟身像"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 42,
+        "name": "I01",
+        "description": "最大的面具",
+        "pictures": "/data/places/2/positions/42/H03 大面具.JPG,",
+        "tags_": [
+          "大面具"
+        ]
+      },
+      {
+        "id": 43,
+        "name": "I02",
+        "description": "世界各地面具",
+        "pictures": "/data/places/2/positions/43/H04 各地面具1.JPG,",
+        "tags_": [
+          "各地面具"
+        ]
+      },
+      {
+        "id": 44,
+        "name": "I03",
+        "description": "青铜兽面具",
+        "pictures": "/data/places/2/positions/44/H05 平面兽面具1.JPG,",
+        "tags_": [
+          "青铜兽面具"
+        ]
+      },
+      {
+        "id": 45,
+        "name": "I04",
+        "description": "戴冠纵目面具",
+        "pictures": "/data/places/2/positions/45/H06 立体威严纵目面具.JPG,",
+        "tags_": [
+          "戴冠纵目面具"
+        ]
+      },
+      {
+        "id": 47,
+        "name": "I05",
+        "description": "眼形器",
+        "pictures": "/data/places/2/positions/47/H08 眼形器.JPG,",
+        "tags_": [
+          "眼形器"
+        ]
+      },
+      {
+        "id": 46,
+        "name": "I06",
+        "description": "纵目面具",
+        "pictures": "/data/places/2/positions/46/H07 千里眼顺风耳.JPG,",
+        "tags_": [
+          "纵目面具"
+        ]
+      },
+      {
+        "id": 48,
+        "name": "I7",
+        "description": "两排铜人头像",
+        "pictures": "/data/places/2/positions/48/I01 左右两排人像.JPG,",
+        "tags_": [
+          "铜人头像"
+        ]
+      },
+      {
+        "id": 49,
+        "name": "I8",
+        "description": "金面铜人头像",
+        "pictures": "/data/places/2/positions/49/I02 贴金面具.JPG,",
+        "tags_": [
+          "金面铜人头像"
+        ]
+      },
+      {
+        "id": 50,
+        "name": "I9",
+        "description": "祭祀大典",
+        "pictures": "/data/places/2/positions/50/I03 祭祀大典.JPG,",
+        "tags_": [
+          "祭祀神坛"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 51,
+        "name": "J1",
+        "description": "青铜大立人",
+        "pictures": "/data/places/2/positions/51/J01 青铜大立人1.JPG,",
+        "tags_": [
+          "青铜立人"
+        ]
+      },
+      {
+        "id": 52,
+        "name": "J2",
+        "description": "兽首冠人像",
+        "pictures": "/data/places/2/positions/52/J02 三冠人.JPG,",
+        "tags_": [
+          "兽首冠人像"
+        ]
+      },
+      {
+        "id": 53,
+        "name": "J3",
+        "description": "其它青铜人像",
+        "pictures": "/data/places/2/positions/53/J03 其它青铜造型.jpg,",
+        "tags_": [
+          "跪坐人像"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 54,
+        "name": "K1",
+        "description": "神树复制品",
+        "pictures": "/data/places/2/positions/54/楼梯神树.jpg,",
+        "tags_": [
+          "青铜神树"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 55,
+        "name": "L1",
+        "description": "酒器之尊，罍",
+        "pictures": "/data/places/2/positions/55/K01 酒器.JPG,",
+        "tags_": [
+          "青铜酒器"
+        ]
+      },
+      {
+        "id": 64,
+        "name": "L10",
+        "description": "青铜龙",
+        "pictures": "/data/places/2/positions/64/K10 青铜龙羊.JPG,",
+        "tags_": [
+          "龙形饰"
+        ]
+      },
+      {
+        "id": 56,
+        "name": "L2",
+        "description": "鸟脚人像",
+        "pictures": "/data/places/2/positions/56/K02 鸟脚人像1.JPG,",
+        "tags_": [
+          "鸟脚人像"
+        ]
+      },
+      {
+        "id": 57,
+        "name": "L3",
+        "description": "人身型器",
+        "pictures": "/data/places/2/positions/57/K03 人身形器.JPG,",
+        "tags_": [
+          "人身型器"
+        ]
+      },
+      {
+        "id": 58,
+        "name": "L4",
+        "description": "青铜太阳轮",
+        "pictures": "/data/places/2/positions/58/K04 太阳轮.JPG,",
+        "tags_": [
+          "青铜太阳轮"
+        ]
+      },
+      {
+        "id": 59,
+        "name": "L5",
+        "description": "凤鸟型青铜器",
+        "pictures": "/data/places/2/positions/59/K05 凤鸟形组图1.JPG,",
+        "tags_": [
+          "凤鸟型青铜器"
+        ]
+      },
+      {
+        "id": 60,
+        "name": "L6",
+        "description": "青铜大鹰头",
+        "pictures": "/data/places/2/positions/60/K06 青铜大鹰头.JPG,",
+        "tags_": [
+          "青铜大鹰头"
+        ]
+      },
+      {
+        "id": 61,
+        "name": "L7",
+        "description": "青铜雄鸡",
+        "pictures": "/data/places/2/positions/61/K07 青铜雄鸡.JPG,",
+        "tags_": [
+          "青铜雄鸡"
+        ]
+      },
+      {
+        "id": 62,
+        "name": "L8",
+        "description": "祭祀神坛",
+        "pictures": "/data/places/2/positions/62/K08 祭祀神坛.JPG,",
+        "tags_": [
+          "祭祀神坛"
+        ]
+      },
+      {
+        "id": 63,
+        "name": "L9",
+        "description": "青铜蛇",
+        "pictures": "/data/places/2/positions/63/K09 青铜蛇.JPG,",
+        "tags_": [
+          "青铜蛇"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 65,
+        "name": "M1",
+        "description": "神龙初显",
+        "pictures": "/data/places/2/positions/65/L01 神龙初显.JPG,",
+        "tags_": [
+          "神龙初显"
+        ]
+      },
+      {
+        "id": 66,
+        "name": "M2",
+        "description": "迷雾寻踪",
+        "pictures": "/data/places/2/positions/66/L02 迷雾寻踪.JPG,",
+        "tags_": [
+          "迷雾寻踪"
+        ]
+      },
+      {
+        "id": 67,
+        "name": "M3",
+        "description": "重军出击",
+        "pictures": "/data/places/2/positions/67/L04 重军出击.JPG,",
+        "tags_": [
+          "重军出击"
+        ]
+      },
+      {
+        "id": 68,
+        "name": "M4",
+        "description": "上下求索",
+        "pictures": "/data/places/2/positions/68/上下求索,",
+        "tags_": [
+          "上下求索"
+        ]
+      },
+      {
+        "id": 69,
+        "name": "M5",
+        "description": "千古之谜",
+        "pictures": "/data/places/2/positions/69/L06 千古之谜.JPG,",
+        "tags_": [
+          "千古之谜"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "name": "测试位置1",
+        "description": "",
+        "pictures": null,
+        "tags_": [
+          "中原文化",
+          "眼睛崇拜",
+          "眼形器"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "测试位置2",
+        "description": "",
+        "pictures": null,
+        "tags_": [
+          "金面铜人头像",
+          "特权身份"
+        ]
+      }
+    ]
+  ]
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    >
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/light_gray"
+	    >
+	    
+	    <RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@color/red"
+			>
+	        
+	        <Button 
+			    android:id="@+id/register_4_button_back"
+			    android:layout_width="50dp"
+			    android:layout_height="30dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="20dp"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/text_size_1"
+			    android:background="@null"
+			    />
+	        
+	        <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:text="@string/start_text30"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/text_size_1"
+			    android:layout_toRightOf="@+id/register_4_button_back"
+			    />
+			    
+			<Button 
+			    android:id="@+id/register_4_button_finish"
+			    android:layout_width="100dp"
+			    android:layout_height="40dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="20dp"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/text_size_1"
+			    android:text="@string/start_text20"
+			    android:background="@null"
+			    />
+	        
+		</RelativeLayout>
+		
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/start_text26"
+	        android:textColor="@color/gray"
+	        android:textSize="@dimen/text_size_2"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="30dp"
+	        />
+		
+	    <EditText 
+	        android:id="@+id/register_4_tag1"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="text"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:hint="@string/start_text21"
+	        android:background="@drawable/edittext_bg"
+	        android:textSize="@dimen/text_size_1"
+	        android:paddingLeft="15dp"
+	        android:singleLine="true"
+	        android:textColorHint="@color/gray"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/register_4_tag2"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="text"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:hint="@string/start_text22"
+	        android:background="@drawable/edittext_bg"
+	        android:textSize="@dimen/text_size_1"
+	        android:paddingLeft="15dp"
+	        android:singleLine="true"
+	        android:textColorHint="@color/gray"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/register_4_tag3"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="text"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:hint="@string/start_text23"
+	        android:background="@drawable/edittext_bg"
+	        android:textSize="@dimen/text_size_1"
+	        android:paddingLeft="15dp"
+	        android:singleLine="true"
+	        android:textColorHint="@color/gray"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/register_4_tag4"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="text"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:hint="@string/start_text24"
+	        android:background="@drawable/edittext_bg"
+	        android:textSize="@dimen/text_size_1"
+	        android:paddingLeft="15dp"
+	        android:singleLine="true"
+	        android:textColorHint="@color/gray"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/register_4_tag5"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="text"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:hint="@string/start_text25"
+	        android:background="@drawable/edittext_bg"
+	        android:textSize="@dimen/text_size_1"
+	        android:paddingLeft="15dp"
+	        android:singleLine="true"
+	        android:textColorHint="@color/gray"
+	        />
+	    
+	</LinearLayout>
+    
+</ScrollView>

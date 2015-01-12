@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost 
+    android:id="@android:id/tabhost" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent">
+
+        <FrameLayout 
+            android:id="@android:id/tabcontent" 
+            android:layout_width="match_parent" 
+            android:layout_height="0.0dip" 
+            android:layout_weight="1.0" />
+        <TabWidget 
+            android:id="@android:id/tabs" 
+            android:visibility="gone"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="0.0" />
+       	<RadioGroup 
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom" 
+            android:orientation="horizontal" 
+            android:id="@+id/main_radio" 
+            android:background="@color/red"
+            android:layout_width="match_parent" 
+            android:layout_height="60dp">
+            <RadioButton 
+                android:id="@+id/radio_button1" 
+                android:tag="radio_button1" 
+                android:text="@string/tab_1"              
+                android:checked="true"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                style="@style/main_tab_button" />
+            <RadioButton 
+                android:id="@+id/radio_button2" 
+                android:tag="radio_button2"
+                android:text="@string/tab_2"
+                android:background="@color/red"
+                style="@style/main_tab_button" />
+            <RadioButton 
+                android:id="@+id/radio_button3" 
+                android:tag="radio_button3" 
+                android:text="@string/tab_3"
+                style="@style/main_tab_button" 
+                android:background="@color/red"
+                android:textAlignment="center"/>
+            <RadioButton 
+                android:id="@+id/radio_button4" 
+                android:tag="radio_button4" 
+                android:text="@string/tab_4"
+                android:background="@color/red"
+                style="@style/main_tab_button" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

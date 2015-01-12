@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    >
+    
+    <RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/red"
+		>
+        
+        <Button 
+		    android:id="@+id/register_3_button_back"
+		    android:layout_width="50dp"
+		    android:layout_height="30dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="20dp"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:background="@null"
+		    />
+        
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/start_text29"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_toRightOf="@+id/register_3_button_back"
+		    />
+		    
+		<Button 
+		    android:id="@+id/register_3_button_next"
+		    android:layout_width="100dp"
+		    android:layout_height="40dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:text="@string/start_text5"
+		    android:background="@null"
+		    />
+        
+	</RelativeLayout>
+	
+    <EditText 
+        android:id="@+id/register_3_job1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/start_text17"
+        android:background="@drawable/edittext_bg"
+        android:textSize="@dimen/text_size_1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        />
+    
+    <EditText 
+        android:id="@+id/register_3_job2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/start_text18"
+        android:background="@drawable/edittext_bg"
+        android:textSize="@dimen/text_size_1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        />
+    
+    <EditText 
+        android:id="@+id/register_3_job3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/start_text19"
+        android:background="@drawable/edittext_bg"
+        android:textSize="@dimen/text_size_1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        />
+    
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:background="@drawable/question_list_item_background"
+    >
+    
+    <ImageView 
+        android:id="@+id/answer_list_item_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/head"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+    
+    <TextView 
+        android:id="@+id/answer_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_2"
+        android:textColor="@color/black"
+        android:layout_alignTop="@+id/answer_list_item_head"
+        android:layout_toRightOf="@+id/answer_list_item_head"
+        android:layout_marginLeft="15dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text_3"
+        android:textSize="@dimen/text_size_2"
+        android:textColor="@color/gray"
+        android:layout_alignTop="@+id/answer_list_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        />
+    
+    <TextView 
+        android:id="@+id/answer_list_item_comment_count"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="@dimen/text_size_2"
+        android:textColor="@color/gray"
+        android:layout_alignTop="@+id/answer_list_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text_2"
+        android:textSize="@dimen/text_size_2"
+        android:textColor="@color/gray"
+        android:layout_alignTop="@+id/answer_list_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+    
+    <TextView 
+        android:id="@+id/answer_list_item_praise_count"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="@dimen/text_size_2"
+        android:textColor="@color/gray"
+        android:layout_alignTop="@+id/answer_list_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/answer_list_item_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size_2"
+        android:textColor="@color/gray"
+        android:layout_alignLeft="@+id/answer_list_item_name"
+        android:layout_below="@+id/answer_list_item_name"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.3"
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/answer_list_item_answer"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

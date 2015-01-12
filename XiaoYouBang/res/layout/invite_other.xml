@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/invite_other_layout"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_alignParentTop="true"
+		android:background="@color/red"
+		>
+		
+        <Button 
+		    android:id="@+id/invite_other_button_back"
+		    android:layout_width="50dp"
+		    android:layout_height="30dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="15dp"
+		    android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+		    />
+        
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/add_answer_text1"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_toRightOf="@+id/invite_other_button_back"
+		    android:layout_marginLeft="20dp"
+		    />
+		    
+		<Button 
+		    android:id="@+id/invite_other_button_finish"
+		    android:layout_width="60dp"
+		    android:layout_height="40dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="15dp"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:text="@string/invite_text_3"
+		    android:background="@null"
+		    />
+        
+	</RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/invite_other_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/app_name"
+        android:layout_below="@+id/invite_other_layout"
+        android:src="@drawable/head"
+        />
+    
+    <EditText 
+        android:id="@+id/invite_other_input_name"
+        android:layout_height="30dp"
+        android:layout_width="155dp"
+        android:singleLine="true"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_1"
+        android:hint="@string/invite_text_1"
+        android:layout_alignTop="@+id/invite_other_head"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/invite_other_head"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/invite_other_check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/invite_other_input_name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/no"
+        />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_alignBottom="@+id/invite_other_head"
+        android:layout_alignLeft="@+id/invite_other_input_name"
+        android:layout_marginRight="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/invite_other_symbol"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/red"
+		android:textSize="@dimen/text_size_2"
+		android:layout_below="@+id/invite_other_head"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="30dp"
+		android:layout_marginTop="10dp"
+		/>
+    
+    <EditText 
+        android:id="@+id/inviter_other_input_reason"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/invite_other_symbol"
+	    android:background="@color/white"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="15dp"
+	    android:paddingBottom="10dp"
+	    android:textSize="@dimen/text_size_1"
+	    android:hint="@string/invite_text_2"
+		android:inputType="textMultiLine"
+		android:singleLine="false"
+		android:scrollHorizontally="false"
+		android:gravity="top"
+		android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

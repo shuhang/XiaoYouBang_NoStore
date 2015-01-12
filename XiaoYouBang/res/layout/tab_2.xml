@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/red"
+		>
+		
+        <ImageButton 
+            android:id="@+id/tab_2_button"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="15dp"
+		    android:src="@drawable/menu"
+		    android:contentDescription="@string/app_name"
+		    android:background="@null"
+		    />
+        
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/tab_text_1"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_toRightOf="@+id/tab_2_button"
+		    android:layout_marginLeft="20dp"
+		    />
+        
+        <ImageButton 
+		        android:id="@+id/tab_2_button_write"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:paddingTop="5dp"
+			    android:paddingBottom="5dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="15dp"
+		        android:src="@drawable/addicon"
+		        android:contentDescription="@string/app_name"
+		        android:background="@null"
+		        />
+        
+	</RelativeLayout>
+	
+    <com.pku.xiaoyoubang.selfview.XListView  
+		android:id="@+id/tab_2_list"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:smoothScrollbar="true"
+	    android:cacheColorHint="#00000000"
+	    android:background="@color/white"
+	    android:divider="@null"
+		/>
+
+</LinearLayout>

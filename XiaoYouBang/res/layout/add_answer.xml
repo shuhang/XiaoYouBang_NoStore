@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/add_answer_layout1"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_alignParentTop="true"
+		android:background="@color/red"
+		>
+		
+        <Button 
+		    android:id="@+id/add_answer_button_back"
+		    android:layout_width="50dp"
+		    android:layout_height="30dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="15dp"
+		    android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+		    />
+        
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/add_answer_text1"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_toRightOf="@+id/add_answer_button_back"
+		    android:layout_marginLeft="20dp"
+		    />
+		    
+		<Button 
+		    android:id="@+id/add_answer_button_finish"
+		    android:layout_width="60dp"
+		    android:layout_height="40dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="15dp"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:text="@string/add_question_text2"
+		    android:background="@null"
+		    />
+        
+	</RelativeLayout>
+	
+    <EditText 
+        android:id="@+id/add_answer_input"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/add_answer_layout1"
+	    android:layout_above="@+id/add_answer_layout2"
+	    android:background="#ffffff"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="15dp"
+	    android:paddingBottom="10dp"
+	    android:textSize="@dimen/text_size_1"
+	    android:hint="@string/add_answer_hint1"
+		android:inputType="textMultiLine"
+		android:singleLine="false"
+		android:scrollHorizontally="false"
+		android:gravity="top"
+		android:maxLength="2000"
+        />
+	
+    <RelativeLayout 
+        android:id="@+id/add_answer_layout2"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/gray"
+		>
+		
+        <CheckBox 
+            android:id="@+id/add_answer_checkbox"
+            android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="15dp"
+		    android:checked="false"
+		    android:button="@drawable/my_checkbox"
+            />
+        
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/hide_name1"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_toRightOf="@+id/add_answer_checkbox"
+		    android:layout_marginLeft="10dp"
+		    />
+        
+	</RelativeLayout>
+
+</RelativeLayout>

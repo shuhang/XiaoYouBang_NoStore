@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+    	android:background="@color/white"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/me_invite_other_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/gray"
+			android:textSize="@dimen/text_size_2"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			/>
+	    
+	    <ImageView 
+	        android:id="@+id/me_invite_other_head"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_alignTop="@+id/me_invite_other_name"
+	        android:layout_toRightOf="@+id/me_invite_other_name"
+	        android:layout_marginLeft="15dp"
+	        android:contentDescription="@string/app_name"
+	        android:src="@drawable/head"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/me_invite_other_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/gray"
+			android:textSize="@dimen/text_size_2"
+			android:layout_alignTop="@+id/me_invite_other_name"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="20dp"
+			/>
+	    
+	    <TextView 
+	        android:id="@+id/me_invite_other_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/gray"
+			android:textSize="@dimen/text_size_2"
+			android:layout_below="@+id/me_invite_other_head"
+			android:layout_alignLeft="@+id/me_invite_other_name"
+			android:layout_marginTop="15dp"
+			android:layout_marginRight="20dp"
+			android:lineSpacingMultiplier="1.3"
+			/>
+	    
+	    <TextView 
+	        android:id="@+id/me_invite_other_symbol"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/invite_text_7"
+			android:textColor="@color/red"
+			android:textSize="@dimen/text_size_2"
+			android:layout_below="@+id/me_invite_other_info"
+			android:layout_marginTop="5dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="20dp"
+			/>
+	    
+	    <View 
+	        android:id="@+id/me_invite_other_line"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:layout_below="@+id/me_invite_other_symbol"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:background="@color/gray"
+	        />
+	
+	</RelativeLayout>

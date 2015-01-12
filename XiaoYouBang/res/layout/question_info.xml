@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/red"
+		>
+		
+        <Button 
+			android:id="@+id/question_info_button_back"
+			android:layout_width="50dp"
+			android:layout_height="30dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="20dp"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+			/>
+        
+        <TextView 
+            android:id="@+id/question_info_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_toRightOf="@+id/question_info_button_back"
+		    android:layout_marginLeft="20dp"
+		    />
+        
+	</RelativeLayout>
+    
+    <com.pku.xiaoyoubang.selfview.AnswerListView 
+		android:id="@+id/question_info_list"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:smoothScrollbar="true"
+	    android:cacheColorHint="#00000000"
+	    android:background="@color/white"
+	    android:divider="@null"
+		/>
+
+</LinearLayout>
