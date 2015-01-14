@@ -10,10 +10,10 @@
 	        android:id="@+id/me_invite_other_name"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/gray"
+			android:textColor="@color/heavy_gray"
 			android:textSize="@dimen/text_size_2"
 			android:layout_marginTop="20dp"
-			android:layout_marginLeft="20dp"
+			android:layout_marginLeft="12dp"
 			/>
 	    
 	    <ImageView 
@@ -23,6 +23,7 @@
 	        android:layout_alignTop="@+id/me_invite_other_name"
 	        android:layout_toRightOf="@+id/me_invite_other_name"
 	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="2dp"
 	        android:contentDescription="@string/app_name"
 	        android:src="@drawable/head"
 	        />
@@ -31,26 +32,26 @@
 	        android:id="@+id/me_invite_other_time"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/gray"
+			android:textColor="@color/heavy_gray"
 			android:textSize="@dimen/text_size_2"
 			android:layout_alignTop="@+id/me_invite_other_name"
 			android:layout_alignParentRight="true"
-			android:layout_marginRight="20dp"
+			android:layout_marginRight="12dp"
 			/>
 	    
 	    <TextView 
 	        android:id="@+id/me_invite_other_info"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/gray"
+			android:textColor="@color/black"
 			android:textSize="@dimen/text_size_2"
 			android:layout_below="@+id/me_invite_other_head"
 			android:layout_alignLeft="@+id/me_invite_other_name"
 			android:layout_marginTop="15dp"
-			android:layout_marginRight="20dp"
-			android:lineSpacingMultiplier="1.3"
+			android:layout_marginRight="12dp"
+			android:lineSpacingMultiplier="1.2"
 			/>
-	    
+
 	    <TextView 
 	        android:id="@+id/me_invite_other_symbol"
 			android:layout_width="wrap_content"
@@ -61,16 +62,28 @@
 			android:layout_below="@+id/me_invite_other_info"
 			android:layout_marginTop="5dp"
 			android:layout_alignParentRight="true"
-			android:layout_marginRight="20dp"
+			android:layout_marginRight="12dp"
 			/>
+	    
+	    <ImageView 
+	        android:id="@+id/me_invite_other_check"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignBottom="@+id/me_invite_other_symbol"
+	        android:layout_toLeftOf="@+id/me_invite_other_symbol"
+	        android:layout_marginRight="5dp"
+	        android:visibility="invisible"
+	        android:contentDescription="@string/app_name"
+	        android:src="@drawable/yes"
+	        />
 	    
 	    <View 
 	        android:id="@+id/me_invite_other_line"
 			android:layout_width="match_parent"
 			android:layout_height="0.5dp"
 			android:layout_below="@+id/me_invite_other_symbol"
-			android:layout_marginLeft="10dp"
-			android:layout_marginRight="10dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
 			android:layout_marginTop="10dp"
 			android:background="@color/gray"
 	        />

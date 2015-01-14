@@ -77,5 +77,11 @@
     <style name="DataSheetAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/push_up_in</item>
     </style>
+    
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+	   <item name="android:button">@drawable/my_checkbox</item>
+	   <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+	</style>
 
 </resources>

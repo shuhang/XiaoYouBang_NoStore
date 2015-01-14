@@ -15,11 +15,11 @@
 		
         <Button 
 		    android:id="@+id/friend_info_button_back"
-		    android:layout_width="50dp"
-		    android:layout_height="30dp"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
 		    android:layout_centerVertical="true"
 		    android:layout_alignParentLeft="true"
-		    android:layout_marginLeft="15dp"
+		    android:layout_marginLeft="3dp"
 		    android:textColor="@color/white"
 			android:textSize="@dimen/text_size_1"
 			android:background="@null"
@@ -33,8 +33,7 @@
 		    android:text="@string/friend_info_8"
 		    android:textColor="@color/white"
 		    android:textSize="@dimen/text_size_1"
-		    android:layout_toRightOf="@+id/friend_info_button_back"
-		    android:layout_marginLeft="20dp"
+		    android:layout_centerHorizontal="true"
 		    />
         
 	</RelativeLayout>
@@ -44,15 +43,15 @@
 	    android:layout_height="wrap_content" 
 	    android:layout_below="@+id/friend_info_layout_up"
 	    >
-	    <RelativeLayout 
+	   <RelativeLayout 
 		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content" 
 		    >
 		    
 		    <ImageView 
 			    android:id="@+id/friend_info_head"
-			    android:layout_width="50dp"
-			    android:layout_height="50dp"
+			    android:layout_width="100dp"
+			    android:layout_height="100dp"
 			    android:contentDescription="@string/app_name"
 			    android:src="@drawable/head"
 			    android:layout_marginLeft="20dp"
@@ -63,21 +62,20 @@
 			    android:id="@+id/friend_info_name"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
-			    android:textSize="@dimen/text_size_2"
+			    android:textSize="@dimen/text_size_1"
 			    android:textColor="@color/black"
 			    android:layout_alignTop="@+id/friend_info_head"
 			    android:layout_toRightOf="@+id/friend_info_head"
 			    android:layout_marginLeft="15dp"
 			    />
 			
-			<TextView 
+			<ImageView 
 			    android:id="@+id/friend_info_sex"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
-			    android:layout_alignLeft="@+id/friend_info_name"
-			    android:layout_below="@+id/friend_info_name"
+			    android:layout_width="30dp"
+			    android:layout_height="30dp"
+			    android:contentDescription="@string/app_name"
+			    android:layout_below="@+id/friend_info_birthday"
+			    android:layout_alignLeft="@+id/friend_info_birthday"
 			    android:layout_marginTop="10dp"
 			    />
 			
@@ -86,10 +84,10 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
-			    android:layout_alignTop="@+id/friend_info_sex"
-			    android:layout_toRightOf="@+id/friend_info_sex"
-			    android:layout_marginLeft="10dp"
+			    android:textColor="@color/heavy_gray"
+			    android:layout_below="@+id/friend_info_name"
+			    android:layout_alignLeft="@+id/friend_info_name"
+			    android:layout_marginTop="5dp"
 			    />
 			
 			<TextView 
@@ -109,7 +107,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_alignLeft="@+id/friend_info_head"
 			    android:layout_below="@+id/friend_info_head"
 			    android:layout_marginTop="15dp"
@@ -120,7 +118,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_alignLeft="@+id/friend_info_pku"
 			    android:layout_below="@+id/friend_info_pku"
 			    android:layout_marginTop="5dp"
@@ -131,7 +129,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_alignLeft="@+id/friend_info_job"
 			    android:layout_below="@+id/friend_info_job"
 			    android:layout_marginTop="5dp"
@@ -142,7 +140,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_alignLeft="@+id/friend_info_home"
 			    android:layout_below="@+id/friend_info_home"
 			    android:layout_marginTop="5dp"
@@ -153,12 +151,12 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_alignLeft="@+id/friend_info_qq"
 			    android:layout_below="@+id/friend_info_qq"
 			    android:layout_marginTop="15dp"
 			    android:layout_marginRight="20dp"
-			    android:lineSpacingMultiplier="1.3"
+			    android:lineSpacingMultiplier="1.2"
 			    />
 			
 			<View 
@@ -169,13 +167,14 @@
 		        android:layout_marginTop="15dp"
 		        android:background="@color/light_gray"
 		        />
+
 			
 			<TextView 
 			    android:id="@+id/friend_info_other_answer_me"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_below="@+id/friend_info_line1"
 			    android:layout_marginLeft="60dp"
 			    android:layout_marginTop="15dp"
@@ -186,7 +185,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/gray"
+			    android:textColor="@color/heavy_gray"
 			    android:layout_alignTop="@+id/friend_info_other_answer_me"
 			    android:layout_marginLeft="200dp"
 			    />
@@ -215,7 +214,7 @@
 				    android:layout_height="wrap_content"
 				    android:text="@string/friend_info_6"
 				    android:textSize="@dimen/text_size_2"
-				    android:textColor="@color/gray"
+				    android:textColor="@color/heavy_gray"
 				    android:layout_centerVertical="true"		    
 				    android:layout_marginLeft="20dp"
 				    />
@@ -225,7 +224,7 @@
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
 				    android:textSize="@dimen/text_size_2"
-				    android:textColor="@color/gray"
+				    android:textColor="@color/heavy_gray"
 				    android:layout_centerVertical="true"		    
 				    android:layout_alignParentRight="true"
 				    android:layout_marginRight="20dp"
@@ -249,7 +248,7 @@
 		        android:layout_width="match_parent"
 		        android:layout_height="0.5dp"
 		        android:layout_below="@+id/friend_info_layout1"
-		        android:background="@color/gray"
+		        android:background="@color/light_gray"
 		        />
 			
 			<RelativeLayout 
@@ -266,7 +265,7 @@
 				    android:layout_height="wrap_content"
 				    android:text="@string/friend_info_4"
 				    android:textSize="@dimen/text_size_2"
-				    android:textColor="@color/gray"
+				    android:textColor="@color/heavy_gray"
 				    android:layout_centerVertical="true"		    
 				    android:layout_marginLeft="20dp"
 				    />
@@ -276,7 +275,7 @@
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
 				    android:textSize="@dimen/text_size_2"
-				    android:textColor="@color/gray"
+				    android:textColor="@color/heavy_gray"
 				    android:layout_centerVertical="true"		    
 				    android:layout_alignParentRight="true"
 				    android:layout_marginRight="20dp"
@@ -289,7 +288,7 @@
 		        android:layout_width="match_parent"
 		        android:layout_height="0.5dp"
 		        android:layout_below="@+id/friend_info_layout2"
-		        android:background="@color/gray"
+		        android:background="@color/light_gray"
 		        />
 			
 			<RelativeLayout 
@@ -306,7 +305,7 @@
 				    android:layout_height="wrap_content"
 				    android:text="@string/friend_info_5"
 				    android:textSize="@dimen/text_size_2"
-				    android:textColor="@color/gray"
+				    android:textColor="@color/heavy_gray"
 				    android:layout_centerVertical="true"		    
 				    android:layout_marginLeft="20dp"
 				    />
@@ -316,7 +315,7 @@
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
 				    android:textSize="@dimen/text_size_2"
-				    android:textColor="@color/gray"
+				    android:textColor="@color/heavy_gray"
 				    android:layout_centerVertical="true"		    
 				    android:layout_alignParentRight="true"
 				    android:layout_marginRight="20dp"
@@ -328,7 +327,7 @@
 		        android:layout_width="match_parent"
 		        android:layout_height="0.5dp"
 		        android:layout_below="@+id/friend_info_layout3"
-		        android:background="@color/gray"
+		        android:background="@color/light_gray"
 		        />
 		
 		</RelativeLayout>

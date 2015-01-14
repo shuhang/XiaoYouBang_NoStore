@@ -12,8 +12,19 @@
         android:layout_height="30dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/head"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginLeft="15dp"
+        />
+    
+    <TextView 
+        android:id="@+id/comment_list_item_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_3"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/comment_list_item_head"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/comment_list_item_head"
         />
     
     <TextView 
@@ -32,10 +43,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_2"
-        android:textColor="@color/gray"
+        android:textColor="@color/heavy_gray"
         android:layout_alignTop="@+id/comment_list_item_name"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="12dp"
         />
     
     <TextView 
@@ -44,18 +55,18 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:textSize="@dimen/text_size_2"
-        android:textColor="@color/black"
+        android:textColor="@color/heavy_gray"
         android:layout_alignLeft="@+id/comment_list_item_name"
         android:layout_below="@+id/comment_list_item_name"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="30dp"
-        android:lineSpacingMultiplier="1.3"
+        android:layout_marginRight="12dp"
+        android:lineSpacingMultiplier="1.2"
         />
     
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="@color/gray"
+        android:background="@color/light_gray"
         android:layout_below="@+id/comment_list_item_comment"
         android:layout_marginTop="9dp"
         android:layout_marginLeft="10dp"

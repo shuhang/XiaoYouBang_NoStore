@@ -8,12 +8,16 @@ public class Information
 	
 	@SuppressLint("SdCardPath")
 	public static String Image_Path = "/data/data/com.pku.xiaoyoubang/head_image/";
+	@SuppressLint("SdCardPath")
 	public static String File_Path = "/data/data/com.pku.xiaoyoubang/question/";
 	/**
 	 *  User Information
 	 */
 	public static String Key1;
 	public static String Key2;
+	
+	public static boolean IsMeChanged = false;
+	public static boolean IsFirst = true;
 	
 	public static String Id = "";
 	public static String Token = "";

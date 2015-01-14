@@ -25,9 +25,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.pku.xiaoyoubang.R;
 import com.pku.xiaoyoubang.entity.AnswerEntity;
@@ -94,6 +96,24 @@ public class AddAnswerActivity extends Activity
 		textInfo.setHint( "写下你的答案、建议、参考..." );
 		
 		box = ( CheckBox ) findViewById( R.id.add_answer_checkbox );
+		box.setOnCheckedChangeListener
+		(
+			new OnCheckedChangeListener()
+			{
+				public void onCheckedChanged( CompoundButton buttonView, boolean isChecked ) 
+				{
+					box.setChecked( isChecked );
+					if( isChecked )
+					{
+						box.setBackgroundResource( R.drawable.check_yes );
+					}
+					else
+					{
+						box.setBackgroundResource( R.drawable.check_no );
+					}
+				}
+			}
+		);
 		
 		buttonBack = ( Button ) findViewById( R.id.add_answer_button_back );
 		buttonBack.setText( "<  " );

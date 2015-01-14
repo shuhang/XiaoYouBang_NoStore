@@ -20,11 +20,11 @@
 			
 	        <Button 
 			    android:id="@+id/edit_my_info_button_back"
-			    android:layout_width="50dp"
-			    android:layout_height="30dp"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
 			    android:layout_centerVertical="true"
 			    android:layout_alignParentLeft="true"
-			    android:layout_marginLeft="15dp"
+			    android:layout_marginLeft="3dp"
 			    android:textColor="@color/white"
 				android:textSize="@dimen/text_size_1"
 				android:background="@null"
@@ -37,8 +37,7 @@
 			    android:text="@string/tab_text_4_1"
 			    android:textColor="@color/white"
 			    android:textSize="@dimen/text_size_1"
-			    android:layout_toRightOf="@+id/edit_my_info_button_back"
-			    android:layout_marginLeft="20dp"
+			    android:layout_centerHorizontal="true"
 			    />
 	        
 	        <Button 
@@ -75,7 +74,6 @@
 				android:id="@+id/edit_my_info_name"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="淀粉糊"
 				android:textSize="@dimen/text_size_2"
 				android:textColor="@color/black"
 				android:layout_alignTop="@+id/edit_my_info_head"
@@ -83,13 +81,12 @@
 				android:layout_marginLeft="15dp"
 				/>
 				
-			<TextView 
+			<ImageView 
 				android:id="@+id/edit_my_info_info_sex"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="男"
-				android:textSize="@dimen/text_size_2"
-				android:textColor="@color/gray"
+				android:layout_width="10dp"
+				android:layout_height="10dp"
+				android:contentDescription="@string/app_name"
+				android:layout_marginTop="4dp"
 				android:layout_alignTop="@+id/edit_my_info_name"
 				android:layout_toRightOf="@+id/edit_my_info_name"
 				android:layout_marginLeft="20dp"
@@ -99,7 +96,6 @@
 				android:id="@+id/edit_my_info_pku"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="1990年生人"
 				android:textSize="@dimen/text_size_2"
 				android:textColor="@color/gray"
 				android:layout_below="@+id/edit_my_info_name"

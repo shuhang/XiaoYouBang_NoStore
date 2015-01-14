@@ -25,6 +25,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -98,6 +100,24 @@ public class AddQuestionActivity extends Activity
 		textInfo.setHint( "请补充描述相关的背景、想法、要求等..." );
 		
 		box = ( CheckBox ) findViewById( R.id.add_question_checkbox );
+		box.setOnCheckedChangeListener
+		(
+			new OnCheckedChangeListener()
+			{
+				public void onCheckedChanged( CompoundButton buttonView, boolean isChecked ) 
+				{
+					box.setChecked( isChecked );
+					if( isChecked )
+					{
+						box.setBackgroundResource( R.drawable.check_yes );
+					}
+					else
+					{
+						box.setBackgroundResource( R.drawable.check_no );
+					}
+				}
+			}
+		);
 		
 		buttonBack = ( Button ) findViewById( R.id.add_question_button_back );
 		buttonBack.setText( "<  " );

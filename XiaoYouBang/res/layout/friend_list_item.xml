@@ -13,7 +13,7 @@
 	    android:contentDescription="@string/app_name"
 	    android:src="@drawable/head"
 	    android:layout_marginLeft="25dp"
-	    android:layout_marginTop="20dp"
+	    android:layout_marginTop="16dp"
 	    />
     
     <TextView 
@@ -40,12 +40,12 @@
 	    android:layout_marginTop="3dp"
 	    />
     
-    <TextView 
+    <ImageView 
 	    android:id="@+id/friend_list_item_sex"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:textSize="@dimen/text_size_2"
-	    android:textColor="@color/blue"
+	    android:layout_width="15dp"
+	    android:layout_height="15dp"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/male_color"
 	    android:layout_alignTop="@+id/friend_list_item_praise"
 	    android:layout_toLeftOf="@+id/friend_list_item_praise"
 	    android:layout_marginRight="80dp"
@@ -56,7 +56,7 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:textSize="@dimen/text_size_2"
-	    android:textColor="@color/gray"
+	    android:textColor="@color/heavy_gray"
 	    android:layout_alignLeft="@+id/friend_list_item_name"
 	    android:layout_below="@+id/friend_list_item_name"
 	    android:layout_marginTop="10dp"
@@ -69,7 +69,7 @@
 	    android:singleLine="true"
 	    android:ellipsize="end"
 	    android:textSize="@dimen/text_size_2"
-	    android:textColor="@color/gray"
+	    android:textColor="@color/heavy_gray"
 	    android:layout_alignLeft="@+id/friend_list_item_pku"
 	    android:layout_below="@+id/friend_list_item_pku"
 	    android:layout_marginTop="5dp"
@@ -77,10 +77,10 @@
     
     <View 
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/gray"
+        android:background="@color/light_gray"
         android:layout_below="@+id/friend_list_item_job"
         android:layout_marginTop="10dp"
         />
