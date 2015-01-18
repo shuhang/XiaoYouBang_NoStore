@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp" 
+    android:background="@drawable/question_list_item_background"
+    >
+    
+    <ImageView 
+	    android:id="@+id/friend_list_header_head"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/head"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginTop="16dp"
+	    />
+    
+    <TextView 
+	    android:id="@+id/friend_list_header_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_size_1"
+	    android:textColor="@color/black"
+	    android:layout_alignTop="@+id/friend_list_header_head"
+	    android:layout_toRightOf="@+id/friend_list_header_head"
+	    android:layout_marginLeft="15dp"
+	    />
+    
+    <TextView 
+	    android:id="@+id/friend_list_header_praise"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_size_2"
+	    android:textColor="@color/red"
+	    android:gravity="center|left"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="20dp"
+	    android:layout_alignTop="@+id/friend_list_header_name"
+	    android:layout_marginTop="3dp"
+	    />
+    
+    <ImageView 
+	    android:id="@+id/friend_list_header_sex"
+	    android:layout_width="15dp"
+	    android:layout_height="15dp"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/male_color"
+	    android:layout_alignTop="@+id/friend_list_header_praise"
+	    android:layout_toLeftOf="@+id/friend_list_header_praise"
+	    android:layout_marginRight="80dp"
+	    />
+    
+    <TextView 
+	    android:id="@+id/friend_list_header_pku"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_size_2"
+	    android:textColor="@color/heavy_gray"
+	    android:layout_alignLeft="@+id/friend_list_header_name"
+	    android:layout_below="@+id/friend_list_header_name"
+	    android:layout_marginTop="10dp"
+	    />
+    
+    <TextView 
+	    android:id="@+id/friend_list_header_job"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:ellipsize="end"
+	    android:textSize="@dimen/text_size_2"
+	    android:textColor="@color/heavy_gray"
+	    android:layout_alignLeft="@+id/friend_list_header_pku"
+	    android:layout_below="@+id/friend_list_header_pku"
+	    android:layout_marginTop="5dp"
+	    />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_gray"
+        android:layout_below="@+id/friend_list_header_job"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

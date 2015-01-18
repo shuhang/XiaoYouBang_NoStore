@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.Window;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -55,12 +54,6 @@ public class MainActivity extends TabActivity
     	File file2 = new File( Information.File_Path );
     	if( !file2.exists() )
     		file2.mkdirs();
-    	
-    	File file = new File( Environment.getExternalStorageDirectory() + "/AAA" );
-    	if( !file.exists() )
-    	{
-    		file.mkdirs();
-    	}
 		
 		judgeLoginStatus();
 	}
@@ -71,24 +64,10 @@ public class MainActivity extends TabActivity
 		Information.Token = shared.getString( "token", "" );
 		if( Information.Token.equals( "" ) )
 		{
-			try
-			{
-				File file = new File( Environment.getExternalStorageDirectory() + "/AAA/1.txt" );
-				file.createNewFile();
-			}
-			catch( Exception ex ) {}
-			
 			startActivityForResult( new Intent( this, StartActivity.class ), 1001 );
 		}
 		else
 		{
-			try
-			{
-				File file = new File( Environment.getExternalStorageDirectory() + "/AAA/2.txt" );
-				file.createNewFile();
-			}
-			catch( Exception ex ) {}
-			
 			loadInformation();
 			initView();
 		}

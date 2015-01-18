@@ -6,28 +6,39 @@
     	android:background="@color/white"
 	    >
 	    
-	    <TextView 
-	        android:id="@+id/me_invite_other_name"
+    	<TextView 
+	        android:id="@+id/me_invite_other_temp1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:text="@string/invite_text_9"
 			android:textColor="@color/heavy_gray"
 			android:textSize="@dimen/text_size_2"
 			android:layout_marginTop="20dp"
 			android:layout_marginLeft="12dp"
 			/>
 	    
-	    <ImageView 
-	        android:id="@+id/me_invite_other_head"
-	        android:layout_width="30dp"
-	        android:layout_height="30dp"
-	        android:layout_alignTop="@+id/me_invite_other_name"
-	        android:layout_toRightOf="@+id/me_invite_other_name"
-	        android:layout_marginLeft="15dp"
-	        android:layout_marginTop="2dp"
-	        android:contentDescription="@string/app_name"
-	        android:src="@drawable/head"
-	        />
+	    <TextView 
+	        android:id="@+id/me_invite_other_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			android:textStyle="bold"
+			android:textSize="@dimen/text_size_2"
+			android:layout_alignTop="@+id/me_invite_other_temp1"
+			android:layout_toRightOf="@+id/me_invite_other_temp1"
+			/>
 	    
+	    <TextView 
+	        android:id="@+id/me_invite_other_temp2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/invite_text_10"
+			android:textColor="@color/heavy_gray"
+			android:textSize="@dimen/text_size_2"
+			android:layout_alignTop="@+id/me_invite_other_temp1"
+			android:layout_toRightOf="@+id/me_invite_other_name"
+			/>
+
 	    <TextView 
 	        android:id="@+id/me_invite_other_time"
 			android:layout_width="wrap_content"
@@ -45,8 +56,8 @@
 			android:layout_height="wrap_content"
 			android:textColor="@color/black"
 			android:textSize="@dimen/text_size_2"
-			android:layout_below="@+id/me_invite_other_head"
-			android:layout_alignLeft="@+id/me_invite_other_name"
+			android:layout_below="@+id/me_invite_other_name"
+			android:layout_alignLeft="@+id/me_invite_other_temp1"
 			android:layout_marginTop="15dp"
 			android:layout_marginRight="12dp"
 			android:lineSpacingMultiplier="1.2"

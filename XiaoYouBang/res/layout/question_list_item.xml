@@ -124,28 +124,14 @@
         android:layout_marginRight="12dp"
         />
     
-    <ImageView
-        android:id="@+id/question_list_item_point_down"
-        android:layout_width="6dp"
-        android:layout_height="6dp"
-        android:layout_alignTop="@+id/question_list_item_symbol"
-        android:layout_toLeftOf="@+id/question_list_item_symbol"
-        android:layout_marginRight="10dp"
-        android:src="@drawable/red1"
-        android:layout_marginTop="4dp"
-        android:contentDescription="@string/app_name"
-        />
-    
     <TextView 
         android:id="@+id/question_list_item_invite_me"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_2"
-        android:textColor="@color/gray"
+        android:textColor="@color/red"
         android:gravity="center|left"
-        android:paddingLeft="10dp"
-        android:background="@color/light_red"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="12dp"
         android:layout_below="@+id/question_list_item_temp_text1"
         android:layout_marginTop="15dp"
         android:layout_marginRight="10dp"
@@ -154,15 +140,13 @@
     <TextView 
         android:id="@+id/question_list_item_my_invite"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_2"
-        android:textColor="@color/gray"
+        android:textColor="@color/red"
         android:gravity="center|left"
-        android:paddingLeft="10dp"
-        android:background="@color/light_red"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="12dp"
         android:layout_below="@+id/question_list_item_invite_me"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         />
     

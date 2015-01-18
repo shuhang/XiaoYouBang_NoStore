@@ -55,9 +55,9 @@
     <string name="add_comment_text2">请写下你的评论</string>
     <string name="add_comment_text3">问题的评论</string>
     <string name="tab_1">主页</string>
-    <string name="tab_2">相关</string>
-    <string name="tab_3">校友录</string>
-    <string name="tab_4">我</string>
+    <string name="tab_2">问过</string>
+    <string name="tab_3">答过</string>
+    <string name="tab_4">校友录</string>
     <string name="friend_info_1">他答过我</string>
     <string name="friend_info_2">我答过他</string>
     <string name="friend_info_3">注册邀请人</string>
@@ -66,7 +66,7 @@
     <string name="friend_info_6">元老</string>
     <string name="friend_info_7">我的资料</string>
     <string name="friend_info_8">校友资料</string>
-    <string name="tab_text_1">与我相关</string>
+    <string name="tab_text_1">我的提问</string>
     <string name="tab_text_4">编辑</string>
     <string name="tab_text_4_1">编辑我的资料</string>
     <string name="tab_text_4_2">出生年份</string>
@@ -76,6 +76,7 @@
     <string name="tab_text_4_6">修改密码</string>
     <string name="tab_text_4_7">退出登录</string>
     <string name="tab_text_4_8">输入原密码</string>
+    <string name="tab_text_4_9">我的回答</string>
     <string name="pop_text_1">回复</string>
     <string name="pop_text_2">复制</string>
     <string name="invite_text_1">请输入对方姓名</string>
@@ -85,6 +86,10 @@
     <string name="invite_text_5">受邀</string>
     <string name="invite_text_6">邀请</string>
     <string name="invite_text_7">已作答</string>
+    <string name="invite_text_8">邀请你回答</string>
+    <string name="invite_text_9">你邀请</string>
+    <string name="invite_text_10">回答</string>
+    <string name="invite_text_11">选择邀请人</string>
     
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>

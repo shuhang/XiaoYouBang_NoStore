@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/red"
+		>
+
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/invite_text_11"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/text_size_1"
+		    android:layout_centerHorizontal="true"
+		    />
+        
+	</RelativeLayout>
+	
+    <ListView
+		android:id="@+id/choose_invite_list"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:smoothScrollbar="true"
+	    android:cacheColorHint="#00000000"
+	    android:background="@color/white"
+	    android:divider="@null"
+		/>
+
+</LinearLayout>

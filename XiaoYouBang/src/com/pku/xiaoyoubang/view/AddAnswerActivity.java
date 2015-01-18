@@ -36,6 +36,7 @@ import com.pku.xiaoyoubang.entity.AnswerEntity;
 import com.pku.xiaoyoubang.entity.CommentEntity;
 import com.pku.xiaoyoubang.tool.Information;
 import com.pku.xiaoyoubang.tool.MyApplication;
+import com.pku.xiaoyoubang.tool.MyDatabaseHelper;
 import com.pku.xiaoyoubang.tool.Tool;
 import com.umeng.analytics.MobclickAgent;
 
@@ -55,6 +56,7 @@ public class AddAnswerActivity extends Activity
 	private String info;
 	
 	private Handler handler;
+	private String time;
 	
 	@SuppressLint("HandlerLeak")
 	protected void onCreate( Bundle savedInstanceState )
@@ -241,6 +243,7 @@ public class AddAnswerActivity extends Activity
 				JSONObject jsonObject = new JSONObject( value.toString() );
 				if( jsonObject.getInt( "result" ) == 4000 )
 				{
+					time = jsonObject.getString( "modifyTime" );					
 					answerId = jsonObject.getString( "id" );
 					handler.sendEmptyMessage( 0 );
 				}
@@ -269,7 +272,6 @@ public class AddAnswerActivity extends Activity
 	
 	private void addAnswerSuccess()
 	{
-		String time = Tool.getNowTime();
 		AnswerEntity entity = new AnswerEntity();
 		entity.setAnswerInfo( info );
 		entity.setCommentList( new ArrayList< CommentEntity >() );
@@ -288,6 +290,9 @@ public class AddAnswerActivity extends Activity
 		entity.setUserHeadUrl( Information.HeadUrl );
 		entity.setUserId( Information.Id );
 		entity.setInvisible( box.isChecked() );
+		
+		MyDatabaseHelper.getInstance( this ).updateQuestion( QuestionInfoActivity.entity.getId(), time );
+		MyDatabaseHelper.getInstance( this ).updateAnswer( QuestionInfoActivity.entity.getId(), time );
 		
 		Intent intent = getIntent();
 		intent.putExtra( "answer", entity );

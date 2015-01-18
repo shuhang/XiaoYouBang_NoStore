@@ -172,8 +172,6 @@ public class AddQuestionActivity extends Activity
 		entity.setNew( false );
 		entity.setInvisible( box.isChecked() );
 		
-		Tool.writeQuestionInfoToFile( entity.getId(), entity );
-		
 		Intent intent = getIntent();
 		intent.putExtra( "question", entity );
 		setResult( 2, intent );
@@ -188,7 +186,11 @@ public class AddQuestionActivity extends Activity
 			showError( "标题不能为空" );
 			return;
 		}
-		if( !title.substring( title.length() - 1, title.length() ).equals( "？" ) )
+		if( title.substring( title.length() - 1, title.length() ).equals( "?" ) )
+		{
+			title = title.substring( 0, title.length() - 1 ) + "？";
+		}
+		else if( !title.substring( title.length() - 1, title.length() ).equals( "？" ) )
 		{
 			if( title.length() == 30 )
 			{

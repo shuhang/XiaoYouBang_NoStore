@@ -40,7 +40,6 @@
 	        android:layout_width="10dp"
 	        android:layout_height="10dp"
 	        android:contentDescription="@string/app_name"
-	        android:src="@drawable/male_color"
 	        android:layout_marginTop="4dp"
 	        android:layout_alignTop="@+id/question_info_answer_list_header_name"
 	        android:layout_toRightOf="@+id/question_info_answer_list_header_name"
@@ -208,9 +207,6 @@
 	        android:layout_height="wrap_content"
 	        android:textSize="@dimen/text_size_2"
 	        android:textColor="@color/gray"
-	        android:maxLength="15"
-	        android:maxLines="1"
-	        android:ellipsize="end"
 	        android:lineSpacingMultiplier="1.2"
 	        android:layout_marginTop="15dp"
 	        android:layout_marginLeft="20dp"
@@ -248,7 +244,7 @@
 	        android:id="@+id/question_info_answer_list_header_temp_view" 
 	        android:layout_width="1dp"
 	        android:layout_height="1dp"
-	        android:background="#ffffffff"
+	        android:background="@color/light_gray"
 	        android:layout_centerInParent="true"
 	        />
 	    

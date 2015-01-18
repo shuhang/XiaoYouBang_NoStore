@@ -80,11 +80,10 @@
 			android:layout_centerHorizontal="true"
 		    />
 		
-		<ImageButton
+		<ImageView
 		    android:id="@+id/register_2_button_sex_male"
 			android:layout_width="30dp"
 			android:layout_height="30dp"
-			android:background="@null"
 			android:src="@drawable/male_color"
 			android:layout_marginTop="15dp"
 			android:layout_alignLeft="@+id/register_2_head"
@@ -93,11 +92,10 @@
 			android:contentDescription="@string/app_name"
 		    />
 		
-		<ImageButton 
+		<ImageView 
 		    android:id="@+id/register_2_button_sex_female"
 			android:layout_width="30dp"
 			android:layout_height="30dp"
-			android:background="@null"
 			android:src="@drawable/female_gray"
 			android:layout_marginTop="15dp"
 			android:layout_alignRight="@+id/register_2_head"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#00000000"
+    android:gravity="center"
+    >
+        
+        <Button 
+            android:id="@+id/answer_pop_view_button"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@color/heavy_gray"
+            android:text="@string/pop_text_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_2"
+            />
+
+</LinearLayout>
