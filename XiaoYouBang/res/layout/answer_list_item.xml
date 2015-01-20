@@ -39,6 +39,7 @@
         />
     
     <TextView 
+         android:id="@+id/answer_list_item_comment_count_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_text_3"
@@ -62,6 +63,7 @@
         />
     
     <TextView 
+        android:id="@+id/answer_list_item_praise_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_text_2"

@@ -286,13 +286,13 @@ public class AddAnswerActivity extends Activity
 		entity.setQuestionId( questionId );
 		entity.setSex( Information.Sex );
 		entity.setCreateTime( time );
-		entity.setModifyTime( time );
+		entity.setModifyTime( "" );
 		entity.setUserHeadUrl( Information.HeadUrl );
 		entity.setUserId( Information.Id );
 		entity.setInvisible( box.isChecked() );
 		
-		MyDatabaseHelper.getInstance( this ).updateQuestion( QuestionInfoActivity.entity.getId(), time );
-		MyDatabaseHelper.getInstance( this ).updateAnswer( QuestionInfoActivity.entity.getId(), time );
+		MyDatabaseHelper.getInstance( this ).updateQuestion1( QuestionInfoActivity.entity.getId(), time );
+		MyDatabaseHelper.getInstance( this ).updateQuestion2( entity.getQuestionId(), time );
 		
 		Intent intent = getIntent();
 		intent.putExtra( "answer", entity );

@@ -10,7 +10,7 @@
     <RelativeLayout 
 		android:layout_width="match_parent"
 		android:layout_height="50dp"
-		android:background="@color/red"
+		android:background="@color/bg_red"
 		>
         
         <TextView 
@@ -79,7 +79,7 @@
 		    android:layout_gravity="right"
 		    android:layout_marginRight="30dp"
 		    android:layout_marginTop="10dp"
-		    android:textColor="@color/red"
+		    android:textColor="@color/bg_red"
 		    android:textSize="@dimen/text_size_1"
 		    android:text="@string/password_text1"
 		    android:background="@null"
@@ -92,7 +92,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:background="@color/red"
+        android:background="@color/bg_red"
         android:text="@string/start_text1"
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_2"

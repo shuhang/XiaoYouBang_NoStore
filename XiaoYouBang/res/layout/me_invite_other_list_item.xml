@@ -44,7 +44,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:textColor="@color/heavy_gray"
-			android:textSize="@dimen/text_size_2"
+			android:textSize="@dimen/text_size_3"
 			android:layout_alignTop="@+id/me_invite_other_name"
 			android:layout_alignParentRight="true"
 			android:layout_marginRight="12dp"
@@ -61,6 +61,7 @@
 			android:layout_marginTop="15dp"
 			android:layout_marginRight="12dp"
 			android:lineSpacingMultiplier="1.2"
+			android:layout_marginLeft="10dp"
 			/>
 
 	    <TextView 
@@ -68,7 +69,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="@string/invite_text_7"
-			android:textColor="@color/red"
+			android:textColor="@color/text_red"
 			android:textSize="@dimen/text_size_2"
 			android:layout_below="@+id/me_invite_other_info"
 			android:layout_marginTop="5dp"
@@ -96,7 +97,7 @@
 			android:layout_marginLeft="12dp"
 			android:layout_marginRight="12dp"
 			android:layout_marginTop="10dp"
-			android:background="@color/gray"
+			android:background="@color/light_gray"
 	        />
 	
 	</RelativeLayout>

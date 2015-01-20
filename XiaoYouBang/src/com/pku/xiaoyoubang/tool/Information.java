@@ -13,6 +13,8 @@ public class Information
 	/**
 	 *  User Information
 	 */
+	public static int Type = 0;
+	
 	public static String Key1;
 	public static String Key2;
 	

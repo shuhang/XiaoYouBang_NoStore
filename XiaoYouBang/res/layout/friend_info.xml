@@ -10,7 +10,7 @@
         android:id="@+id/friend_info_layout_up"
 		android:layout_width="match_parent"
 		android:layout_height="50dp"
-		android:background="@color/red"
+		android:background="@color/bg_red"
 		>
 		
         <Button 
@@ -95,7 +95,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textSize="@dimen/text_size_2"
-			    android:textColor="@color/red"
+			    android:textColor="@color/text_red"
 			    android:gravity="center|right"
 			    android:layout_alignTop="@+id/friend_info_name"
 			    android:layout_alignParentRight="true"

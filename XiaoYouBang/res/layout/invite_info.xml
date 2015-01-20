@@ -10,7 +10,7 @@
     <RelativeLayout 
 			android:layout_width="match_parent"
 			android:layout_height="50dp"
-			android:background="@color/red"
+			android:background="@color/bg_red"
 			>
 			
 	        <Button 
@@ -45,7 +45,7 @@
 	        android:id="@+id/invite_info_text1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/red"
+			android:textColor="@color/text_red"
 			android:textSize="@dimen/text_size_2"
 			android:layout_marginLeft="12dp"
 			android:layout_centerVertical="true"
@@ -55,7 +55,7 @@
 	        android:id="@+id/invite_info_text2"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/red"
+			android:textColor="@color/text_red"
 			android:textSize="@dimen/text_size_2"
 			android:layout_centerVertical="true"
 			android:layout_alignParentRight="true"

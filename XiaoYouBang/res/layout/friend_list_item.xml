@@ -29,11 +29,10 @@
     
     <TextView 
 	    android:id="@+id/friend_list_item_praise"
-	    android:layout_width="50dp"
+	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:textSize="@dimen/text_size_2"
-	    android:textColor="@color/red"
-	    android:gravity="center|left"
+	    android:textColor="@color/text_red"
 	    android:layout_alignParentRight="true"
 	    android:layout_marginRight="20dp"
 	    android:layout_alignTop="@+id/friend_list_item_name"
@@ -47,8 +46,8 @@
 	    android:contentDescription="@string/app_name"
 	    android:src="@drawable/male_color"
 	    android:layout_alignTop="@+id/friend_list_item_praise"
-	    android:layout_toLeftOf="@+id/friend_list_item_praise"
-	    android:layout_marginRight="80dp"
+	    android:layout_toRightOf="@+id/friend_list_item_name"
+	    android:layout_marginLeft="30dp"
 	    />
     
     <TextView 

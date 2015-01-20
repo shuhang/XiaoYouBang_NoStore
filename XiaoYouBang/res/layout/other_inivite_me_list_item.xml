@@ -33,7 +33,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:textColor="@color/heavy_gray"
-			android:textSize="@dimen/text_size_2"
+			android:textSize="@dimen/text_size_3"
 			android:layout_alignTop="@+id/other_invite_me_name"
 			android:layout_alignParentRight="true"
 			android:layout_marginRight="12dp"
@@ -49,6 +49,7 @@
 			android:textSize="@dimen/text_size_2"
 			android:layout_marginTop="15dp"
 			android:layout_marginRight="12dp"
+			android:layout_marginLeft="10dp"
 			android:lineSpacingMultiplier="1.2"
 			/>
 	    

@@ -50,7 +50,7 @@
         android:id="@+id/my_answer_list_item_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_2"
+        android:textSize="@dimen/text_size_3"
         android:textColor="@color/heavy_gray"
         android:layout_alignTop="@+id/my_answer_list_item_name"
         android:layout_alignParentRight="true"
@@ -109,6 +109,7 @@
         />
     
     <TextView 
+        android:id="@+id/my_answer_list_item_praise_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_text_2"

@@ -32,7 +32,7 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:textSize="@dimen/text_size_2"
-	    android:textColor="@color/red"
+	    android:textColor="@color/text_red"
 	    android:layout_alignParentRight="true"
 	    android:layout_marginRight="20dp"
 	    android:layout_marginTop="2dp"
@@ -45,10 +45,9 @@
 	    android:layout_height="15dp"
 	    android:contentDescription="@string/app_name"
 	    android:src="@drawable/male_color"
-	    android:layout_alignBottom="@+id/choose_invite_list_item_symbol"
-	    android:layout_marginBottom="2dp"
-	    android:layout_alignParentRight="true"
-	    android:layout_marginRight="120dp"
+	    android:layout_alignTop="@+id/choose_invite_list_item_symbol"
+	    android:layout_toRightOf="@+id/choose_invite_list_item_name"
+	    android:layout_marginLeft="30dp"
 	    />
     
     <TextView 

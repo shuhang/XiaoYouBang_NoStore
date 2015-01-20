@@ -21,6 +21,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnFocusChangeListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -143,6 +144,36 @@ public class AddQuestionActivity extends Activity
 				}
 			}
 		);
+		
+		textTitle.setOnFocusChangeListener
+		(
+			new OnFocusChangeListener()
+			{
+				public void onFocusChange( View v, boolean hasFocus )
+				{
+					if( !hasFocus )
+					{
+						String title = textTitle.getText().toString();
+						if( title.length() > 0 )
+						{
+							if( title.substring( title.length() - 1, title.length() ).equals( "?" ) )
+							{
+								title = title.substring( 0, title.length() - 1 ) + "？";
+							}
+							else if( !title.substring( title.length() - 1, title.length() ).equals( "？" ) )
+							{
+								if( title.length() == 30 )
+								{
+									return;
+								}
+								title += "？";
+							}
+						}
+						textTitle.setText( title );
+					}
+				}
+			}
+		);
 	}
 	
 	private void addQuestionSuccess()
@@ -166,6 +197,7 @@ public class AddQuestionActivity extends Activity
 		entity.setSex( Information.Sex );
 		entity.setUpdate( false );
 		entity.setModifyTime( time );
+		entity.setUpdateTime( time );
 		entity.setUserHeadUrl( Information.HeadUrl );
 		entity.setUserId( Information.Id );
 		entity.setUserName( Information.Name );
@@ -186,18 +218,10 @@ public class AddQuestionActivity extends Activity
 			showError( "标题不能为空" );
 			return;
 		}
-		if( title.substring( title.length() - 1, title.length() ).equals( "?" ) )
+		else if( title.length() == 30 )
 		{
-			title = title.substring( 0, title.length() - 1 ) + "？";
-		}
-		else if( !title.substring( title.length() - 1, title.length() ).equals( "？" ) )
-		{
-			if( title.length() == 30 )
-			{
-				showError( "问题包含问号不能超过30个字" );
-				return;
-			}
-			title += "？";
+			showError( "问题包含问号不能超过30个字" );
+			return;
 		}
 		info = textInfo.getText().toString();
 		startAdd( title, info );

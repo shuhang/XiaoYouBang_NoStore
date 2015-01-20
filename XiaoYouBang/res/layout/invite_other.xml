@@ -11,7 +11,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="50dp"
 		android:layout_alignParentTop="true"
-		android:background="@color/red"
+		android:background="@color/bg_red"
 		>
 		
         <Button 
@@ -102,7 +102,7 @@
         android:id="@+id/invite_other_symbol"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:textColor="@color/red"
+		android:textColor="@color/text_red"
 		android:textSize="@dimen/text_size_2"
 		android:layout_below="@+id/invite_other_head"
 		android:layout_alignParentRight="true"
@@ -120,6 +120,7 @@
 	    android:paddingRight="10dp"
 	    android:paddingTop="15dp"
 	    android:paddingBottom="10dp"
+	    android:maxLength="200"
 	    android:textSize="@dimen/text_size_1"
 	    android:hint="@string/invite_text_2"
 		android:inputType="textMultiLine"

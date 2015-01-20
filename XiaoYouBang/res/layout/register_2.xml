@@ -16,7 +16,7 @@
 		    android:id="@+id/register_2_layout"
 			android:layout_width="match_parent"
 			android:layout_height="50dp"
-			android:background="@color/red"
+			android:background="@color/bg_red"
 			>
 			
 	        <Button 

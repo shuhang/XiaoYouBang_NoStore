@@ -4,7 +4,7 @@
     <string name="app_name">校友邦</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="main_page_title">全部问题</string>
+    <string name="main_page_title">全部提问</string>
     <string name="hide_name">匿名提问</string>
     <string name="hide_name1">匿名回答</string>
     <string name="add_question_text1">添加提问</string>
@@ -37,7 +37,7 @@
     <string name="start_text14">现居地，例四川省成都市</string>
     <string name="start_text15">故乡，例黑龙江省哈尔滨市</string>
     <string name="start_text16">网络联系方式，电邮/QQ/微信</string>
-    <string name="start_text17">现工作单位</string>
+    <string name="start_text17">现工作单位，学生请填在读</string>
     <string name="start_text18">所在部门</string>
     <string name="start_text19">职位</string>
     <string name="start_text20">完成</string>
@@ -61,8 +61,8 @@
     <string name="friend_info_1">他答过我</string>
     <string name="friend_info_2">我答过他</string>
     <string name="friend_info_3">注册邀请人</string>
-    <string name="friend_info_4">提问</string>
-    <string name="friend_info_5">回答</string>
+    <string name="friend_info_4">问过</string>
+    <string name="friend_info_5">答过</string>
     <string name="friend_info_6">元老</string>
     <string name="friend_info_7">我的资料</string>
     <string name="friend_info_8">校友资料</string>
@@ -91,6 +91,9 @@
     <string name="invite_text_10">回答</string>
     <string name="invite_text_11">选择邀请人</string>
     
+    <string name="start_1">与校友分享你的</string>
+    <string name="start_2">智慧、资源与人脉</string>
+    
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>
     <string name="xlistview_header_hint_loading">正在加载</string>
@@ -99,7 +102,7 @@
     <string name="xlistview_footer_hint_ready">松开载入更多</string>
     
     <string name="password_text1">忘记密码</string>
-    <string name="password_text2">找回密码</string>
+    <string name="password_text2">重置密码</string>
     <string name="password_text3">获取验证码</string>
     <string name="password_text4">手机验证码</string>
     <string name="password_text5">密码最长16位，由字母、数字和各类英文符号组成，字母区分大小写</string>
