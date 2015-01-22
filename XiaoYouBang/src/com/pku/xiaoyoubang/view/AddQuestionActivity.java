@@ -96,9 +96,9 @@ public class AddQuestionActivity extends Activity
 		setContentView( R.layout.add_question );
 		
 		textTitle = ( EditText ) findViewById( R.id.add_question_input1 );
-		textTitle.setHint( "请简要描述你的问题..." );
+		textTitle.setHint( "请简要描述你的问题，至少包含一个问号" );
 		textInfo = ( EditText ) findViewById( R.id.add_question_input2 );
-		textInfo.setHint( "请补充描述相关的背景、想法、要求等..." );
+		textInfo.setHint( "请补充描述相关的背景、想法、要求等…" );
 		
 		box = ( CheckBox ) findViewById( R.id.add_question_checkbox );
 		box.setOnCheckedChangeListener
@@ -154,19 +154,16 @@ public class AddQuestionActivity extends Activity
 					if( !hasFocus )
 					{
 						String title = textTitle.getText().toString();
-						if( title.length() > 0 )
+						int length = title.length();
+						if( length > 0 )
 						{
-							if( title.substring( title.length() - 1, title.length() ).equals( "?" ) )
+							if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
 							{
-								title = title.substring( 0, title.length() - 1 ) + "？";
-							}
-							else if( !title.substring( title.length() - 1, title.length() ).equals( "？" ) )
-							{
-								if( title.length() == 30 )
+								if( length < 30 ) title += "？";
+								else
 								{
-									return;
+									title = title.substring( 0, title.length() - 1 ) + "？";
 								}
-								title += "？";
 							}
 						}
 						textTitle.setText( title );
@@ -216,11 +213,6 @@ public class AddQuestionActivity extends Activity
 		if( title.length() == 0 )
 		{
 			showError( "标题不能为空" );
-			return;
-		}
-		else if( title.length() == 30 )
-		{
-			showError( "问题包含问号不能超过30个字" );
 			return;
 		}
 		info = textInfo.getText().toString();

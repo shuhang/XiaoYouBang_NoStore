@@ -2,6 +2,8 @@ package com.pku.xiaoyoubang.tool;
 
 import android.annotation.SuppressLint;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+
 public class Information 
 {
 	public static String Server_Url = "http://118.186.214.42:5000";
@@ -10,6 +12,8 @@ public class Information
 	public static String Image_Path = "/data/data/com.pku.xiaoyoubang/head_image/";
 	@SuppressLint("SdCardPath")
 	public static String File_Path = "/data/data/com.pku.xiaoyoubang/question/";
+	
+	public static DisplayImageOptions options;
 	/**
 	 *  User Information
 	 */
@@ -37,6 +41,7 @@ public class Information
 	public static String Company = "";
 	public static String Part = "";
 	public static String Job = "";
+	public static String Intro = "";
 	public static String Tag[] = { "", "", "", "", "" };
 	public static int Praise_Count = 0;
 	public static int Question_Count = 0;
@@ -150,5 +155,64 @@ public class Information
 			"政府管理",
 			"社科调查",
 			"中文"
+		};
+	
+	public static String[] User_List = 
+		{
+			"李青",
+			"段明君",
+			"俸旻",
+			"陈志",
+			"刘勐",
+			"王明振",
+			"王路化",
+			"淦华",
+			"徐晶晶",
+			"孙华英",
+			"孙建宁",
+			"彭馨",
+			"杨鹏飞",
+			"丰学兵",
+			"程兰岚",
+			"杜江",
+			"赵双",
+			"王欢",
+			"李文",
+			"蒋炆伶",
+			"何江宁",
+			"杨在文",
+			"李清钰",
+			"胡栋梁",
+			"孙小莉",
+			"潘勇",
+			"曾文之",
+			"李飞",
+			"黄辰",
+			"黎洪彬",
+			"郭明",
+			"姚春梅",
+			"石毅",
+			"龙巍",
+			"朱旗琛",
+			"赖兵",
+			"李佳鞠",
+			"黄杜斌",
+			"房誉",
+			"舒航",
+			"顾宏",
+			"陈鹏",
+			"汤诗伟",
+			"郑威",
+			"段琳",
+			"王胜",
+			"李智",
+			"江艳",
+			"杨志华",
+			"林靖欣",
+			"杨仕文",
+			"林鸣",
+			"夏强",
+			"柴上",
+			"罗文孜",
 		};
 }

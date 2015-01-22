@@ -8,10 +8,9 @@
     
     <ImageView 
         android:id="@+id/question_list_item_head"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/head"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="12dp"
         />
@@ -111,6 +110,19 @@
         android:layout_alignTop="@+id/question_list_item_temp_text1"
         android:layout_toRightOf="@+id/question_list_item_temp_text2"
         android:layout_marginLeft="10dp"
+        />
+    
+    <ImageView
+        android:id="@+id/question_list_item_point_down"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignTop="@+id/question_list_item_temp_text2"
+        android:layout_toRightOf="@+id/question_list_item_temp_text2"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/red1"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
         />
     
     <TextView 

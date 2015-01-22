@@ -95,7 +95,7 @@ public class AddAnswerActivity extends Activity
 		setContentView( R.layout.add_answer );
 		
 		textInfo = ( EditText ) findViewById( R.id.add_answer_input );
-		textInfo.setHint( "写下你的答案、建议、参考..." );
+		textInfo.setHint( "写下你的答案、建议、参考…" );
 		
 		box = ( CheckBox ) findViewById( R.id.add_answer_checkbox );
 		box.setOnCheckedChangeListener

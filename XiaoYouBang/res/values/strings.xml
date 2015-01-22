@@ -79,7 +79,7 @@
     <string name="tab_text_4_9">我的回答</string>
     <string name="pop_text_1">回复</string>
     <string name="pop_text_2">复制</string>
-    <string name="invite_text_1">请输入对方姓名</string>
+    <string name="invite_text_1">输入姓名，或点击头像选择</string>
     <string name="invite_text_2">本邀请只有被邀请人可以看到，请写下你的邀请理由</string>
     <string name="invite_text_3">提交</string>
     <string name="invite_text_4">邀请详情</string>

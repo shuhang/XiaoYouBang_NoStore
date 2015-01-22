@@ -30,7 +30,6 @@
         android:layout_height="30dp"
         android:layout_below="@+id/my_answer_list_item_question"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/head"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="12dp"
         />

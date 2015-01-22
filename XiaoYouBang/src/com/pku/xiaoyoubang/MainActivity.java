@@ -14,6 +14,9 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.pku.xiaoyoubang.entity.UserEntity;
 import com.pku.xiaoyoubang.tool.Information;
 import com.pku.xiaoyoubang.tool.MyApplication;
@@ -41,11 +44,23 @@ public class MainActivity extends TabActivity
 	{
 		super.onCreate( savedInstanceState );
 		
+		UmengUpdateAgent.setUpdateOnlyWifi( false );
 		UmengUpdateAgent.update( this );
 		MobclickAgent.updateOnlineConfig( this );
 		
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		MyApplication.getInstance().addActivity( this );
+		
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder( this ).build();
+		ImageLoader.getInstance().init( config );
+		
+		Information.options = new DisplayImageOptions.Builder()
+		.showImageOnLoading( R.drawable.head_default )
+		.showImageForEmptyUri( R.drawable.head_default )
+		.showImageOnFail( R.drawable.head_default )
+		.cacheInMemory( true )
+		.cacheOnDisk( true )
+		.build();
 		
 		File file1 = new File( Information.Image_Path );
     	if( !file1.exists() )

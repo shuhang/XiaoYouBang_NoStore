@@ -63,6 +63,7 @@
         android:textSize="@dimen/text_size_1"
         android:paddingLeft="15dp"
         android:singleLine="true"
+        android:maxLength="11"
         android:textColorHint="@color/gray"
         />
     

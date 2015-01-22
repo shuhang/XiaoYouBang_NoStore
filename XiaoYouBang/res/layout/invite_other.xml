@@ -30,7 +30,7 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_centerVertical="true"
-		    android:text="@string/add_answer_text1"
+		    android:text="@string/question_text_5"
 		    android:textColor="@color/white"
 		    android:textSize="@dimen/text_size_1"
 		    android:layout_centerHorizontal="true"
@@ -57,15 +57,15 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
+        android:src="@drawable/head_default"
         android:contentDescription="@string/app_name"
         android:layout_below="@+id/invite_other_layout"
-        android:src="@drawable/head"
         />
     
     <EditText 
         android:id="@+id/invite_other_input_name"
         android:layout_height="30dp"
-        android:layout_width="155dp"
+        android:layout_width="225dp"
         android:singleLine="true"
         android:background="@null"
         android:textColor="@color/black"

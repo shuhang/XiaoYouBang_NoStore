@@ -53,7 +53,6 @@
 			    android:layout_width="100dp"
 			    android:layout_height="100dp"
 			    android:contentDescription="@string/app_name"
-			    android:src="@drawable/head"
 			    android:layout_marginLeft="20dp"
 			    android:layout_marginTop="20dp"
 			    />
@@ -160,11 +159,24 @@
 			    android:lineSpacingMultiplier="1.2"
 			    />
 			
+			<TextView 
+			    android:id="@+id/my_info_intro"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="@dimen/text_size_2"
+			    android:textColor="@color/text_red"
+			    android:layout_alignLeft="@+id/my_info_info_tag"
+			    android:layout_below="@+id/my_info_info_tag"
+			    android:layout_marginTop="12dp"
+			    android:lineSpacingMultiplier="1.2"
+			    android:textStyle="bold"
+			    />
+			
 			<View 
 		        android:id="@+id/my_info_info_line2"
 		        android:layout_width="match_parent"
 		        android:layout_height="10dp"
-		        android:layout_below="@+id/my_info_info_tag"
+		        android:layout_below="@+id/my_info_intro"
 		        android:layout_marginTop="15dp"
 		        android:background="@color/light_gray"
 		        />
@@ -206,7 +218,6 @@
 				    android:layout_width="30dp"
 				    android:layout_height="30dp"
 				    android:contentDescription="@string/app_name"
-				    android:src="@drawable/head"
 				    android:visibility="invisible"
 				    android:layout_toLeftOf="@+id/my_info_info_layout1_name"
 				    android:layout_marginRight="5dp"

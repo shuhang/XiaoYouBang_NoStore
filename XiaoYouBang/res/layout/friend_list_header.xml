@@ -29,7 +29,6 @@
 		    android:layout_width="50dp"
 		    android:layout_height="50dp"
 		    android:contentDescription="@string/app_name"
-		    android:src="@drawable/head"
 		    android:layout_marginLeft="25dp"
 		    />
 	
