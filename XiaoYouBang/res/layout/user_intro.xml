@@ -17,6 +17,18 @@
 			android:layout_height="50dp"
 			android:background="@color/bg_red"
 			>
+			
+	        <Button 
+			    android:id="@+id/user_intro_button_back"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="3dp"
+			    android:textColor="@color/white"
+				android:textSize="@dimen/text_size_1"
+				android:background="@null"
+			    />
 	
 	        <TextView 
 	            android:id="@+id/user_intro_title"

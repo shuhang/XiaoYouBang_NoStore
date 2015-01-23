@@ -115,6 +115,19 @@
 	    android:layout_marginLeft="15dp"
 	    />
     
+    <TextView 
+	    android:id="@+id/friend_list_header_count"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/tab_4"
+	    android:textSize="@dimen/text_size_3"
+	    android:textColor="@color/heavy_gray"
+	    android:layout_alignBottom="@+id/friend_list_header_friend"
+	    android:layout_marginBottom="3dp"
+	    android:layout_toRightOf="@+id/friend_list_header_friend"
+	    android:layout_marginLeft="10dp"
+	    />
+    
     <View 
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
