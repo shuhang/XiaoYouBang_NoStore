@@ -140,6 +140,10 @@ public class AddQuestionActivity extends Activity
 			{
 				public void onClick( View view )
 				{
+					if( Tool.isFastDoubleClick() )
+					{
+						return;
+					}
 					judgeInput();
 				}
 			}
@@ -159,7 +163,7 @@ public class AddQuestionActivity extends Activity
 						{
 							if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
 							{
-								if( length < 30 ) title += "？";
+								if( length < 36 ) title += "？";
 								else
 								{
 									title = title.substring( 0, title.length() - 1 ) + "？";
@@ -215,7 +219,18 @@ public class AddQuestionActivity extends Activity
 			showError( "标题不能为空" );
 			return;
 		}
+		else if( title.length() == 36 && title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
+		{
+			showError( "标题必须包含问号且不能超过40字" );
+			return;
+		}
+		
 		info = textInfo.getText().toString();
+		if( info.length() == 0 )
+		{
+			showError( "为了他人能更好地回答你的问题，请用力填写描述" );
+			return;
+		}
 		startAdd( title, info );
 	}
 	

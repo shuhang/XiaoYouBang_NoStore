@@ -17,7 +17,7 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_centerVertical="true"
-		    android:text="@string/tab_4"
+		    android:text="@string/tab_text_5_1"
 		    android:textColor="@color/white"
 		    android:textSize="@dimen/text_size_1"
 		    android:layout_centerHorizontal="true"
@@ -25,7 +25,7 @@
         
 	</RelativeLayout>
 	
-    <com.pku.xiaoyoubang.selfview.FriendListView
+    <com.pku.xiaoyoubang.selfview.XListView
 		android:id="@+id/tab_4_list"
 		android:layout_width="match_parent"
 	    android:layout_height="wrap_content"

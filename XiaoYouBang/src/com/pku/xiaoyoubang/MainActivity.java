@@ -1,23 +1,44 @@
 package com.pku.xiaoyoubang;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.TabActivity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.pku.xiaoyoubang.entity.UserEntity;
+import com.pku.xiaoyoubang.model.MyAlertDialog;
+import com.pku.xiaoyoubang.service.MyService;
 import com.pku.xiaoyoubang.tool.Information;
 import com.pku.xiaoyoubang.tool.MyApplication;
 import com.pku.xiaoyoubang.tool.MyDatabaseHelper;
@@ -26,27 +47,80 @@ import com.pku.xiaoyoubang.view.TabActivity1;
 import com.pku.xiaoyoubang.view.TabActivity2;
 import com.pku.xiaoyoubang.view.TabActivity3;
 import com.pku.xiaoyoubang.view.TabActivity4;
+import com.pku.xiaoyoubang.view.TabActivity5;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengDialogButtonListener;
 import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UmengUpdateListener;
+import com.umeng.update.UpdateResponse;
+import com.umeng.update.UpdateStatus;
 
 @SuppressWarnings("deprecation")
-public class MainActivity extends TabActivity
+public class MainActivity extends TabActivity implements OnCheckedChangeListener
 {
 	private TabHost tabHost;
 	
-	private RadioGroup radioGroup;
 	private RadioButton radioButton1;
 	private RadioButton radioButton2;
 	private RadioButton radioButton3;
 	private RadioButton radioButton4;
+	private RadioButton radioButton5;
+	
+	private static TextView textNumber2;
+	private static TextView textNumber3;
+	private static TextView textNumber4;
+	
+	private Dialog dialog;
+	private static int nowState = 0;
+	
+	private boolean force = false;
+	
+	//Service
+	public static MyService myService = null;
+	private ServiceConnection connection = new ServiceConnection()
+	{
+		public void onServiceConnected( ComponentName name, IBinder service )
+		{
+			MyService.MyBinder myBinder = ( MyService.MyBinder ) service;
+			myService = myBinder.getService();
+			Log.e( "ff", "start1" );
+			myService.startTab2();
+			myService.startTab3();
+			myService.startTab4();
+		}
+		public void onServiceDisconnected( ComponentName name ) {}
+	};
+	
+	public static Handler handler = new Handler()
+	{
+		public void handleMessage( Message message )
+		{
+			switch( message.what )
+			{
+			case 2 :
+				showNumber2( message.arg1 );
+				break;
+			case 3 :
+				showNumber3( message.arg1 );
+				break;
+			case 4 :
+				Log.e( "aa", "get message" );
+				showNumber4( message.arg1 );
+				break;
+			}
+		}
+	};
 	
 	protected void onCreate( Bundle savedInstanceState )
 	{
 		super.onCreate( savedInstanceState );
 		
 		UmengUpdateAgent.setUpdateOnlyWifi( false );
-		UmengUpdateAgent.update( this );
-		MobclickAgent.updateOnlineConfig( this );
+		
+		SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );
+		SharedPreferences.Editor editor = shared.edit();
+		editor.putBoolean( "force_update", true );
+		editor.commit();
 		
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		MyApplication.getInstance().addActivity( this );
@@ -55,9 +129,9 @@ public class MainActivity extends TabActivity
 		ImageLoader.getInstance().init( config );
 		
 		Information.options = new DisplayImageOptions.Builder()
-		.showImageOnLoading( R.drawable.head_default )
-		.showImageForEmptyUri( R.drawable.head_default )
-		.showImageOnFail( R.drawable.head_default )
+		.showImageOnLoading( R.drawable.head_hidden )
+		.showImageForEmptyUri( R.drawable.head_hidden )
+		.showImageOnFail( R.drawable.head_hidden )
 		.cacheInMemory( true )
 		.cacheOnDisk( true )
 		.build();
@@ -126,53 +200,82 @@ public class MainActivity extends TabActivity
         		.setIndicator( "tab3" ) );
         tabHost.addTab( tabHost.newTabSpec( "tab4" ).setContent( new Intent( this, TabActivity4.class ) )
         		.setIndicator( "tab4" ) );
+        tabHost.addTab( tabHost.newTabSpec( "tab5" ).setContent( new Intent( this, TabActivity5.class ) )
+        		.setIndicator( "tab5" ) );
         tabHost.setCurrentTab( 0 );
         tabHost.setSelected( false ); 
         
-        radioButton1 = ( RadioButton ) findViewById( R.id.radio_button1 );
-        radioButton2 = ( RadioButton ) findViewById( R.id.radio_button2 );
-        radioButton3 = ( RadioButton ) findViewById( R.id.radio_button3 );
-        radioButton4 = ( RadioButton ) findViewById( R.id.radio_button4 );
-
-        radioGroup = ( RadioGroup ) findViewById( R.id.main_radio );
-        radioGroup.setOnCheckedChangeListener
-	    (
-	    	new OnCheckedChangeListener() 
-	    	{
-	    		public void onCheckedChanged( RadioGroup group, int checkedId ) 
-	    		{
-	    			switch( checkedId ) 
-	    			{
-	    			case R.id.radio_button1:
-	    				tabHost.setCurrentTabByTag( "tab1" );
-	    				changeTextColor( Color.WHITE, Color.BLACK, Color.BLACK, Color.BLACK );
-	    				break;
-	    			case R.id.radio_button2:
-	    				tabHost.setCurrentTabByTag( "tab2" );
-	    				changeTextColor( Color.BLACK, Color.WHITE, Color.BLACK, Color.BLACK );    				
-						break;
-					case R.id.radio_button3:
-						tabHost.setCurrentTabByTag( "tab3" );
-						changeTextColor( Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK );						
-						break;
-					case R.id.radio_button4:
-						tabHost.setCurrentTabByTag( "tab4" );
-						changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE );						
-	    				break;
-					default:
-						break;
-	    			}
-	    		}
-	    	}
-	    );
+        radioButton1 = ( RadioButton ) findViewById( R.id.main_tab_1 );
+        radioButton1.setOnCheckedChangeListener( this );
+        radioButton2 = ( RadioButton ) findViewById( R.id.main_tab_2 );
+        radioButton2.setOnCheckedChangeListener( this );
+        radioButton3 = ( RadioButton ) findViewById( R.id.main_tab_3 );
+        radioButton3.setOnCheckedChangeListener( this );
+        radioButton4 = ( RadioButton ) findViewById( R.id.main_tab_4 );
+        radioButton4.setOnCheckedChangeListener( this );
+        radioButton5 = ( RadioButton ) findViewById( R.id.main_tab_5 );
+        radioButton5.setOnCheckedChangeListener( this );
+        
+        textNumber2 = ( TextView ) findViewById( R.id.main_tab_2_number );
+        textNumber3 = ( TextView ) findViewById( R.id.main_tab_3_number );
+        textNumber4 = ( TextView ) findViewById( R.id.main_tab_4_number );
+        
+        Intent intent = new Intent( this, MyService.class );
+		bindService( intent, connection, Context.BIND_AUTO_CREATE );
     }
 	
-	private void changeTextColor( int color1, int color2, int color3, int color4 )
+	public static void showNumber2( int number )
+	{
+		if( nowState != 1 )
+		{
+			TabActivity2.shouldUpdate = true;
+			textNumber2.setVisibility( View.VISIBLE );
+			textNumber2.setText( "" + number );
+		}
+	}
+	
+	public void clearNumber2()
+	{
+		textNumber2.setVisibility( View.INVISIBLE );
+	}
+	
+	public static void showNumber3( int number )
+	{
+		if( nowState != 2 )
+		{
+			TabActivity3.shouldUpdate = true;
+			textNumber3.setVisibility( View.VISIBLE );
+			textNumber3.setText( "" + number );
+		}
+	}
+	
+	public void clearNumber3()
+	{
+		textNumber3.setVisibility( View.INVISIBLE );
+	}
+	
+	public static void showNumber4( int number )
+	{
+		if( nowState != 3 )
+		{
+			TabActivity4.shouldUpdate = true;
+			textNumber4.setVisibility( View.VISIBLE );
+			textNumber4.setText( "" + number );
+		}
+	}
+	
+	public void clearNumber4()
+	{
+		textNumber4.setVisibility( View.INVISIBLE );
+	}
+	
+	private void changeTextColor( int color1, int color2, int color3, int color4, int color5 )
 	{
 		radioButton1.setTextColor( color1 );
 		radioButton2.setTextColor( color2 );
 		radioButton3.setTextColor( color3 );
 		radioButton4.setTextColor( color4 );
+		radioButton5.setTextColor( color5 );
 	}
 	
 	protected void onActivityResult( int requestCode, int resultCode, Intent data ) 
@@ -192,6 +295,13 @@ public class MainActivity extends TabActivity
 	{
 		super.onResume();
 		MobclickAgent.onResume( this );
+
+		if( myService != null )
+		{
+			myService.startTab2();
+			myService.startTab3();
+			myService.startTab4();
+		}
 	}
 	
 	public void onPause()
@@ -199,4 +309,197 @@ public class MainActivity extends TabActivity
 		super.onPause();
 		MobclickAgent.onPause( this );
 	}
+	
+	public boolean onPrepareOptionsMenu( Menu menu )
+	{
+		super.onPrepareOptionsMenu( menu );
+		List< String > list = new ArrayList< String >();
+		list.add( "检查更新" );
+		list.add( "退出程序" );
+		MyAlertDialog.showAlert
+		( 
+			MainActivity.this, "系统", list, null, new MyAlertDialog.OnAlertSelectId()
+			{
+				public void onClick( int whichButton ) 
+				{						
+					switch( whichButton )
+					{
+					case 0 :
+						checkUpdate();
+						break;
+					case 1 :
+						MyApplication.getInstance().logout();
+						break;
+					}
+				}
+			}
+		);
+		return false;
+	}
+	
+	private void checkUpdate()
+	{
+		dialog = new Dialog( this, R.style.dialog_progress );
+		LayoutInflater inflater = LayoutInflater.from( this );  
+		View view = inflater.inflate( R.layout.dialog_progress, null );
+		TextView textView = ( TextView ) view.findViewById( R.id.dialog_textview );
+		textView.setText( "正在检查更新" );
+		
+		WindowManager.LayoutParams layoutParams = dialog.getWindow().getAttributes();
+		layoutParams.alpha = 0.8f;
+		dialog.getWindow().setAttributes( layoutParams );
+		dialog.setContentView( view );
+		dialog.setCancelable( false );
+		dialog.setOnKeyListener
+		(
+			new OnKeyListener()
+			{
+				public boolean onKey( DialogInterface dialog, int keyCode, KeyEvent event ) 
+				{
+					if( keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0 )
+					{
+						dialog.dismiss();
+						return true;
+					}
+					return false;
+				}
+			}
+		);
+		dialog.show();
+		
+		UmengUpdateAgent.setUpdateAutoPopup( false );
+		UmengUpdateAgent.forceUpdate( this );
+		UmengUpdateAgent.setUpdateListener 
+		(
+			new UmengUpdateListener() 
+			{
+			    public void onUpdateReturned( int updateStatus, UpdateResponse updateInfo ) 
+			    {
+			    	if( dialog != null )
+			    	{
+			    		dialog.dismiss();
+			    	}
+			        switch( updateStatus ) 
+			        {
+			        case UpdateStatus.Yes:
+			        	if( updateInfo.version.indexOf( "F" ) != -1 )
+				        {
+				        	force = true;
+				        }
+				        UmengUpdateAgent.showUpdateDialog( MainActivity.this, updateInfo );
+			            break;
+			        case UpdateStatus.No:
+			            Toast.makeText( MainActivity.this, "已经是最新版本", Toast.LENGTH_SHORT ).show();
+			            break;
+			        case UpdateStatus.Timeout:
+			        	Toast.makeText( MainActivity.this, "检查更新超时", Toast.LENGTH_SHORT ).show();
+			            break;
+			        }
+			    }
+			}
+		);
+		UmengUpdateAgent.setDialogListener
+		(
+			new UmengDialogButtonListener() 
+			{
+			    public void onClick( int status ) 
+			    {
+			        switch( status ) 
+			        {
+			        case UpdateStatus.Update:			            
+			            break;
+			        case UpdateStatus.NotNow:
+			            if( force == true )
+			            {
+			            	MyApplication.getInstance().logout();
+			            }
+			            else
+			            {
+			            	SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );
+			        		SharedPreferences.Editor editor = shared.edit();
+			        		editor.putBoolean( "force_update", false );
+			        		editor.commit();
+			            }
+			            break;
+			        }
+			    }
+			}
+		);
+	}
+	
+	private void switchState( int state ) 
+	{
+        if( nowState == state )
+        {
+            return;
+        }
+ 
+        nowState = state;
+        radioButton1.setChecked( false );
+        radioButton2.setChecked( false );
+        radioButton3.setChecked( false );
+        radioButton4.setChecked( false );
+        radioButton5.setChecked( false );
+ 
+        switch( nowState ) 
+        {
+            case 0:
+            	radioButton1.setChecked( true );
+            	tabHost.setCurrentTabByTag( "tab1" );
+				changeTextColor( Color.WHITE, Color.BLACK, Color.BLACK, Color.BLACK, Color.BLACK );
+                break;
+            case 1:
+            	clearNumber2();
+            	radioButton2.setChecked( true );
+				tabHost.setCurrentTabByTag( "tab2" );
+				changeTextColor( Color.BLACK, Color.WHITE, Color.BLACK, Color.BLACK, Color.BLACK );
+                break;
+            case 2:
+            	clearNumber3();
+            	radioButton3.setChecked( true );
+            	tabHost.setCurrentTabByTag( "tab3" );
+				changeTextColor( Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK, Color.BLACK );
+                break;
+            case 3:
+            	clearNumber4();
+            	radioButton4.setChecked( true );
+            	tabHost.setCurrentTabByTag( "tab4" );
+				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK );
+                break;
+            case 4:
+            	radioButton5.setChecked( true );
+            	tabHost.setCurrentTabByTag( "tab5" );
+				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE );
+                break;
+            default:
+                break;
+        }
+    }
+
+	public void onCheckedChanged( CompoundButton buttonView, boolean isChecked )
+	{
+        if( isChecked ) 
+        {
+            switch( buttonView.getId() ) 
+            {
+            case R.id.main_tab_1:
+                switchState( 0 );
+                break;
+            case R.id.main_tab_2:
+                switchState( 1 );
+                break;
+            case R.id.main_tab_3:
+                switchState( 2 );
+                break;
+            case R.id.main_tab_4:
+                switchState( 3 );
+                break; 
+            case R.id.main_tab_5:
+                switchState( 4 );
+                break; 
+            default:
+                break;
+            }
+        }
+    }
 }

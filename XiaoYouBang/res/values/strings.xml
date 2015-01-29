@@ -57,7 +57,8 @@
     <string name="tab_1">主页</string>
     <string name="tab_2">问过</string>
     <string name="tab_3">答过</string>
-    <string name="tab_4">校友录</string>
+    <string name="tab_4">评论</string>
+    <string name="tab_5">校友录</string>
     <string name="friend_info_1">他答过我</string>
     <string name="friend_info_2">我答过他</string>
     <string name="friend_info_3">注册邀请人</string>
@@ -77,6 +78,7 @@
     <string name="tab_text_4_7">退出登录</string>
     <string name="tab_text_4_8">输入原密码</string>
     <string name="tab_text_4_9">我的回答</string>
+    <string name="tab_text_5_1">回复我的评论</string>
     <string name="pop_text_1">回复</string>
     <string name="pop_text_2">复制</string>
     <string name="invite_text_1">输入姓名，或点击头像选择</string>

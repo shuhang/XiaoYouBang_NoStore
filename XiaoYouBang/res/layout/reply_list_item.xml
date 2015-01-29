@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/reply_list_item_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/reply_list_item_bg"
+    	android:layout_marginTop="12dp"
+        >
+        
+        <TextView 
+	        android:id="@+id/reply_list_item_title_temp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="12dp"
+	        android:textSize="@dimen/text_size_3"
+	        android:textColor="#ccc"
+	        android:layout_marginLeft="12dp"
+	        />
+        
+        <TextView 
+	        android:id="@+id/reply_list_item_title_name1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/reply_list_item_title_temp"
+	        android:layout_marginTop="2dp"
+	        android:singleLine="true"
+	        android:gravity="left"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        android:textSize="@dimen/text_size_2"
+	        android:textColor="#ccc"
+	        android:paddingLeft="6dp"
+	        android:paddingRight="6dp"
+	        android:paddingTop="6dp"
+	        android:paddingBottom="6dp"
+	        />
+	    
+	    <ImageView 
+	        android:id="@+id/reply_list_item_head"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/reply_list_item_title_name1"
+	        android:contentDescription="@string/app_name"
+	        android:layout_marginTop="6dp"
+	        android:layout_marginLeft="12dp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/reply_list_item_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_2"
+	        android:textColor="@color/black"
+	        android:layout_alignTop="@+id/reply_list_item_head"
+	        android:layout_toRightOf="@+id/reply_list_item_head"
+	        android:layout_marginLeft="15dp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/reply_list_item_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_3"
+	        android:textColor="@color/gray"
+	        android:layout_alignTop="@+id/reply_list_item_name"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="12dp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/reply_list_item_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxLines="2"
+	        android:ellipsize="end"
+	        android:textSize="@dimen/text_size_2"
+	        android:textColor="@color/heavy_gray"
+	        android:layout_alignLeft="@+id/reply_list_item_name"
+	        android:layout_below="@+id/reply_list_item_name"
+	        android:layout_alignRight="@+id/reply_list_item_time"
+	        android:layout_marginTop="10dp"
+	        android:lineSpacingMultiplier="1.2"
+	        />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#bbb"
+	        android:layout_below="@+id/reply_list_item_info"
+	        android:layout_marginTop="9dp"
+	        />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

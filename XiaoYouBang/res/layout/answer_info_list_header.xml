@@ -15,6 +15,7 @@
         android:gravity="left"
         android:textSize="@dimen/text_size_1"
         android:textColor="@color/heavy_gray"
+        android:ellipsize="end"
         android:background="@color/light_gray"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
@@ -144,13 +145,24 @@
         android:gravity="left"
 	    />
     
+    <TextView 
+	    android:id="@+id/answer_info_list_header_edit_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_size_3"
+	    android:textColor="@color/gray"
+	    android:layout_below="@+id/answer_info_list_header_answer"
+	    android:layout_alignLeft="@+id/answer_info_list_header_answer"
+	    android:layout_marginTop="6dp"
+	    />
+    
 
     <RelativeLayout 
         android:id="@+id/answer_info_list_header_praise_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_red"
-        android:layout_below="@+id/answer_info_list_header_answer"
+        android:layout_below="@+id/answer_info_list_header_edit_time"
         android:layout_marginTop="10dp"
         >
 	    
