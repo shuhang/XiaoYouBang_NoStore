@@ -59,7 +59,7 @@
         android:layout_below="@+id/comment_list_item_name"
         android:layout_marginTop="10dp"
         android:layout_marginRight="12dp"
-        android:lineSpacingMultiplier="1.2"
+        android:lineSpacingMultiplier="1.3"
         />
     
     <View

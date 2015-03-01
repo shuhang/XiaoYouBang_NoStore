@@ -1,19 +1,27 @@
 package com.pku.xiaoyoubang.tool;
 
 import android.annotation.SuppressLint;
+import android.os.Environment;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 
 public class Information 
 {
-	public static String Server_Url = "http://118.186.214.42:5000";
+	public static String Server_Url = "http://118.186.214.42:4000";
 	
 	@SuppressLint("SdCardPath")
 	public static String Image_Path = "/data/data/com.pku.xiaoyoubang/head_image/";
 	@SuppressLint("SdCardPath")
+	public static String Temp_Image_Path = "/data/data/com.pku.xiaoyoubang/temp_image/";
+	@SuppressLint("SdCardPath")
 	public static String File_Path = "/data/data/com.pku.xiaoyoubang/question/";
 	
+	public static String Store_Path = Environment.getExternalStorageDirectory().toString() + "/xiaoyoubang";
+	
+	public static String Loader_Path = "/data/data/com.pku.xiaoyoubang/cache_image/";
+	
 	public static DisplayImageOptions options;
+	public static DisplayImageOptions options_image;
 	/**
 	 *  User Information
 	 */

@@ -86,7 +86,7 @@
 	        android:layout_below="@+id/reply_list_item_name"
 	        android:layout_alignRight="@+id/reply_list_item_time"
 	        android:layout_marginTop="10dp"
-	        android:lineSpacingMultiplier="1.2"
+	        android:lineSpacingMultiplier="1.3"
 	        />
 	    
 	    <View

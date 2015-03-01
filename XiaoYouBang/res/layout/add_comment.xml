@@ -62,7 +62,7 @@
 	    android:paddingTop="15dp"
 	    android:paddingBottom="10dp"
 	    android:maxLength="500"
-	    android:lineSpacingMultiplier="1.2"
+	    android:lineSpacingMultiplier="1.3"
 	    android:textSize="@dimen/text_size_1"
 	    android:hint="@string/add_comment_text2"
 		android:inputType="textMultiLine"

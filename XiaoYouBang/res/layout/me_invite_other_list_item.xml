@@ -60,7 +60,7 @@
 			android:layout_alignLeft="@+id/me_invite_other_temp1"
 			android:layout_marginTop="15dp"
 			android:layout_marginRight="12dp"
-			android:lineSpacingMultiplier="1.2"
+			android:lineSpacingMultiplier="1.3"
 			android:layout_marginLeft="10dp"
 			/>
 

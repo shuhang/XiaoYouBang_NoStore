@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="2"
-        android:lineSpacingMultiplier="1.2"
+        android:lineSpacingMultiplier="1.3"
         android:gravity="left"
         android:ellipsize="end"
         android:textSize="@dimen/text_size_2"

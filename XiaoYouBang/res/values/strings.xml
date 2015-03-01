@@ -13,6 +13,7 @@
     <string name="add_question_hint2">请补充你的想法、要求等</string>
     <string name="add_answer_text1">添加回答</string>
     <string name="add_answer_hint1">写下答案、建议、参考</string>
+    <string name="add_picture_text1">添加照片</string>
     <string name="question_text_1">回答</string>
     <string name="question_text_2">赞</string>
     <string name="question_text_3">评论</string>
@@ -79,6 +80,7 @@
     <string name="tab_text_4_8">输入原密码</string>
     <string name="tab_text_4_9">我的回答</string>
     <string name="tab_text_5_1">回复我的评论</string>
+    <string name="tab_text_5_2">校友</string>
     <string name="pop_text_1">回复</string>
     <string name="pop_text_2">复制</string>
     <string name="invite_text_1">输入姓名，或点击头像选择</string>
@@ -92,6 +94,9 @@
     <string name="invite_text_9">你邀请</string>
     <string name="invite_text_10">回答</string>
     <string name="invite_text_11">选择邀请人</string>
+    
+    <string name="temp_text_1">选择文件夹</string>
+    <string name="temp_text_2">选择照片</string>
     
     <string name="start_1">与校友分享你的</string>
     <string name="start_2">智慧、资源与人脉</string>

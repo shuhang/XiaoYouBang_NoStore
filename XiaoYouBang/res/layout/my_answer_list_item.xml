@@ -68,7 +68,7 @@
         android:layout_below="@+id/my_answer_list_item_name"
         android:layout_alignRight="@+id/my_answer_list_item_time"
         android:layout_marginTop="10dp"
-        android:lineSpacingMultiplier="1.2"
+        android:lineSpacingMultiplier="1.3"
         />
     
     <TextView 

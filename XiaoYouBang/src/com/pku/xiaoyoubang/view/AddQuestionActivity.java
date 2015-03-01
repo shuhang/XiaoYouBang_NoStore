@@ -1,11 +1,16 @@
 package com.pku.xiaoyoubang.view;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
@@ -46,6 +51,9 @@ public class AddQuestionActivity extends Activity
 {
 	private Button buttonBack;
 	private Button buttonFinish;
+	private Button buttonPicture;
+	
+	private TextView textView;
 	
 	private EditText textTitle;
 	private EditText textInfo;
@@ -61,6 +69,11 @@ public class AddQuestionActivity extends Activity
 	private String info;
 	private String time;
 	
+	private ArrayList< String > pictureListBig = new ArrayList< String >();
+	private ArrayList< String > pictureListSmall = new ArrayList< String >();
+	
+	private int index;
+	private ArrayList< String > pictureList = new ArrayList< String >();
 	@SuppressLint("HandlerLeak")
 	protected void onCreate( Bundle savedInstanceState )
 	{
@@ -68,21 +81,34 @@ public class AddQuestionActivity extends Activity
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		MyApplication.getInstance().addActivity( this );
 		
+		File file1 = new File( Information.Temp_Image_Path );
+    	if( !file1.exists() )
+    		file1.mkdirs();
+		
 		handler = new Handler()
 		{
 			public void handleMessage( Message message )
-			{	
-				if( dialog != null )
-				{
-					dialog.dismiss();
-				}
+			{					
 				switch( message.what )
 				{
 				case 0 : //add success
+					if( dialog != null )
+					{
+						dialog.dismiss();
+					}
 					addQuestionSuccess();
 					break;
-				case 1 : //add failed					
-					showError( "添加提问失败" );
+				case 1 : //add failed			
+					if( dialog != null )
+					{
+						dialog.dismiss();
+					}
+					showError( "发布失败" );
+					break;
+				case 2 : //upload success
+					index ++;
+					pictureList.add( ( String ) message.obj );
+					judgeAdd();
 					break;
 				}
 			}
@@ -149,6 +175,22 @@ public class AddQuestionActivity extends Activity
 			}
 		);
 		
+		buttonPicture = ( Button ) findViewById( R.id.add_question_picture );
+		buttonPicture.setOnClickListener
+		(
+			new OnClickListener()
+			{
+				public void onClick( View view )
+				{
+					if( Tool.isFastDoubleClick() )
+					{
+						return;
+					}
+					addPicture();
+				}
+			}
+		);
+		
 		textTitle.setOnFocusChangeListener
 		(
 			new OnFocusChangeListener()
@@ -177,6 +219,14 @@ public class AddQuestionActivity extends Activity
 		);
 	}
 	
+	private void addPicture()
+	{
+		Intent intent = new Intent( this, AddPictureActivity.class );
+		intent.putStringArrayListExtra( "pictureListBig", pictureListBig );
+		intent.putStringArrayListExtra( "pictureListSmall", pictureListSmall );
+		startActivityForResult( intent, 0 );
+	}
+	
 	private void addQuestionSuccess()
 	{
 		QuestionEntity entity = new QuestionEntity();
@@ -196,7 +246,7 @@ public class AddQuestionActivity extends Activity
 		entity.setPKU( Information.PKU_Value );
 		entity.setPraiseCount( 0 );
 		entity.setSex( Information.Sex );
-		entity.setUpdate( false );
+		entity.setModified( false );
 		entity.setModifyTime( time );
 		entity.setUpdateTime( time );
 		entity.setUserHeadUrl( Information.HeadUrl );
@@ -204,6 +254,9 @@ public class AddQuestionActivity extends Activity
 		entity.setUserName( Information.Name );
 		entity.setNew( false );
 		entity.setInvisible( box.isChecked() );
+		entity.setImageList( pictureListSmall );
+		
+		Tool.deleteAllTempImage();
 		
 		Intent intent = getIntent();
 		intent.putExtra( "question", entity );
@@ -219,9 +272,14 @@ public class AddQuestionActivity extends Activity
 			showError( "标题不能为空" );
 			return;
 		}
-		else if( title.length() == 36 && title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
+		else if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
 		{
-			showError( "标题必须包含问号且不能超过40字" );
+			if( title.length() < 36 ) title += "？";
+			else
+			{
+				title = title.substring( 0, title.length() - 1 ) + "？";
+			}
+			showError( "标题必须包含问号且不能超过36字" );
 			return;
 		}
 		
@@ -231,19 +289,20 @@ public class AddQuestionActivity extends Activity
 			showError( "为了他人能更好地回答你的问题，请用力填写描述" );
 			return;
 		}
-		startAdd( title, info );
+		
+		index = 0;
+		pictureList.clear();
+		startAdd();
 	}
 	
-	private void startAdd( final String title, final String info )
+	private void startAdd()
 	{
 		if( Tool.isNetworkConnected( this ) == true )
 		{
 			dialog = new Dialog( this, R.style.dialog_progress );
 			LayoutInflater inflater = LayoutInflater.from( this );  
 			View view = inflater.inflate( R.layout.dialog_progress, null );
-			TextView textView = ( TextView ) view.findViewById( R.id.dialog_textview );
-			textView.setText( "正在添加提问" );
-			
+			textView = ( TextView ) view.findViewById( R.id.dialog_textview );		
 			WindowManager.LayoutParams layoutParams = dialog.getWindow().getAttributes();
 			layoutParams.alpha = 0.8f;
 			dialog.getWindow().setAttributes( layoutParams );
@@ -270,16 +329,7 @@ public class AddQuestionActivity extends Activity
 			);
 			dialog.show();
 			
-			new Thread
-	    	(
-	    		new Thread()
-	    		{
-	    			public void run()
-	    			{
-	    				doAdd( title, info );
-	    			}
-	    		}
-	    	).start();
+			judgeAdd();
 		}
 		else
 		{
@@ -287,7 +337,124 @@ public class AddQuestionActivity extends Activity
 		}
 	}
 	
-	private void doAdd( final String title, final String info )
+	private void judgeAdd()
+	{
+		if( pictureListBig.size() == index )
+		{
+			textView.setText( "正在添加提问" );
+		}
+		else
+		{
+			textView.setText( "正在上传第" + ( index + 1 ) + "张照片" );
+		}
+		new Thread
+    	(
+    		new Thread()
+    		{
+    			public void run()
+    			{
+    				if( pictureListBig.size() == index )
+    				{
+    					doAddQuestion();
+    				}
+    				else
+    				{
+    					doUploadImage();
+    				}
+    			}
+    		}
+    	).start();
+	}
+	
+	private void doUploadImage()
+	{
+		final String urlString = Information.Server_Url + "/api/image?token=" + Information.Token;
+		try
+		{
+			URL url = new URL( urlString );
+			connection = ( HttpURLConnection ) url.openConnection();  
+			connection.setRequestProperty( "Connection", "keep-alive" );
+			connection.setRequestMethod( "POST" );
+			connection.setConnectTimeout( 10000 );
+			connection.setReadTimeout( 60000 );
+			connection.setDoOutput( true );
+			
+            String symbol = pictureListBig.get( index ).substring( pictureListBig.get( index ).lastIndexOf( "." ) + 1, pictureListBig.get( index ).length() );
+            if( symbol.compareToIgnoreCase( "jpg" ) == 0 || symbol.compareToIgnoreCase( "jpeg" ) == 0 )
+            {
+                symbol = "jpeg";
+            }
+            else
+            {
+            	symbol = "png";
+            }
+			String contentDisposition = "Content-Disposition: form-data; name=\"head\"; filename=\"" + pictureListBig.get( index ) + "\"";
+            String contentType = "Content-Type: image/" + symbol;
+            String BOUNDRY = "----WebKitFormBoundaryabcdefghijklmnop";
+            connection.setRequestProperty( "Content-Type", "multipart/form-data; boundary=" + BOUNDRY );
+            
+            DataOutputStream dataOS = new DataOutputStream( connection.getOutputStream());
+            dataOS.writeBytes( "--" + BOUNDRY + "\r\n" );
+            dataOS.writeBytes( contentDisposition + "\r\n" );
+            dataOS.writeBytes( contentType + "\r\n\r\n" );
+            
+			InputStream is = new FileInputStream( new File( pictureListBig.get( index ) ) );
+            byte[] buffer = new byte[ 1024 ];
+            int count = 0;  
+            while( ( count = is.read( buffer ) ) != -1 )  
+            {  
+                dataOS.write( buffer, 0, count );
+            }
+            dataOS.writeBytes( "\r\n--" + BOUNDRY + "--\r\n" );
+            
+            dataOS.flush();
+            dataOS.close();
+            is.close();
+            
+			final int responseCode = connection.getResponseCode();
+			if( responseCode == 200 )
+			{
+				BufferedReader reader = new BufferedReader( new InputStreamReader( connection.getInputStream() ) );
+				String temp1 = null;
+				StringBuilder value = new StringBuilder();
+				while( ( temp1 = reader.readLine() ) != null )
+				{
+					value.append( temp1 );
+				}
+				
+				JSONObject jsonObject = new JSONObject( value.toString() );
+				if( jsonObject.getInt( "result" ) == 9000 )
+				{
+					Message message = handler.obtainMessage();
+					message.what = 2;
+					message.obj = jsonObject.getString( "url" );
+					handler.sendMessage( message );
+				}
+				else
+				{
+					handler.sendEmptyMessage( 1 );
+				}
+			}
+			else
+			{
+				handler.sendEmptyMessage( 1 );
+			}
+		}
+		catch( Exception ex )
+		{
+			ex.printStackTrace();
+			handler.sendEmptyMessage( 1 );
+		}
+		finally
+		{
+			if( connection != null )
+			{
+				connection.disconnect();
+			}
+		}
+	}
+	
+	private void doAddQuestion()
 	{
 		final String urlString = Information.Server_Url + "/api/question";
 		try
@@ -307,6 +474,14 @@ public class AddQuestionActivity extends Activity
 			json.put( "title", title );
 			json.put( "info", info );
 			json.put( "invisible", box.isChecked() );
+			
+			JSONArray array = new JSONArray();
+			for( String temp : pictureList )
+			{
+				array.put( temp );
+			}
+			json.put( "images", array );
+			
 			connection.getOutputStream().write( json.toString().getBytes() );			
 
 			final int responseCode = connection.getResponseCode();
@@ -350,6 +525,24 @@ public class AddQuestionActivity extends Activity
 		}
 	}
 	
+	protected void onActivityResult( int requestCode, int resultCode, Intent data ) 
+	{
+		super.onActivityResult( requestCode, resultCode, data );
+		if( resultCode == 1 )
+		{
+			pictureListSmall = data.getStringArrayListExtra( "pictureListSmall" );
+			pictureListBig = data.getStringArrayListExtra( "pictureListBig" );
+			if( pictureListSmall.size() > 0 )
+			{
+				buttonPicture.setText( "" + pictureListSmall.size() );
+			}
+			else
+			{
+				buttonPicture.setText( "" );
+			}
+		}
+	}
+	
 	private void showError( String text )
 	{
 		Toast.makeText( this, text, Toast.LENGTH_SHORT ).show();
@@ -357,6 +550,7 @@ public class AddQuestionActivity extends Activity
 	
 	private void back()
 	{
+		Tool.deleteAllTempImage();
 		setResult( 1 );
 		finish();
 	}

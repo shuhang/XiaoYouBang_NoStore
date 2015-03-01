@@ -14,12 +14,12 @@ import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -49,6 +49,7 @@ import com.pku.xiaoyoubang.view.TabActivity3;
 import com.pku.xiaoyoubang.view.TabActivity4;
 import com.pku.xiaoyoubang.view.TabActivity5;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.message.PushAgent;
 import com.umeng.update.UmengDialogButtonListener;
 import com.umeng.update.UmengUpdateAgent;
 import com.umeng.update.UmengUpdateListener;
@@ -83,7 +84,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		{
 			MyService.MyBinder myBinder = ( MyService.MyBinder ) service;
 			myService = myBinder.getService();
-			Log.e( "ff", "start1" );
+
 			myService.startTab2();
 			myService.startTab3();
 			myService.startTab4();
@@ -104,7 +105,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 				showNumber3( message.arg1 );
 				break;
 			case 4 :
-				Log.e( "aa", "get message" );
 				showNumber4( message.arg1 );
 				break;
 			}
@@ -115,6 +115,9 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 	{
 		super.onCreate( savedInstanceState );
 		
+		PushAgent mPushAgent = PushAgent.getInstance( this );
+		mPushAgent.enable();
+
 		UmengUpdateAgent.setUpdateOnlyWifi( false );
 		
 		SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );
@@ -125,7 +128,12 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		MyApplication.getInstance().addActivity( this );
 		
-		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder( this ).build();
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration
+		.Builder( getApplicationContext() )
+		.discCacheSize( 50 * 1024 * 1024 )//
+		.discCacheFileCount( 100 )//缓存一百张图片
+		.writeDebugLogs()
+		.build();
 		ImageLoader.getInstance().init( config );
 		
 		Information.options = new DisplayImageOptions.Builder()
@@ -134,6 +142,15 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		.showImageOnFail( R.drawable.head_hidden )
 		.cacheInMemory( true )
 		.cacheOnDisk( true )
+		.build();
+		
+		Information.options_image = new DisplayImageOptions.Builder()
+		.showImageOnLoading( R.drawable.picture )
+		.showImageForEmptyUri( R.drawable.picture )
+		.showImageOnFail( R.drawable.picture )
+		.cacheInMemory( false )
+		.cacheOnDisk( true )
+		.bitmapConfig( Bitmap.Config.RGB_565 )
 		.build();
 		
 		File file1 = new File( Information.Image_Path );
@@ -146,6 +163,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		
 		judgeLoginStatus();
 	}
+	
 	
 	private void judgeLoginStatus()
 	{
@@ -296,6 +314,16 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		super.onResume();
 		MobclickAgent.onResume( this );
 
+		if( myService != null )
+		{
+			myService.startTab2();
+			myService.startTab3();
+			myService.startTab4();
+		}
+	}
+	
+	public static void startMessage()
+	{
 		if( myService != null )
 		{
 			myService.startTab2();
