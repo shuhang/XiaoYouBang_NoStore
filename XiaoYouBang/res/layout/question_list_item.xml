@@ -53,11 +53,11 @@
         android:id="@+id/question_list_item_image_symbol"
         android:layout_width="15dp"
         android:layout_height="10dp"
-        android:layout_alignTop="@+id/question_list_item_time"
-        android:layout_toLeftOf="@+id/question_list_item_point_up"
-        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/question_list_item_name"
+        android:layout_toRightOf="@+id/question_list_item_head"
+        android:layout_marginLeft="110dp"
         android:src="@drawable/pic_icon"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="5dp"
         android:contentDescription="@string/app_name"
         />
     

@@ -97,6 +97,9 @@
     
     <string name="temp_text_1">选择文件夹</string>
     <string name="temp_text_2">选择照片</string>
+    <string name="temp_text_3">相册</string>
+    <string name="temp_text_4">拍照</string>
+    <string name="temp_text_5">取消</string>
     
     <string name="start_1">与校友分享你的</string>
     <string name="start_2">智慧、资源与人脉</string>

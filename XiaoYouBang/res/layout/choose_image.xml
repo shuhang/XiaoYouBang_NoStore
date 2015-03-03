@@ -56,11 +56,12 @@
         android:cacheColorHint="@android:color/transparent"
         android:clipChildren="true"
         android:gravity="center"
-        android:horizontalSpacing="3dip"
+        android:horizontalSpacing="5dp"
         android:listSelector="@android:color/transparent"
         android:numColumns="3"
+        android:layout_marginTop="5dp"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="3dip" >
+        android:verticalSpacing="5dp" >
     </GridView>
 
 </LinearLayout>

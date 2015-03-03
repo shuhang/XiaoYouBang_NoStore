@@ -37,8 +37,20 @@
         android:layout_marginLeft="15dp"
         />
     
+    <ImageView
+        android:id="@+id/answer_list_item_image_symbol"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/answer_list_item_name"
+        android:layout_toRightOf="@+id/answer_list_item_head"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/pic_icon"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
+        />
+    
     <TextView 
-         android:id="@+id/answer_list_item_comment_count_temp"
+        android:id="@+id/answer_list_item_comment_count_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_text_3"

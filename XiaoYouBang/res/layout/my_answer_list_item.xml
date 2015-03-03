@@ -56,6 +56,18 @@
         android:layout_marginRight="12dp"
         />
     
+    <ImageView
+        android:id="@+id/my_answer_list_item_image_symbol"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/my_answer_list_item_name"
+        android:layout_toRightOf="@+id/my_answer_list_item_head"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/pic_icon"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
+        />
+    
     <TextView 
         android:id="@+id/my_answer_list_item_answer"
         android:layout_width="wrap_content"

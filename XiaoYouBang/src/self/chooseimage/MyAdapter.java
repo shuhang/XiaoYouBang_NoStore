@@ -68,7 +68,6 @@ public class MyAdapter extends CommonAdapter<String>
 
 			}
 		});
-		
 		/**
 		 * 已经选择过的图片，显示出选择过的效果
 		 */
@@ -77,6 +76,5 @@ public class MyAdapter extends CommonAdapter<String>
 			mSelect.setImageResource(R.drawable.pictures_selected);
 			mImageView.setColorFilter(Color.parseColor("#77000000"));
 		}
-
 	}
 }

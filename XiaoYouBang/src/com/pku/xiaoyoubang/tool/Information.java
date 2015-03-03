@@ -21,7 +21,8 @@ public class Information
 	public static String Loader_Path = "/data/data/com.pku.xiaoyoubang/cache_image/";
 	
 	public static DisplayImageOptions options;
-	public static DisplayImageOptions options_image;
+	public static DisplayImageOptions options_image_big;
+	public static DisplayImageOptions options_image_small;
 	/**
 	 *  User Information
 	 */

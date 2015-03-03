@@ -65,7 +65,7 @@
     <EditText 
         android:id="@+id/invite_other_input_name"
         android:layout_height="30dp"
-        android:layout_width="225dp"
+        android:layout_width="245dp"
         android:singleLine="true"
         android:background="@null"
         android:textColor="@color/black"

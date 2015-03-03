@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/photo_choose_dialog_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_gallery_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/temp_text_3"
+        android:textSize="@dimen/text_size_2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/photo_choose_dialog_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_camera_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/temp_text_4"
+        android:textSize="@dimen/text_size_2" />
+
+    <Button
+        android:id="@+id/photo_choose_dialog_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/photo_cancel_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/temp_text_5"
+        android:textSize="@dimen/text_size_2" />
+
+</LinearLayout>

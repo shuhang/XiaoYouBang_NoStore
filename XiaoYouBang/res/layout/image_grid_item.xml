@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pku.xiaoyoubang.selfview.SquareLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="#00000000"
+    >
+    
+    <ImageView 
+	        android:id="@+id/image_grid_item_image"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:contentDescription="@string/app_name"
+	        android:background="#00000000"
+	        />
+        
+        <TextView 
+            android:id="@+id/image_grid_item_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="invisible"
+	        android:layout_alignBottom="@+id/image_grid_item_image"
+	        android:layout_alignRight="@+id/image_grid_item_image"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_4"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginRight="5dp"
+            />
+
+</com.pku.xiaoyoubang.selfview.SquareLayout >

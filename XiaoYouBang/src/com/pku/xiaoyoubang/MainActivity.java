@@ -132,7 +132,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		.Builder( getApplicationContext() )
 		.discCacheSize( 50 * 1024 * 1024 )//
 		.discCacheFileCount( 100 )//缓存一百张图片
-		.writeDebugLogs()
 		.build();
 		ImageLoader.getInstance().init( config );
 		
@@ -144,10 +143,16 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		.cacheOnDisk( true )
 		.build();
 		
-		Information.options_image = new DisplayImageOptions.Builder()
-		.showImageOnLoading( R.drawable.picture )
-		.showImageForEmptyUri( R.drawable.picture )
-		.showImageOnFail( R.drawable.picture )
+		Information.options_image_big = new DisplayImageOptions.Builder()
+		.cacheInMemory( false )
+		.cacheOnDisk( true )
+		.bitmapConfig( Bitmap.Config.RGB_565 )
+		.build();
+		
+		Information.options_image_small = new DisplayImageOptions.Builder()
+		.showImageOnLoading( R.drawable.image_download )
+		.showImageForEmptyUri( R.drawable.image_download )
+		.showImageOnFail( R.drawable.image_download )
 		.cacheInMemory( false )
 		.cacheOnDisk( true )
 		.bitmapConfig( Bitmap.Config.RGB_565 )

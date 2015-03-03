@@ -175,6 +175,7 @@ public class AddAnswerActivity extends Activity
 		layout = ( RelativeLayout ) findViewById( R.id.add_answer_layout2 );
 		
 		box = ( CheckBox ) findViewById( R.id.add_answer_checkbox );
+		box.setEnabled( false );
 		box.setOnCheckedChangeListener
 		(
 			new OnCheckedChangeListener()
@@ -202,6 +203,10 @@ public class AddAnswerActivity extends Activity
 			{
 				public void onClick( View view )
 				{
+					if( Tool.isFastDoubleClick() )
+					{
+						return;
+					}
 					back();
 				}
 			}
@@ -286,7 +291,7 @@ public class AddAnswerActivity extends Activity
 			}
 			else
 			{
-				textView.setText( "正在上传第" + ( index + 1 ) + "张照片" );
+				textView.setText( "正在上传第" + ( index + 1 + pictureListSmall.size() ) + "张照片" );
 			}
 		}
 		new Thread
@@ -408,19 +413,9 @@ public class AddAnswerActivity extends Activity
 	
 	private void doEdit()
 	{
-		final String urlString = Information.Server_Url + "/api/answer/" + AnswerInfoActivity.entity.getId();
 		try
 		{
-			URL url = new URL( urlString );
-			connection = ( HttpURLConnection ) url.openConnection();  
-			connection.setRequestProperty( "Connection", "keep-alive" );
-			connection.setRequestProperty( "Content-Type", "application/json" );
-			connection.setRequestMethod( "PUT" );
-			connection.setConnectTimeout( 10000 );
-			connection.setReadTimeout( 30000 );
-			connection.setDoOutput( true );
-			connection.setDoInput( true );
-			
+			final String urlString = Information.Server_Url + "/api/answer/" + AnswerInfoActivity.entity.getId();
 			JSONObject json = new JSONObject();
 			json.put( "token", Information.Token );
 			json.put( "content", info );
@@ -430,23 +425,16 @@ public class AddAnswerActivity extends Activity
 				array.put( temp );
 			}
 			json.put( "images", array );
-			connection.getOutputStream().write( json.toString().getBytes() );			
-
-			final int responseCode = connection.getResponseCode();
-			if( responseCode == 200 )
+			JSONObject result = Tool.doPutWithUrl( urlString, json );
+			if( result == null )
 			{
-				BufferedReader reader = new BufferedReader( new InputStreamReader( connection.getInputStream() ) );
-				String temp1 = null;
-				StringBuilder value = new StringBuilder();
-				while( ( temp1 = reader.readLine() ) != null )
+				handler.sendEmptyMessage( 3 );
+			}
+			else
+			{
+				if( result.getInt( "result" ) == 4000 )
 				{
-					value.append( temp1 );
-				}
-
-				JSONObject jsonObject = new JSONObject( value.toString() );
-				if( jsonObject.getInt( "result" ) == 4000 )
-				{
-					time = jsonObject.getString( "editTime" );
+					time = result.getString( "editTime" );
 					handler.sendEmptyMessage( 2 );
 				}
 				else
@@ -454,21 +442,10 @@ public class AddAnswerActivity extends Activity
 					handler.sendEmptyMessage( 3 );
 				}
 			}
-			else
-			{
-				handler.sendEmptyMessage( 3 );
-			}
 		}
 		catch( Exception ex )
 		{
 			handler.sendEmptyMessage( 3 );
-		}
-		finally
-		{
-			if( connection != null )
-			{
-				connection.disconnect();
-			}
 		}
 	}
 	
@@ -517,18 +494,9 @@ public class AddAnswerActivity extends Activity
 	
 	private void doAddAnswer()
 	{
-		final String urlString = Information.Server_Url + "/api/answer";
 		try
 		{
-			URL url = new URL( urlString );
-			connection = ( HttpURLConnection ) url.openConnection();  
-			connection.setRequestProperty( "Connection", "keep-alive" );
-			connection.setRequestProperty( "Content-Type", "application/json" );
-			connection.setRequestMethod( "POST" );
-			connection.setConnectTimeout( 10000 );
-			connection.setReadTimeout( 30000 );
-			connection.setDoOutput( true );
-			connection.setDoInput( true );
+			final String urlString = Information.Server_Url + "/api/answer";
 			
 			JSONObject json = new JSONObject();
 			json.put( "token", Information.Token );
@@ -541,25 +509,18 @@ public class AddAnswerActivity extends Activity
 				array.put( temp );
 			}
 			json.put( "images", array );
-
-			connection.getOutputStream().write( json.toString().getBytes() );			
-
-			final int responseCode = connection.getResponseCode();
-			if( responseCode == 200 )
+			
+			JSONObject result = Tool.doPostWithUrl( urlString, json );
+			if( result == null )
 			{
-				BufferedReader reader = new BufferedReader( new InputStreamReader( connection.getInputStream() ) );
-				String temp1 = null;
-				StringBuilder value = new StringBuilder();
-				while( ( temp1 = reader.readLine() ) != null )
+				handler.sendEmptyMessage( 1 );
+			}
+			else
+			{
+				if( result.getInt( "result" ) == 4000 )
 				{
-					value.append( temp1 );
-				}
-
-				JSONObject jsonObject = new JSONObject( value.toString() );
-				if( jsonObject.getInt( "result" ) == 4000 )
-				{
-					time = jsonObject.getString( "modifyTime" );					
-					answerId = jsonObject.getString( "id" );
+					time = result.getString( "modifyTime" );					
+					answerId = result.getString( "id" );
 					handler.sendEmptyMessage( 0 );
 				}
 				else
@@ -567,21 +528,10 @@ public class AddAnswerActivity extends Activity
 					handler.sendEmptyMessage( 1 );
 				}
 			}
-			else
-			{
-				handler.sendEmptyMessage( 1 );
-			}
 		}
 		catch( Exception ex )
 		{
 			handler.sendEmptyMessage( 1 );
-		}
-		finally
-		{
-			if( connection != null )
-			{
-				connection.disconnect();
-			}
 		}
 	}
 	
@@ -627,6 +577,7 @@ public class AddAnswerActivity extends Activity
             dataOS.writeBytes( contentType + "\r\n\r\n" );
 
             InputStream is = new FileInputStream( new File( fileName ) );
+
             byte[] buffer = new byte[ 1024 ];
             int count = 0;  
             while( ( count = is.read( buffer ) ) != -1 )  

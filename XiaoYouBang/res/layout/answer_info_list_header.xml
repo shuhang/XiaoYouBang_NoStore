@@ -145,15 +145,22 @@
         android:gravity="left"
 	    />
     
-    <TableLayout 
-        android:id="@+id/answer_info_list_header_table"
+    <com.pku.xiaoyoubang.selfview.MyGridView
+        android:id="@+id/answer_info_list_header_gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:listSelector="@android:color/transparent"
         android:layout_below="@+id/answer_info_list_header_answer"
-        />
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </com.pku.xiaoyoubang.selfview.MyGridView>
     
     <TextView 
 	    android:id="@+id/answer_info_list_header_edit_time"
@@ -161,7 +168,7 @@
 	    android:layout_height="wrap_content"
 	    android:textSize="@dimen/text_size_3"
 	    android:textColor="@color/gray"
-	    android:layout_below="@+id/answer_info_list_header_table"
+	    android:layout_below="@+id/answer_info_list_header_gridView"
 	    android:layout_alignLeft="@+id/answer_info_list_header_answer"
 	    android:layout_marginTop="6dp"
 	    />
