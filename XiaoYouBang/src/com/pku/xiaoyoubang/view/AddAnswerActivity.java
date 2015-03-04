@@ -729,8 +729,30 @@ public class AddAnswerActivity extends Activity
 	{
 		if( type == 0 )
 		{
-			Tool.deleteAllTempImage();
-			finish();
+			if( textInfo.getText().toString().equals( "" ) )
+			{
+				Tool.deleteAllTempImage();
+        		finish();
+			}
+			else
+			{
+				AlertDialog.Builder dialog = new AlertDialog.Builder( this );
+		        dialog.setTitle( "返回提示" ).setMessage( "确定返回吗？" )
+		        .setPositiveButton( "确定", new DialogInterface.OnClickListener() 
+		        {
+		        	public void onClick( DialogInterface dialog, int which ) 
+		        	{
+		        		Tool.deleteAllTempImage();
+		        		finish();
+		        	}
+		        }).setNegativeButton( "取消", new DialogInterface.OnClickListener() 
+		        {
+		        	public void onClick( DialogInterface dialog, int which ) 
+		        	{
+		        		dialog.cancel();
+		        	}
+		        }).create().show();
+			}
 		}
 		else
 		{

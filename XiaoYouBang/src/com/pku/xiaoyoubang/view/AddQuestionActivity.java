@@ -15,6 +15,7 @@ import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnKeyListener;
@@ -526,11 +527,44 @@ public class AddQuestionActivity extends Activity
 		Toast.makeText( this, text, Toast.LENGTH_SHORT ).show();
 	}
 	
+	public boolean onKeyDown( int keyCode, KeyEvent event )
+	{
+		if( keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0 )
+		{
+			back();
+			return true;
+		}
+		return false;
+	}
+	
 	private void back()
 	{
-		Tool.deleteAllTempImage();
-		setResult( 1 );
-		finish();
+		if( textTitle.getText().toString().equals( "" ) && textInfo.getText().toString().equals( "" ) )
+		{
+			Tool.deleteAllTempImage();
+    		setResult( 1 );
+    		finish();
+		}
+		else
+		{
+			AlertDialog.Builder dialog = new AlertDialog.Builder( this );
+	        dialog.setTitle( "返回提示" ).setMessage( "确定返回吗？" )
+	        .setPositiveButton( "确定", new DialogInterface.OnClickListener() 
+	        {
+	        	public void onClick( DialogInterface dialog, int which ) 
+	        	{
+	        		Tool.deleteAllTempImage();
+	        		setResult( 1 );
+	        		finish();
+	        	}
+	        }).setNegativeButton( "取消", new DialogInterface.OnClickListener() 
+	        {
+	        	public void onClick( DialogInterface dialog, int which ) 
+	        	{
+	        		dialog.cancel();
+	        	}
+	        }).create().show();
+		}
 	}
 	
 	public void onResume() 
