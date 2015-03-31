@@ -60,7 +60,7 @@
         android:lineSpacingMultiplier="1.3"
         android:gravity="left"
         android:ellipsize="end"
-        android:textSize="@dimen/text_size_2"
+        android:textSize="@dimen/text_size_3"
         android:textColor="@color/heavy_gray"
         android:background="@color/light_gray"
         android:paddingLeft="12dp"
@@ -75,7 +75,6 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
 	    android:layout_below="@+id/add_answer_question"
-	    android:layout_above="@+id/add_answer_picture"
 	    android:background="#ffffff"
 	    android:paddingLeft="10dp"
 	    android:paddingRight="10dp"
@@ -93,17 +92,17 @@
     
     <Button 
         android:id="@+id/add_answer_picture"
-        android:layout_width="40dp"
-	    android:layout_height="40dp"
-	    android:layout_above="@+id/add_answer_layout2"
+        android:layout_width="32dp"
+	    android:layout_height="32dp"
 	    android:layout_alignParentRight="true"
 	    android:layout_marginRight="15dp"
 	    android:layout_marginBottom="15dp"
 	    android:background="@drawable/picture"
 	    android:textColor="@color/white"
 	    android:gravity="center|bottom"
-	    android:paddingBottom="3dp"
+	    android:paddingBottom="1dp"
 	    android:textSize="@dimen/text_size_3"
+	    android:layout_alignParentBottom="true"
         />
 	
     <RelativeLayout 
@@ -112,6 +111,7 @@
 		android:layout_height="50dp"
 		android:layout_alignParentBottom="true"
 		android:background="@color/gray"
+		android:visibility="gone"
 		>
 		
         <CheckBox 

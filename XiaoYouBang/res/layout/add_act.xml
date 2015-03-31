@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/add_act_layout1"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/bg_red"
+		>
+			
+	    <Button 
+			android:id="@+id/add_act_button_back"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="3dp"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+			/>
+	        
+	    <TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="@string/act_text_1"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:layout_centerHorizontal="true"
+			/>
+	        
+	    <Button 
+	        android:id="@+id/add_act_finish"
+	        android:layout_width="60dp"
+	        android:layout_height="match_parent"
+	        android:text="@string/add_question_text2"
+	        android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+	        />
+	        
+	</RelativeLayout>
+	
+    <EditText 
+        android:id="@+id/add_act_input_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="90dp"
+	    android:layout_below="@+id/add_act_layout1"
+	    android:background="#ffffff"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="10dp"
+	    android:maxLength="30"
+	    android:lineSpacingMultiplier="1.3"
+	    android:textSize="@dimen/text_size_1"
+	    android:hint="@string/act_text_2"
+		android:inputType="textMultiLine"
+		android:singleLine="false"
+		android:scrollHorizontally="false"
+		android:gravity="top"
+        />
+    
+    <View
+        android:id="@+id/add_act_line1"
+       	android:layout_width="20dp"
+	    android:layout_height="1dp"
+	    android:layout_below="@+id/add_act_input_title"
+	    android:background="@color/light_gray"
+        />
+    
+    <EditText 
+	    android:id="@+id/add_act_input_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:inputType="text"
+	    android:layout_below="@+id/add_act_line1"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/edittext_bg1"
+	    android:textSize="@dimen/text_size_2"
+	    android:hint="@string/act_text_3"
+	    android:paddingLeft="15dp"
+	    android:singleLine="true"
+	    android:textColorHint="@color/gray"
+	    />
+    
+    <EditText 
+	    android:id="@+id/add_act_input_2"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:inputType="text"
+	    android:layout_below="@+id/add_act_input_1"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/edittext_bg1"
+	    android:textSize="@dimen/text_size_2"
+	    android:hint="@string/act_text_4"
+	    android:paddingLeft="15dp"
+	    android:singleLine="true"
+	    android:textColorHint="@color/gray"
+	    />
+    
+    <EditText 
+	    android:id="@+id/add_act_input_3"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:inputType="text"
+	    android:layout_below="@+id/add_act_input_2"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/edittext_bg1"
+	    android:textSize="@dimen/text_size_2"
+	    android:hint="@string/act_text_5"
+	    android:paddingLeft="15dp"
+	    android:singleLine="true"
+	    android:textColorHint="@color/gray"
+	    />
+    
+    <View
+        android:id="@+id/add_act_line2"
+       	android:layout_width="20dp"
+	    android:layout_height="1dp"
+	    android:layout_below="@+id/add_act_input_3"
+	    android:background="@color/light_gray"
+	    android:layout_marginTop="10dp"
+        />
+    
+    <EditText 
+        android:id="@+id/add_act_input_info"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/add_act_line2"
+	    android:layout_marginTop="10dp"
+	    android:background="#ffffff"
+	    android:maxLength="2000"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:lineSpacingMultiplier="1.3"
+	    android:textSize="@dimen/text_size_2"
+	    android:hint="@string/act_text_6"
+		android:inputType="textMultiLine"
+		android:singleLine="false"
+		android:scrollHorizontally="false"
+		android:gravity="top"
+        />
+    
+    <Button 
+        android:id="@+id/add_act_picture"
+        android:layout_width="32dp"
+	    android:layout_height="32dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginBottom="15dp"
+	    android:background="@drawable/picture"
+	    android:textColor="@color/white"
+	    android:gravity="center|bottom"
+	    android:paddingBottom="1dp"
+	    android:textSize="@dimen/text_size_3"
+	    android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

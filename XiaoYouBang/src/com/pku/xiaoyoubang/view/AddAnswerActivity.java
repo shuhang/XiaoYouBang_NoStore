@@ -77,7 +77,12 @@ public class AddAnswerActivity extends Activity
 	
 	private Handler handler;
 	private String time;
-	
+
+	/**
+	 *  0 : add answer
+	 *  1 : edit answer
+	 *  2 : edit act info
+	 */
 	private int type;
 	private int index;
 	private TextView textView;
@@ -94,16 +99,20 @@ public class AddAnswerActivity extends Activity
     	if( !file1.exists() )
     		file1.mkdirs();
 		
-		if( getIntent().getIntExtra( "type", 0 ) == 0 )
+    	type = getIntent().getIntExtra( "type", 0 );
+    	
+		if( type == 0 )
 		{
-			type = 0;
 			questionId = getIntent().getStringExtra( "questionId" );
 			questionTitle = getIntent().getStringExtra( "questionTitle" );
 		}
-		else
+		else if( type == 1 )
 		{
-			type = 1;
 			questionTitle = getIntent().getStringExtra( "questionTitle" );
+		}
+		else if( type == 2 )
+		{
+			questionTitle = QuestionInfoActivity.entity.getQuestionTitle();
 		}
 		
 		handler = new Handler()
@@ -145,6 +154,20 @@ public class AddAnswerActivity extends Activity
 					pictureList.add( ( String ) message.obj );
 					judgeAdd();
 					break;
+				case 5 : //add success
+					if( dialog != null )
+					{
+						dialog.dismiss();
+					}
+					editQuestionSuccess();
+					break;
+				case 6 : //add failed
+					if( dialog != null )
+					{
+						dialog.dismiss();
+					}
+					showError( "编辑活动详情失败" );
+					break;
 				}
 			}
 		};
@@ -161,17 +184,33 @@ public class AddAnswerActivity extends Activity
 		{
 			textTitle.setText( "添加回答" );
 		}
-		else
+		else if( type == 1 )
 		{
 			textTitle.setText( "编辑回答" );
 		}
+		else if( type == 2 )
+		{
+			textTitle.setText( "编辑活动详情" );
+		}
 		
 		textQuestion = ( TextView ) findViewById( R.id.add_answer_question );
-		textQuestion.setText( "问题：" + questionTitle );
-		
+		if( type == 0 || type == 1 )
+		{
+			textQuestion.setText( "问题：" + questionTitle );
+		}
+		else if( type == 2 )
+		{
+			textQuestion.setText( "活动：" + questionTitle );
+		}
 		textInfo = ( EditText ) findViewById( R.id.add_answer_input );
-		textInfo.setHint( "写下你的答案、建议、参考…" );
-		
+		if( type == 0 || type == 1 )
+		{
+			textInfo.setHint( "写下你的答案、建议、参考…" );
+		}
+		else
+		{
+			textInfo.setHint( "写下你的活动详情" );
+		}
 		layout = ( RelativeLayout ) findViewById( R.id.add_answer_layout2 );
 		
 		box = ( CheckBox ) findViewById( R.id.add_answer_checkbox );
@@ -268,6 +307,30 @@ public class AddAnswerActivity extends Activity
 				buttonPicture.setText( "" );
 			}
 		}
+		else if( type == 2 )
+		{
+			textInfo.setText( QuestionInfoActivity.entity.getQuestionInfo() );
+			LayoutParams params = new LayoutParams( LayoutParams.MATCH_PARENT, 0 );
+			params.addRule( RelativeLayout.ALIGN_PARENT_BOTTOM );
+			layout.setLayoutParams( params );
+			
+			final int count = QuestionInfoActivity.entity.getImageList().size();
+			for( int i = 0; i < count; i ++ )
+			{
+				pictureList.add( QuestionInfoActivity.entity.getImageList().get( i ) );
+				pictureListBig.add( QuestionInfoActivity.entity.getImageList().get( i ).replaceAll( "_small", "" ) );
+				pictureListSmall.add( QuestionInfoActivity.entity.getImageList().get( i ) );
+			}
+			
+			if( pictureListSmall.size() > 0 )
+			{
+				buttonPicture.setText( "" + pictureListSmall.size() );
+			}
+			else
+			{
+				buttonPicture.setText( "" );
+			}
+		}
 	}
 	
 	private void judgeAdd()
@@ -283,11 +346,22 @@ public class AddAnswerActivity extends Activity
 				textView.setText( "正在上传第" + ( index + 1 ) + "张照片" );
 			}
 		}
-		else
+		else if( type == 1 )
 		{
 			if( pictureListBigNew.size() == index )
 			{
 				textView.setText( "正在添加回答" );
+			}
+			else
+			{
+				textView.setText( "正在上传第" + ( index + 1 + pictureListSmall.size() ) + "张照片" );
+			}
+		}
+		else if( type == 2 )
+		{
+			if( pictureListBigNew.size() == index )
+			{
+				textView.setText( "正在编辑活动详情" );
 			}
 			else
 			{
@@ -311,11 +385,22 @@ public class AddAnswerActivity extends Activity
 	    					doUploadImage();
 	    				}
     				}
-    				else
+    				else if( type == 1 )
     				{
     					if( pictureListBigNew.size() == index )
 	    				{
 	    					doEdit();
+	    				}
+	    				else
+	    				{
+	    					doUploadImage();
+	    				}
+    				}
+    				else if( type == 2 )
+    				{
+    					if( pictureListBigNew.size() == index )
+	    				{
+	    					doEditQuestion();
 	    				}
 	    				else
 	    				{
@@ -346,7 +431,7 @@ public class AddAnswerActivity extends Activity
 		info = textInfo.getText().toString();
 		if( info.length() == 0 )
 		{
-			showError( "请输入回答" );
+			showError( "请输入内容" );
 			return;
 		}
 		
@@ -357,7 +442,7 @@ public class AddAnswerActivity extends Activity
 		{	
 			startAdd();
 		}
-		else
+		else if( type == 1 )
 		{
 			final int count = AnswerInfoActivity.entity.getImageList().size();
 			for( int i = 0; i < count; i ++ )
@@ -366,9 +451,61 @@ public class AddAnswerActivity extends Activity
 			}
 			startEdit();
 		}
+		else if( type == 2 )
+		{
+			final int count = QuestionInfoActivity.entity.getImageList().size();
+			for( int i = 0; i < count; i ++ )
+			{
+				pictureList.add( QuestionInfoActivity.entity.getImageList().get( i ) );
+			}
+			startEditQuestion();
+		}
 	}
 	
 	private void startEdit()
+	{
+		if( Tool.isNetworkConnected( this ) == true )
+		{
+			dialog = new Dialog( this, R.style.dialog_progress );
+			LayoutInflater inflater = LayoutInflater.from( this );  
+			View view = inflater.inflate( R.layout.dialog_progress, null );
+			textView = ( TextView ) view.findViewById( R.id.dialog_textview );	
+			
+			WindowManager.LayoutParams layoutParams = dialog.getWindow().getAttributes();
+			layoutParams.alpha = 0.8f;
+			dialog.getWindow().setAttributes( layoutParams );
+			dialog.setContentView( view );
+			dialog.setCancelable( false );
+			dialog.setOnKeyListener
+			(
+				new OnKeyListener()
+				{
+					public boolean onKey( DialogInterface dialog, int keyCode, KeyEvent event ) 
+					{
+						if( keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0 )
+						{
+							if( connection != null )
+							{
+								connection.disconnect();
+							}
+							dialog.dismiss();
+							return true;
+						}
+						return false;
+					}
+				}
+			);
+			dialog.show();
+			
+			judgeAdd();
+		}
+		else
+		{
+			showError( "网络不可用，请打开网络" );
+		}
+	}
+	
+	private void startEditQuestion()
 	{
 		if( Tool.isNetworkConnected( this ) == true )
 		{
@@ -446,6 +583,44 @@ public class AddAnswerActivity extends Activity
 		catch( Exception ex )
 		{
 			handler.sendEmptyMessage( 3 );
+		}
+	}
+	
+	private void doEditQuestion()
+	{
+		try
+		{
+			final String urlString = Information.Server_Url + "/api/question/" + QuestionInfoActivity.entity.getId() + "/edit";
+			JSONObject json = new JSONObject();
+			json.put( "token", Information.Token );
+			json.put( "content", info );
+			JSONArray array = new JSONArray();
+			for( String temp : pictureList )
+			{
+				array.put( temp );
+			}
+			json.put( "images", array );
+			JSONObject result = Tool.doPutWithUrl( urlString, json );
+			if( result == null )
+			{
+				handler.sendEmptyMessage( 6 );
+			}
+			else
+			{
+				if( result.getInt( "result" ) == 3000 )
+				{
+					time = result.getString( "editTime" );
+					handler.sendEmptyMessage( 5 );
+				}
+				else
+				{
+					handler.sendEmptyMessage( 6 );
+				}
+			}
+		}
+		catch( Exception ex )
+		{
+			handler.sendEmptyMessage( 6 );
 		}
 	}
 	
@@ -707,6 +882,21 @@ public class AddAnswerActivity extends Activity
 		
 		Intent intent = getIntent();
 		setResult( 2, intent );
+		finish();
+	}
+	
+	private void editQuestionSuccess()
+	{
+		Tool.deleteAllTempImage();
+		
+		QuestionInfoActivity.entity.setQuestionInfo( info );
+		QuestionInfoActivity.entity.setChangeTime( time );
+		QuestionInfoActivity.entity.setImageList( pictureList );
+		
+		MyDatabaseHelper.getInstance( this ).updateQuestion1( QuestionInfoActivity.entity.getId(), time );
+		
+		Intent intent = getIntent();
+		setResult( 12, intent );
 		finish();
 	}
 	

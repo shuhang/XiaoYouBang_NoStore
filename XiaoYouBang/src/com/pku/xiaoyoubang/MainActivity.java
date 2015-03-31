@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -115,6 +116,8 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 	{
 		super.onCreate( savedInstanceState );
 		
+		nowState = 0;
+		
 		PushAgent mPushAgent = PushAgent.getInstance( this );
 		mPushAgent.enable();
 
@@ -207,6 +210,9 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		Information.Praise_Count = entity.getPraiseCount();
 		Information.Question_Count = entity.getQuestionCount();
 		Information.Answer_Count = entity.getAnswerCount();
+		Information.InviteUserName = entity.getInviteName();
+		Information.InviteUserHeadUrl = entity.getInviteHeadUrl();
+		Information.InviteUserId = entity.getInviteUserId();
 	}
 	
 	private void initView() 
@@ -466,6 +472,8 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
         {
             return;
         }
+        
+        Log.e( "aa", "tab:" + nowState + "," + state );
  
         nowState = state;
         radioButton1.setChecked( false );
@@ -500,6 +508,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK );
                 break;
             case 4:
+            	Log.e( "aa", "tab5 click" );
             	radioButton5.setChecked( true );
             	tabHost.setCurrentTabByTag( "tab5" );
 				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE );

@@ -18,6 +18,7 @@ public class Information
 	
 	public static String Store_Path = Environment.getExternalStorageDirectory().toString() + "/xiaoyoubang";
 	
+	@SuppressLint("SdCardPath")
 	public static String Loader_Path = "/data/data/com.pku.xiaoyoubang/cache_image/";
 	
 	public static DisplayImageOptions options;
@@ -40,7 +41,7 @@ public class Information
 	public static String Password;
 	public static String Phone;
 	public static String HeadUrl = "";
-	public static int Sex = 1;
+	public static int Sex = 2;
 	public static String Birthday = "";
 	public static int PKU_Index = 0;
 	public static String PKU_Value = "北大所在院系";
@@ -56,6 +57,9 @@ public class Information
 	public static int Question_Count = 0;
 	public static int Answer_Count = 0;
 	public static int Version = 0;
+	public static String InviteUserName = "元老";
+	public static String InviteUserId = "";
+	public static String InviteUserHeadUrl = "";
 	
 	public static String[] PKU1 = 
 		{ 
@@ -166,62 +170,62 @@ public class Information
 			"中文"
 		};
 	
-	public static String[] User_List = 
-		{
-			"李青",
-			"段明君",
-			"俸旻",
-			"陈志",
-			"刘勐",
-			"王明振",
-			"王路化",
-			"淦华",
-			"徐晶晶",
-			"孙华英",
-			"孙建宁",
-			"彭馨",
-			"杨鹏飞",
-			"丰学兵",
-			"程兰岚",
-			"杜江",
-			"赵双",
-			"王欢",
-			"李文",
-			"蒋炆伶",
-			"何江宁",
-			"杨在文",
-			"李清钰",
-			"胡栋梁",
-			"孙小莉",
-			"潘勇",
-			"曾文之",
-			"李飞",
-			"黄辰",
-			"黎洪彬",
-			"郭明",
-			"姚春梅",
-			"石毅",
-			"龙巍",
-			"朱旗琛",
-			"赖兵",
-			"李佳鞠",
-			"黄杜斌",
-			"房誉",
-			"舒航",
-			"顾宏",
-			"陈鹏",
-			"汤诗伟",
-			"郑威",
-			"段琳",
-			"王胜",
-			"李智",
-			"江艳",
-			"杨志华",
-			"林靖欣",
-			"杨仕文",
-			"林鸣",
-			"夏强",
-			"柴上",
-			"罗文孜",
-		};
+//	public static String[] User_List = 
+//		{
+//			"李青",
+//			"段明君",
+//			"俸旻",
+//			"陈志",
+//			"刘勐",
+//			"王明振",
+//			"王路化",
+//			"淦华",
+//			"徐晶晶",
+//			"孙华英",
+//			"孙建宁",
+//			"彭馨",
+//			"杨鹏飞",
+//			"丰学兵",
+//			"程兰岚",
+//			"杜江",
+//			"赵双",
+//			"王欢",
+//			"李文",
+//			"蒋炆伶",
+//			"何江宁",
+//			"杨在文",
+//			"李清钰",
+//			"胡栋梁",
+//			"孙小莉",
+//			"潘勇",
+//			"曾文之",
+//			"李飞",
+//			"黄辰",
+//			"黎洪彬",
+//			"郭明",
+//			"姚春梅",
+//			"石毅",
+//			"龙巍",
+//			"朱旗琛",
+//			"赖兵",
+//			"李佳鞠",
+//			"黄杜斌",
+//			"房誉",
+//			"舒航",
+//			"顾宏",
+//			"陈鹏",
+//			"汤诗伟",
+//			"郑威",
+//			"段琳",
+//			"王胜",
+//			"李智",
+//			"江艳",
+//			"杨志华",
+//			"林靖欣",
+//			"杨仕文",
+//			"林鸣",
+//			"夏强",
+//			"柴上",
+//			"罗文孜",
+//		};
 }

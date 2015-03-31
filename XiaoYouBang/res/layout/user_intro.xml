@@ -39,6 +39,19 @@
 			    android:textSize="@dimen/text_size_1"
 			    />
 	        
+	        <Button 
+			    android:id="@+id/user_intro_button_edit"
+			    android:layout_width="60dp"
+			    android:layout_height="40dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="15dp"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/text_size_1"
+			    android:text="@string/tab_text_4"
+			    android:background="@null"
+			    />
+	        
 		</RelativeLayout>
 	    
 		<TextView 

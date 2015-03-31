@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@color/bg_red"
+			>
+			
+	        <Button 
+			    android:id="@+id/edit_my_intro_button_back"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="3dp"
+			    android:textColor="@color/white"
+				android:textSize="@dimen/text_size_1"
+				android:background="@null"
+			    />
+	
+	        <TextView 
+	            android:id="@+id/edit_my_intro_title"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerInParent="true"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/text_size_1"
+			    android:text="@string/temp_text_12"
+			    />
+	        
+	        <Button 
+			    android:id="@+id/edit_my_intro_button_finish"
+			    android:layout_width="60dp"
+			    android:layout_height="40dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="15dp"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/text_size_1"
+			    android:text="@string/start_text20"
+			    android:background="@null"
+			    />
+	        
+		</RelativeLayout>
+		
+    <EditText 
+        android:id="@+id/edit_my_intro_input"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#ffffff"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="15dp"
+	    android:paddingBottom="10dp"
+	    android:textSize="@dimen/text_size_1"
+	    android:hint="@string/temp_text_13"
+		android:inputType="textMultiLine"
+		android:lineSpacingMultiplier="1.3"
+		android:singleLine="false"
+		android:scrollHorizontally="false"
+		android:gravity="top"
+		android:maxLength="3000"
+        />
+
+</LinearLayout>

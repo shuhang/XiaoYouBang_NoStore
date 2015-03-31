@@ -218,7 +218,6 @@
 				    android:layout_width="30dp"
 				    android:layout_height="30dp"
 				    android:contentDescription="@string/app_name"
-				    android:visibility="invisible"
 				    android:layout_toLeftOf="@+id/my_info_info_layout1_name"
 				    android:layout_marginRight="5dp"
 				    android:layout_centerVertical="true"

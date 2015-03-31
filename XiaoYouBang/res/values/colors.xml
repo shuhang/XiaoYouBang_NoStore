@@ -5,18 +5,28 @@
     <color name="text_red">#ab172a</color>
     <color name="bg_red">#9a0102</color>
     <color name="light_red">#fddcdc</color>
+    <color name="super_light_red">#ffefef</color>
     <color name="heavy_gray">#808080</color>
     <color name="gray">#a6a6a6</color>
     <color name="light_gray">#eee</color>
     <color name="blue">#4f81bd</color>
     <color name="pink">#ff3399</color>
     <color name="light_pink">#f8e3e2</color>
-    <color name="green">#71ba39</color>
+    <color name="deap_yellow">#ffb300</color>
+    <color name="green">#acce22</color>
     <color name="light_green">#e7f7e7</color>
+    <color name="bg_green">#88a913</color>
+    <color name="bg_coffee">#9e8766</color>
+    <color name="text_green">#61861b</color>
+    
+    <color name="blue_stone">#62c3d0</color>
+    <color name="blue_stone_light">#dbeef4</color>
     
     <color name="lightgrey">#ff888888</color>
     <color name="semitransparent">#80000000</color>
     <color name="lightransparent">#a0000000</color>
     <color name="transparent">#00000000</color>
     <color name="navpage">#FFE1E8EB</color>
+    
+    <color name="color_transparent">#00000000</color>
 </resources>

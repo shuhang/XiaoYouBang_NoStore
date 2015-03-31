@@ -58,7 +58,7 @@
     <string name="tab_1">主页</string>
     <string name="tab_2">问过</string>
     <string name="tab_3">答过</string>
-    <string name="tab_4">评论</string>
+    <string name="tab_4">消息</string>
     <string name="tab_5">校友录</string>
     <string name="friend_info_1">他答过我</string>
     <string name="friend_info_2">我答过他</string>
@@ -79,12 +79,12 @@
     <string name="tab_text_4_7">退出登录</string>
     <string name="tab_text_4_8">输入原密码</string>
     <string name="tab_text_4_9">我的回答</string>
-    <string name="tab_text_5_1">回复我的评论</string>
+    <string name="tab_text_5_1">我的消息</string>
     <string name="tab_text_5_2">校友</string>
     <string name="pop_text_1">回复</string>
     <string name="pop_text_2">复制</string>
     <string name="invite_text_1">输入姓名，或点击头像选择</string>
-    <string name="invite_text_2">本邀请只有被邀请人可以看到，请写下你的邀请理由</string>
+    <string name="invite_text_2">请写下你的邀请理由，将发表在问题的评论区</string>
     <string name="invite_text_3">提交</string>
     <string name="invite_text_4">邀请详情</string>
     <string name="invite_text_5">受邀</string>
@@ -100,6 +100,26 @@
     <string name="temp_text_3">相册</string>
     <string name="temp_text_4">拍照</string>
     <string name="temp_text_5">取消</string>
+    <string name="temp_text_6">评论互动 >></string>
+    <string name="temp_text_7">沉思中，稍后作答</string>
+    <string name="temp_text_8">帮你留意着</string>
+    <string name="temp_text_9">爱莫能助的飘过</string>
+    <string name="temp_text_10">评论灌水</string>
+    <string name="temp_text_11">关心一下</string>
+    <string name="temp_text_12">编辑自我介绍</string>
+    <string name="temp_text_13">请向校友全面地介绍你吧</string>
+    
+    <string name="act_text_1">发起活动</string>
+    <string name="act_text_2">请输入活动的标题，包括时间、地点等（不要写本周末），限30字…</string>
+    <string name="act_text_3">活动时间（如2015.3.7  15:00-19:00）</string>
+    <string name="act_text_4">活动地点（如八宝街新城市2楼必胜客）</string>
+    <string name="act_text_5">费用金额及方式（如人均80元，AA制）</string>
+    <string name="act_text_6">请描述活动的详细内容，包括发起初心、场地魅力、活动计划、交通提示、初步报名情况等…</string>
+    <string name="act_text_7">我要报名</string>
+    <string name="act_text_8">邀请参加</string>
+    <string name="act_text_9">活动总结</string>
+    <string name="act_text_10">编辑活动详情</string>
+    <string name="act_text_11">对活动点赞</string>
     
     <string name="start_1">与校友分享你的</string>
     <string name="start_2">智慧、资源与人脉</string>
@@ -114,7 +134,8 @@
     <string name="password_text1">忘记密码</string>
     <string name="password_text2">重置密码</string>
     <string name="password_text3">获取验证码</string>
-    <string name="password_text4">手机验证码</string>
+    <string name="password_text4">输入邀请码</string>
     <string name="password_text5">密码最长16位，由字母、数字和各类英文符号组成，字母区分大小写</string>
+    <string name="password_text6">输入邀请人姓名</string>
     
 </resources>

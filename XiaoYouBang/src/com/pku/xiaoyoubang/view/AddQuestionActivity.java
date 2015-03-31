@@ -31,9 +31,6 @@ import android.view.View.OnFocusChangeListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,7 +55,11 @@ public class AddQuestionActivity extends Activity
 	
 	private EditText textTitle;
 	private EditText textInfo;
-	private CheckBox box;
+//	private CheckBox box;
+	
+	private EditText textAct1;
+	private EditText textAct2;
+	private EditText textAct3;
 	
 	private Dialog dialog;
 	private HttpURLConnection connection = null;
@@ -75,12 +76,20 @@ public class AddQuestionActivity extends Activity
 	
 	private int index;
 	private ArrayList< String > pictureList = new ArrayList< String >();
+	
+	/**
+	 *  0 : question
+	 *  1 : act
+	 */
+	int type;
 	@SuppressLint("HandlerLeak")
 	protected void onCreate( Bundle savedInstanceState )
 	{
 		super.onCreate( savedInstanceState );
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		MyApplication.getInstance().addActivity( this );
+		
+		type = getIntent().getIntExtra( "type", 0 );
 		
 		File file1 = new File( Information.Temp_Image_Path );
     	if( !file1.exists() )
@@ -120,109 +129,171 @@ public class AddQuestionActivity extends Activity
 	
 	private void initView()
 	{
-		setContentView( R.layout.add_question );
-		
-		textTitle = ( EditText ) findViewById( R.id.add_question_input1 );
-		textTitle.setHint( "请简要描述你的问题，至少包含一个问号" );
-		textInfo = ( EditText ) findViewById( R.id.add_question_input2 );
-		textInfo.setHint( "请补充描述相关的背景、想法、要求等…" );
-		
-		box = ( CheckBox ) findViewById( R.id.add_question_checkbox );
-		box.setEnabled( false );
-		box.setOnCheckedChangeListener
-		(
-			new OnCheckedChangeListener()
-			{
-				public void onCheckedChanged( CompoundButton buttonView, boolean isChecked ) 
+		if( type == 0 )
+		{
+			setContentView( R.layout.add_question );
+			
+			textTitle = ( EditText ) findViewById( R.id.add_question_input1 );
+			textTitle.setHint( "请简要描述你的问题，至少包含一个问号" );
+			textInfo = ( EditText ) findViewById( R.id.add_question_input2 );
+			textInfo.setHint( "请补充描述相关的背景、想法、要求等…" );
+			
+//			box = ( CheckBox ) findViewById( R.id.add_question_checkbox );
+//			box.setEnabled( false );
+//			box.setOnCheckedChangeListener
+//			(
+//				new OnCheckedChangeListener()
+//				{
+//					public void onCheckedChanged( CompoundButton buttonView, boolean isChecked ) 
+//					{
+//						box.setChecked( isChecked );
+//						if( isChecked )
+//						{
+//							box.setBackgroundResource( R.drawable.check_yes );
+//						}
+//						else
+//						{
+//							box.setBackgroundResource( R.drawable.check_no );
+//						}
+//					}
+//				}
+//			);
+			
+			buttonBack = ( Button ) findViewById( R.id.add_question_button_back );
+			buttonBack.setText( "<  " );
+			buttonBack.setOnClickListener
+			(
+				new OnClickListener()
 				{
-					box.setChecked( isChecked );
-					if( isChecked )
+					public void onClick( View view )
 					{
-						box.setBackgroundResource( R.drawable.check_yes );
-					}
-					else
-					{
-						box.setBackgroundResource( R.drawable.check_no );
-					}
-				}
-			}
-		);
-		
-		buttonBack = ( Button ) findViewById( R.id.add_question_button_back );
-		buttonBack.setText( "<  " );
-		buttonBack.setOnClickListener
-		(
-			new OnClickListener()
-			{
-				public void onClick( View view )
-				{
-					if( Tool.isFastDoubleClick() )
-					{
-						return;
-					}
-					back();
-				}
-			}
-		);
-		
-		buttonFinish = ( Button ) findViewById( R.id.add_question_button_finish );
-		buttonFinish.setOnClickListener
-		(
-			new OnClickListener()
-			{
-				public void onClick( View view )
-				{
-					if( Tool.isFastDoubleClick() )
-					{
-						return;
-					}
-					judgeInput();
-				}
-			}
-		);
-		
-		buttonPicture = ( Button ) findViewById( R.id.add_question_picture );
-		buttonPicture.setOnClickListener
-		(
-			new OnClickListener()
-			{
-				public void onClick( View view )
-				{
-					if( Tool.isFastDoubleClick() )
-					{
-						return;
-					}
-					addPicture();
-				}
-			}
-		);
-		
-		textTitle.setOnFocusChangeListener
-		(
-			new OnFocusChangeListener()
-			{
-				public void onFocusChange( View v, boolean hasFocus )
-				{
-					if( !hasFocus )
-					{
-						String title = textTitle.getText().toString();
-						int length = title.length();
-						if( length > 0 )
+						if( Tool.isFastDoubleClick() )
 						{
-							if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
+							return;
+						}
+						back();
+					}
+				}
+			);
+			
+			buttonFinish = ( Button ) findViewById( R.id.add_question_button_finish );
+			buttonFinish.setOnClickListener
+			(
+				new OnClickListener()
+				{
+					public void onClick( View view )
+					{
+						if( Tool.isFastDoubleClick() )
+						{
+							return;
+						}
+						judgeInput();
+					}
+				}
+			);
+			
+			buttonPicture = ( Button ) findViewById( R.id.add_question_picture );
+			buttonPicture.setOnClickListener
+			(
+				new OnClickListener()
+				{
+					public void onClick( View view )
+					{
+						if( Tool.isFastDoubleClick() )
+						{
+							return;
+						}
+						addPicture();
+					}
+				}
+			);
+			
+			textTitle.setOnFocusChangeListener
+			(
+				new OnFocusChangeListener()
+				{
+					public void onFocusChange( View v, boolean hasFocus )
+					{
+						if( !hasFocus )
+						{
+							String title = textTitle.getText().toString();
+							int length = title.length();
+							if( length > 0 )
 							{
-								if( length < 36 ) title += "？";
-								else
+								if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
 								{
-									title = title.substring( 0, title.length() - 1 ) + "？";
+									if( length < 36 ) title += "？";
+									else
+									{
+										title = title.substring( 0, title.length() - 1 ) + "？";
+									}
 								}
 							}
+							textTitle.setText( title );
 						}
-						textTitle.setText( title );
 					}
 				}
-			}
-		);
+			);
+		}
+		else
+		{
+			setContentView( R.layout.add_act );
+			
+			textTitle = ( EditText ) findViewById( R.id.add_act_input_title );
+			textInfo = ( EditText ) findViewById( R.id.add_act_input_info );
+			textAct1 = ( EditText ) findViewById( R.id.add_act_input_1 );
+			textAct2 = ( EditText ) findViewById( R.id.add_act_input_2 );
+			textAct3 = ( EditText ) findViewById( R.id.add_act_input_3 );
+			
+			buttonBack = ( Button ) findViewById( R.id.add_act_button_back );
+			buttonBack.setText( "<  " );
+			buttonBack.setOnClickListener
+			(
+				new OnClickListener()
+				{
+					public void onClick( View view )
+					{
+						if( Tool.isFastDoubleClick() )
+						{
+							return;
+						}
+						back();
+					}
+				}
+			);
+			
+			buttonFinish = ( Button ) findViewById( R.id.add_act_finish );
+			buttonFinish.setOnClickListener
+			(
+				new OnClickListener()
+				{
+					public void onClick( View view )
+					{
+						if( Tool.isFastDoubleClick() )
+						{
+							return;
+						}
+						judgeInput();
+					}
+				}
+			);
+			
+			buttonPicture = ( Button ) findViewById( R.id.add_act_picture );
+			buttonPicture.setOnClickListener
+			(
+				new OnClickListener()
+				{
+					public void onClick( View view )
+					{
+						if( Tool.isFastDoubleClick() )
+						{
+							return;
+						}
+						addPicture();
+					}
+				}
+			);
+		}
 	}
 	
 	private void addPicture()
@@ -259,8 +330,9 @@ public class AddQuestionActivity extends Activity
 		entity.setUserId( Information.Id );
 		entity.setUserName( Information.Name );
 		entity.setNew( false );
-		entity.setInvisible( box.isChecked() );
+		entity.setInvisible( false );
 		entity.setImageList( pictureListSmall );
+		entity.setType( type );
 		
 		Tool.deleteAllTempImage();
 		
@@ -278,7 +350,7 @@ public class AddQuestionActivity extends Activity
 			showError( "标题不能为空" );
 			return;
 		}
-		else if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
+		else if( type == 0 && title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
 		{
 			if( title.length() < 36 ) title += "？";
 			else
@@ -289,12 +361,52 @@ public class AddQuestionActivity extends Activity
 			return;
 		}
 		
-		info = textInfo.getText().toString();
-		if( info.length() == 0 )
+		String input = textInfo.getText().toString();
+		if( input.length() == 0 )
 		{
-			showError( "为了他人能更好地回答你的问题，请用力填写描述" );
+			if( type == 0 )
+			{
+				showError( "为了他人能更好地回答你的问题，请用力填写描述" );
+			}
+			else
+			{
+				showError( "请描述活动的详细内容" );
+			}
 			return;
 		}
+		
+		String input1 = textAct1.getText().toString();
+		if( input1.length() == 0 )
+		{
+			showError( "请输入活动时间" );
+			return;
+		}
+		
+		String input2 = textAct2.getText().toString();
+		if( input2.length() == 0 )
+		{
+			showError( "请输入活动地点" );
+			return;
+		}
+		
+		String input3 = textAct3.getText().toString();
+		if( input3.length() == 0 )
+		{
+			showError( "请输入费用金额及方式" );
+			return;
+		}
+		
+		StringBuilder temp = new StringBuilder();
+		temp.append( "【活动时间】\n" );
+		temp.append( input1 );
+		temp.append( "\n\n【活动地点】\n" );
+		temp.append( input2 );
+		temp.append( "\n\n【活动费用】\n" );
+		temp.append( input3 );
+		temp.append( "\n\n【活动详情】\n" );
+		temp.append( input );
+		
+		info = temp.toString();
 		
 		index = 0;
 		pictureList.clear();
@@ -347,7 +459,14 @@ public class AddQuestionActivity extends Activity
 	{
 		if( pictureListBig.size() == index )
 		{
-			textView.setText( "正在添加提问" );
+			if( type == 0 )
+			{
+				textView.setText( "正在添加提问" );
+			}
+			else
+			{
+				textView.setText( "正在发布活动" );
+			}
 		}
 		else
 		{
@@ -470,7 +589,8 @@ public class AddQuestionActivity extends Activity
 			json.put( "token", Information.Token );
 			json.put( "title", title );
 			json.put( "info", info );
-			json.put( "invisible", box.isChecked() );
+			json.put( "invisible", false );
+			json.put( "questionType", type );
 			
 			JSONArray array = new JSONArray();
 			for( String temp : pictureList )

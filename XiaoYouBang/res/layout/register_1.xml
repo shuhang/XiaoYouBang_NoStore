@@ -112,20 +112,14 @@
 		    android:layout_marginRight="30dp"
 		    />
     
-    <RelativeLayout 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        >
-        
-        <EditText 
+    <EditText 
 	        android:id="@+id/register_1_code"
 	        android:layout_width="match_parent"
 	        android:layout_height="40dp"
-	        android:inputType="phone"
-	        android:maxLength="11"
+	        android:inputType="text"
 	        android:layout_marginLeft="30dp"
 	        android:layout_marginRight="30dp"
+	        android:layout_marginTop="40dp"
 	        android:hint="@string/password_text4"
 	        android:background="@drawable/edittext_bg"
 	        android:textSize="@dimen/text_size_1"
@@ -134,19 +128,20 @@
 	        android:textColorHint="@color/gray"
 	        />
         
-        <Button 
-	        android:id="@+id/register_1_button_send_code"
-	        android:layout_width="100dp"
-	        android:layout_height="30dp"
-	        android:layout_alignParentRight="true"
-	        android:layout_centerVertical="true"
-	        android:layout_marginRight="40dp"
-	        android:background="@color/bg_red"
-	        android:text="@string/password_text3"
-	        android:textColor="@color/white"
-	        android:textSize="@dimen/text_size_2"
+        <EditText 
+	        android:id="@+id/register_1_invite"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="text"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:hint="@string/password_text6"
+	        android:background="@drawable/edittext_bg"
+	        android:textSize="@dimen/text_size_1"
+	        android:paddingLeft="15dp"
+	        android:singleLine="true"
+	        android:textColorHint="@color/gray"
 	        />
-        
-    </RelativeLayout>
 
 </LinearLayout>
