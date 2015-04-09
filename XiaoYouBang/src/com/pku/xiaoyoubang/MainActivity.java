@@ -20,7 +20,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -179,6 +178,9 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		Information.Token = shared.getString( "token", "" );
 		if( Information.Token.equals( "" ) )
 		{
+			SharedPreferences.Editor editor = shared.edit();
+			editor.putBoolean( "device_token_update", false );
+			editor.commit();
 			startActivityForResult( new Intent( this, StartActivity.class ), 1001 );
 		}
 		else
@@ -319,6 +321,23 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 			finish();
 		}
 	}
+	
+	/**
+	 * 退出
+	 */
+//	@Override
+//	public boolean dispatchKeyEvent(KeyEvent event) 
+//	{
+//		if( event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0 )
+//		{
+//			Log.e( "qqq", "wwww" );
+//			Intent intent = new Intent( Intent.ACTION_MAIN );  
+//			intent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );  
+//			intent.addCategory( Intent.CATEGORY_HOME );
+//			startActivity( intent );  
+//		}
+//		return super.dispatchKeyEvent(event);
+//	}
 	
 	public void onResume() 
 	{
@@ -472,8 +491,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
         {
             return;
         }
-        
-        Log.e( "aa", "tab:" + nowState + "," + state );
  
         nowState = state;
         radioButton1.setChecked( false );
@@ -508,7 +525,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK );
                 break;
             case 4:
-            	Log.e( "aa", "tab5 click" );
             	radioButton5.setChecked( true );
             	tabHost.setCurrentTabByTag( "tab5" );
 				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE );

@@ -57,7 +57,9 @@ public class AddAnswerActivity extends Activity
 	private TextView textTitle;
 	private TextView textQuestion;
 	private EditText textInfo;
+	private EditText inputTitle;
 	private CheckBox box;
+	private View line;
 	
 	private RelativeLayout layout;
 	
@@ -84,6 +86,13 @@ public class AddAnswerActivity extends Activity
 	 *  2 : edit act info
 	 */
 	private int type;
+	
+	/**
+	 *  0 : question 
+	 *  1 : act
+	 */
+	private int questionType = 0;
+	
 	private int index;
 	private TextView textView;
 	private ArrayList< String > pictureList = new ArrayList< String >();
@@ -100,6 +109,7 @@ public class AddAnswerActivity extends Activity
     		file1.mkdirs();
 		
     	type = getIntent().getIntExtra( "type", 0 );
+    	questionType = getIntent().getIntExtra( "questionType", 0 );
     	
 		if( type == 0 )
 		{
@@ -182,30 +192,69 @@ public class AddAnswerActivity extends Activity
 		textTitle = ( TextView ) findViewById( R.id.add_answer_title );
 		if( type == 0 )
 		{
-			textTitle.setText( "添加回答" );
+			if( questionType == 0 )
+			{
+				textTitle.setText( "添加回答" );
+			}
+			else
+			{
+				textTitle.setText( "添加活动总结" );
+			}
 		}
 		else if( type == 1 )
 		{
-			textTitle.setText( "编辑回答" );
+			if( questionType == 0 )
+			{
+				textTitle.setText( "编辑回答" );
+			}
+			else
+			{
+				textTitle.setText( "编辑总结" );
+			}
 		}
 		else if( type == 2 )
 		{
-			textTitle.setText( "编辑活动详情" );
+			textTitle.setText( "编辑活动" );
 		}
 		
 		textQuestion = ( TextView ) findViewById( R.id.add_answer_question );
 		if( type == 0 || type == 1 )
 		{
-			textQuestion.setText( "问题：" + questionTitle );
+			if( questionType == 0 )
+			{
+				textQuestion.setText( "问题：" + questionTitle );
+			}
+			else
+			{
+				textQuestion.setText( "活动：" + questionTitle );
+			}
 		}
 		else if( type == 2 )
 		{
 			textQuestion.setText( "活动：" + questionTitle );
 		}
-		textInfo = ( EditText ) findViewById( R.id.add_answer_input );
 		if( type == 0 || type == 1 )
 		{
-			textInfo.setHint( "写下你的答案、建议、参考…" );
+			textInfo = ( EditText ) findViewById( R.id.add_answer_input );
+		}
+		else
+		{
+			textInfo = ( EditText ) findViewById( R.id.add_answer_input_ );
+		}
+		textInfo.setVisibility( View.VISIBLE );
+		inputTitle = ( EditText ) findViewById( R.id.add_answer_input_title );
+		inputTitle.setText( questionTitle );
+		line = ( View ) findViewById( R.id.add_answer_line1 );
+		if( type == 0 || type == 1 )
+		{
+			if( questionType == 0 )
+			{
+				textInfo.setHint( "写下你的答案、建议、参考…" );
+			}
+			else
+			{
+				textInfo.setHint( "写下你的活动总结" );
+			}
 		}
 		else
 		{
@@ -331,6 +380,16 @@ public class AddAnswerActivity extends Activity
 				buttonPicture.setText( "" );
 			}
 		}
+		
+		if( type == 2 )
+		{
+			textQuestion.setVisibility( View.GONE );
+		}
+		else
+		{
+			inputTitle.setVisibility( View.GONE );
+			line.setVisibility( View.GONE );
+		}
 	}
 	
 	private void judgeAdd()
@@ -339,7 +398,14 @@ public class AddAnswerActivity extends Activity
 		{
 			if( pictureListBig.size() == index )
 			{
-				textView.setText( "正在添加回答" );
+				if( questionType == 0 )
+				{
+					textView.setText( "正在添加回答" );
+				}
+				else
+				{
+					textView.setText( "正在添加总结" );
+				}
 			}
 			else
 			{
@@ -350,7 +416,14 @@ public class AddAnswerActivity extends Activity
 		{
 			if( pictureListBigNew.size() == index )
 			{
-				textView.setText( "正在添加回答" );
+				if( questionType == 0 )
+				{
+					textView.setText( "正在添加回答" );
+				}
+				else
+				{
+					textView.setText( "正在添加总结" );
+				}
 			}
 			else
 			{
@@ -453,6 +526,13 @@ public class AddAnswerActivity extends Activity
 		}
 		else if( type == 2 )
 		{
+			questionTitle = inputTitle.getText().toString();
+			if( questionTitle.equals( "" ) )
+			{
+				showError( "请输入活动标题" );
+				return;
+			}
+			
 			final int count = QuestionInfoActivity.entity.getImageList().size();
 			for( int i = 0; i < count; i ++ )
 			{
@@ -594,6 +674,8 @@ public class AddAnswerActivity extends Activity
 			JSONObject json = new JSONObject();
 			json.put( "token", Information.Token );
 			json.put( "content", info );
+			json.put( "title", questionTitle );
+			json.put( "name", Information.Name );
 			JSONArray array = new JSONArray();
 			for( String temp : pictureList )
 			{
@@ -672,12 +754,13 @@ public class AddAnswerActivity extends Activity
 		try
 		{
 			final String urlString = Information.Server_Url + "/api/answer";
-			
+
 			JSONObject json = new JSONObject();
 			json.put( "token", Information.Token );
 			json.put( "questionId", questionId );
 			json.put( "answer", info );
 			json.put( "invisible", box.isChecked() );
+			json.put( "answerType", questionType );
 			JSONArray array = new JSONArray();
 			for( String temp : pictureList )
 			{
@@ -811,7 +894,7 @@ public class AddAnswerActivity extends Activity
 	private void showExitDialog()
 	{
 		AlertDialog.Builder dialog = new AlertDialog.Builder( this );
-        dialog.setTitle( "编辑回答" ).setMessage( "确定要放弃编辑吗？" )
+        dialog.setTitle( "编辑" ).setMessage( "确定要放弃编辑吗？" )
         .setPositiveButton( "确定", new DialogInterface.OnClickListener() 
         {
         	public void onClick( DialogInterface dialog, int which ) 
@@ -851,6 +934,7 @@ public class AddAnswerActivity extends Activity
 		entity.setInvisible( box.isChecked() );
 		entity.setHasPraised( false );
 		entity.setImageList( pictureList );
+		entity.setType( questionType );
 		
 		if( entity.isInvisible() )
 		{
@@ -889,9 +973,11 @@ public class AddAnswerActivity extends Activity
 	{
 		Tool.deleteAllTempImage();
 		
+		QuestionInfoActivity.entity.setQuestionTitle( questionTitle );
 		QuestionInfoActivity.entity.setQuestionInfo( info );
 		QuestionInfoActivity.entity.setChangeTime( time );
 		QuestionInfoActivity.entity.setImageList( pictureList );
+		QuestionInfoActivity.entity.setEditTime( time );
 		
 		MyDatabaseHelper.getInstance( this ).updateQuestion1( QuestionInfoActivity.entity.getId(), time );
 		

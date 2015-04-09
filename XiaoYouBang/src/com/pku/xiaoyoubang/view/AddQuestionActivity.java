@@ -326,6 +326,7 @@ public class AddQuestionActivity extends Activity
 		entity.setModified( false );
 		entity.setModifyTime( time );
 		entity.setUpdateTime( time );
+		entity.setChangeTime( time );
 		entity.setUserHeadUrl( Information.HeadUrl );
 		entity.setUserId( Information.Id );
 		entity.setUserName( Information.Name );
@@ -375,38 +376,45 @@ public class AddQuestionActivity extends Activity
 			return;
 		}
 		
-		String input1 = textAct1.getText().toString();
-		if( input1.length() == 0 )
+		if( type == 1 )
 		{
-			showError( "请输入活动时间" );
-			return;
+			String input1 = textAct1.getText().toString();
+			if( input1.length() == 0 )
+			{
+				showError( "请输入活动时间" );
+				return;
+			}
+			
+			String input2 = textAct2.getText().toString();
+			if( input2.length() == 0 )
+			{
+				showError( "请输入活动地点" );
+				return;
+			}
+			
+			String input3 = textAct3.getText().toString();
+			if( input3.length() == 0 )
+			{
+				showError( "请输入费用金额及方式" );
+				return;
+			}
+			
+			StringBuilder temp = new StringBuilder();
+			temp.append( "时间：" );
+			temp.append( input1 );
+			temp.append( "\n地点：" );
+			temp.append( input2 );
+			temp.append( "\n费用：" );
+			temp.append( input3 );
+			temp.append( "\n\n【活动详情】\n" );
+			temp.append( input );
+			
+			info = temp.toString();
 		}
-		
-		String input2 = textAct2.getText().toString();
-		if( input2.length() == 0 )
+		else if( type == 0 )
 		{
-			showError( "请输入活动地点" );
-			return;
+			info = input;
 		}
-		
-		String input3 = textAct3.getText().toString();
-		if( input3.length() == 0 )
-		{
-			showError( "请输入费用金额及方式" );
-			return;
-		}
-		
-		StringBuilder temp = new StringBuilder();
-		temp.append( "【活动时间】\n" );
-		temp.append( input1 );
-		temp.append( "\n\n【活动地点】\n" );
-		temp.append( input2 );
-		temp.append( "\n\n【活动费用】\n" );
-		temp.append( input3 );
-		temp.append( "\n\n【活动详情】\n" );
-		temp.append( input );
-		
-		info = temp.toString();
 		
 		index = 0;
 		pictureList.clear();

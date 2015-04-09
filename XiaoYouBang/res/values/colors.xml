@@ -17,7 +17,9 @@
     <color name="light_green">#e7f7e7</color>
     <color name="bg_green">#88a913</color>
     <color name="bg_coffee">#9e8766</color>
+    <color name="light_coffee">#dbd8c6</color>
     <color name="text_green">#61861b</color>
+    <color name="text_coffee">#9d9071</color>
     
     <color name="blue_stone">#62c3d0</color>
     <color name="blue_stone_light">#dbeef4</color>
