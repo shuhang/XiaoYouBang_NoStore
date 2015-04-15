@@ -119,7 +119,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		
 		PushAgent mPushAgent = PushAgent.getInstance( this );
 		mPushAgent.enable();
-
+		mPushAgent.setDebugMode( true );
 		UmengUpdateAgent.setUpdateOnlyWifi( false );
 		
 		SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );

@@ -50,7 +50,7 @@
 			    android:layout_marginRight="20dp"
 			    android:textColor="@color/white"
 			    android:textSize="@dimen/text_size_1"
-			    android:text="@string/start_text20"
+			    android:text="@string/start_text5"
 			    android:background="@null"
 			    />
 	        

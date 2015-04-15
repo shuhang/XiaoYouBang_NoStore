@@ -108,6 +108,11 @@
     <string name="temp_text_11">关心一下</string>
     <string name="temp_text_12">编辑自我介绍</string>
     <string name="temp_text_13">请向校友全面地介绍你吧</string>
+    <string name="temp_text_14">留言板-主人寄语</string>
+    <string name="temp_text_15">请在你的留言板上，跟大家说句话吧</string>
+    <string name="temp_text_16">主人寄语</string>
+    <string name="temp_text_17">留言板</string>
+    <string name="temp_text_18">编辑寄语</string>
     
     <string name="act_text_1">发起活动</string>
     <string name="act_text_2">请输入活动的标题，限30字…</string>

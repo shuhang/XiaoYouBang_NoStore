@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <RelativeLayout 
+        android:id="@+id/add_leave_word_layout1"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/bg_red"
+		>
+			
+	    <Button 
+			android:id="@+id/add_leave_word_button_back"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="3dp"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+			/>
+	        
+	    <TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="@string/temp_text_14"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:layout_centerHorizontal="true"
+			/>
+	        
+	    <Button 
+	        android:id="@+id/add_leave_word_finish"
+	        android:layout_width="60dp"
+	        android:layout_height="match_parent"
+	        android:text="@string/start_text20"
+	        android:textColor="@color/white"
+			android:textSize="@dimen/text_size_1"
+			android:background="@null"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+	        />
+	        
+	</RelativeLayout>
+	
+    <TextView 
+        android:id="@+id/add_leave_word_text1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:text="@string/temp_text_15"
+		android:textColor="@color/gray"
+		android:textSize="@dimen/text_size_2"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/add_leave_word_layout1"
+		android:layout_marginTop="30dp"
+		/>
+    
+    <EditText 
+        android:id="@+id/add_leave_word_input"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/add_leave_word_text1"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="#ffffff"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="10dp"
+	    android:maxLength="100"
+	    android:lineSpacingMultiplier="1.3"
+	    android:textSize="@dimen/text_size_1"
+	    android:hint="@string/temp_text_14"
+		android:inputType="textMultiLine"
+		android:singleLine="false"
+		android:scrollHorizontally="false"
+		android:gravity="top"
+        />
+
+</RelativeLayout>

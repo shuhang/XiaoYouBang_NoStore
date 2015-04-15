@@ -60,6 +60,7 @@ public class Information
 	public static String InviteUserName = "元老";
 	public static String InviteUserId = "";
 	public static String InviteUserHeadUrl = "";
+	public static String LeaveWord = "";
 	
 	public static String[] PKU1 = 
 		{ 

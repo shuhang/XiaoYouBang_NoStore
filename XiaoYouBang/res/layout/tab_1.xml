@@ -8,37 +8,37 @@
     >
     
    <RelativeLayout 
-		    android:layout_width="match_parent"
-		    android:layout_height="50dp"
-		    android:background="@color/bg_red"
-		    >
+	   android:layout_width="match_parent"
+	   android:layout_height="50dp"
+	   android:background="@color/bg_red"
+	   >
 
-		    <TextView 
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_centerVertical="true"
-		        android:text="@string/main_page_title"
-		        android:textColor="@color/white"
-		        android:textSize="@dimen/text_size_1"
-		        android:layout_centerHorizontal="true"
-		        />
+	   <TextView 
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_centerVertical="true"
+		   android:text="@string/main_page_title"
+		   android:textColor="@color/white"
+		   android:textSize="@dimen/text_size_1"
+		   android:layout_centerHorizontal="true"
+		   />
 		    
-		    <ImageButton 
-		        android:id="@+id/main_page_button_write"
-		        android:layout_width="40dp"
-		        android:layout_height="40dp"
-		        android:paddingLeft="5dp"
-			    android:paddingRight="5dp"
-			    android:paddingTop="5dp"
-			    android:paddingBottom="5dp"
-		        android:layout_centerVertical="true"
-		        android:layout_alignParentRight="true"
-		        android:layout_marginRight="15dp"
-		        android:contentDescription="@string/app_name"
-		        android:background="@drawable/add"
-		        />
+	   <ImageButton 
+		    android:id="@+id/main_page_button_write"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="15dp"
+		    android:contentDescription="@string/app_name"
+		    android:background="@drawable/add"
+		    />
 		    
-		</RelativeLayout>
+	</RelativeLayout>
 		
 	<com.viewpagerindicator.TabPageIndicator
         android:id="@+id/id_indicator"
