@@ -49,12 +49,13 @@
 	    android:layout_above="@+id/answer_info_layout2"
 		/>
     
-    <RelativeLayout 
+   <RelativeLayout 
         android:id="@+id/answer_info_layout2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/heavy_gray"
         android:layout_alignParentBottom="true"
+        android:visibility="gone"
         >
         
         <Button
@@ -95,5 +96,57 @@
 	        />
         
     </RelativeLayout>
+    
+   <LinearLayout 
+        android:id="@+id/answer_info_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/heavy_gray"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        
+        <Button
+	        android:id="@+id/answer_info_button_praise_"
+	        android:layout_width="0dp"
+	        android:layout_height="30dp"
+	        android:text="@string/question_text_2"
+	        android:textSize="@dimen/text_size_2"
+	        android:textColor="@color/white"
+	        android:layout_marginLeft="15dp"
+	        android:background="@color/gray"
+	        android:layout_marginRight="5dp"
+	        android:layout_weight="1"
+	        />
+	    
+	    <Button
+	        android:id="@+id/answer_info_button_comment_"
+	        android:layout_width="0dp"
+	        android:layout_height="30dp"
+	        android:text="@string/question_text_3"
+	        android:textSize="@dimen/text_size_2"
+	        android:textColor="@color/white"
+	        android:layout_marginRight="5dp"
+	        android:background="@color/gray"
+	        android:layout_marginLeft="5dp"
+	        android:layout_weight="1"
+	        />
+	    
+	    <Button
+	        android:id="@+id/answer_info_button_save"
+	        android:layout_width="0dp"
+	        android:layout_height="30dp"
+	        android:text="@string/temp_text_20"
+	        android:textSize="@dimen/text_size_2"
+	        android:textColor="@color/white"
+	        android:layout_marginRight="15dp"
+	        android:background="@color/gray"
+	        android:layout_marginLeft="5dp"
+	        android:layout_weight="1"
+	        />
+        
+    </LinearLayout>
 
 </RelativeLayout>

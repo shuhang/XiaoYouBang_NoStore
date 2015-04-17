@@ -23,6 +23,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.HorizontalScrollView;
@@ -130,10 +131,15 @@ public class IconPageIndicator extends HorizontalScrollView implements PageIndic
         mIconsLayout.removeAllViews();
         IconPagerAdapter iconAdapter = (IconPagerAdapter) mViewPager.getAdapter();
         int count = iconAdapter.getCount();
-        for (int i = 0; i < count; i++) {
-            ImageView view = new ImageView(getContext(), null, R.attr.vpiIconPageIndicatorStyle);
-            view.setImageResource(iconAdapter.getIconResId(i));
-            mIconsLayout.addView(view);
+        for (int i = 0; i < count; i++) 
+        {
+        	Log.e( "get valuebb", "" + iconAdapter.getIconResId( i ) );
+        	if( iconAdapter.getIconResId( i ) > 0 )
+        	{
+	            ImageView view = new ImageView(getContext(), null, R.attr.vpiIconPageIndicatorStyle);
+	            view.setImageResource(iconAdapter.getIconResId(i));
+	            mIconsLayout.addView(view);
+        	}
         }
         if (mSelectedIndex > count) {
             mSelectedIndex = count - 1;

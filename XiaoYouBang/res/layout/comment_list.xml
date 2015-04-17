@@ -6,7 +6,7 @@
     android:background="@color/white"
     >
     
-    <RelativeLayout 
+   <RelativeLayout 
         android:id="@+id/comment_list_layout1"
 		android:layout_width="match_parent"
 		android:layout_height="50dp"
@@ -36,20 +36,6 @@
 		    android:textSize="@dimen/text_size_1"
 		    android:layout_centerHorizontal="true"
 		    />
-		
-        <Button 
-		    android:id="@+id/comment_list_button_edit"
-		    android:layout_width="80dp"
-		    android:layout_height="40dp"
-		    android:layout_centerVertical="true"
-		    android:layout_alignParentRight="true"
-		    android:layout_marginRight="15dp"
-		    android:textColor="@color/white"
-		    android:textSize="@dimen/text_size_1"
-		    android:text="@string/temp_text_18"
-		    android:background="@null"
-		    android:visibility="gone"
-		    />
         
 	</RelativeLayout>
 	
@@ -58,8 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/comment_list_layout1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:visibility="gone"
         >
         
@@ -69,6 +53,7 @@
             android:layout_height="40dp"
             android:contentDescription="@string/app_name"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
             />
         
         <TextView 
@@ -92,7 +77,49 @@
 	        android:layout_alignLeft="@+id/comment_list_master_name"
 	        android:layout_below="@+id/comment_list_master_name"
 	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="15dp"
 	        />
+        
+        <RelativeLayout 
+	        android:id="@+id/comment_list_master_layout_2"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_below="@+id/comment_list_master_info"
+	        android:layout_marginRight="10dp"
+	        android:visibility="gone"
+	        >
+	        
+	        <Button 
+	            android:id="@+id/comment_list_button_edit"
+	            android:layout_width="110dp"
+	            android:layout_height="40dp"
+	            android:text="@string/temp_text_18"
+	            android:textSize="@dimen/text_size_2"
+	            android:textColor="@color/gray"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentBottom="true"
+	            android:background="@null"
+	            android:paddingLeft="20dp"
+	            />
+	        
+	        <ImageView 
+		        android:layout_width="16dp"
+		        android:layout_height="16dp"
+		        android:contentDescription="@string/app_name"
+		        android:layout_alignLeft="@+id/comment_list_button_edit"
+		        android:src="@drawable/edit_gray"
+		        android:layout_marginTop="21dp"
+		        android:layout_marginLeft="13dp"
+		        />
+	        
+	    </RelativeLayout>
+	    
+        <View 	      
+		    android:layout_width="match_parent"
+		    android:layout_height="10dp"
+		    android:layout_below="@+id/comment_list_master_layout_2"
+		    android:background="@color/light_gray"
+		    />
         
     </RelativeLayout>
 	

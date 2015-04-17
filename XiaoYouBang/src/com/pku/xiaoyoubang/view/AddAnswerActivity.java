@@ -18,6 +18,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnFocusChangeListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -84,6 +86,7 @@ public class AddAnswerActivity extends Activity
 	 *  0 : add answer
 	 *  1 : edit answer
 	 *  2 : edit act info
+	 *  3 : edit question
 	 */
 	private int type;
 	
@@ -121,6 +124,10 @@ public class AddAnswerActivity extends Activity
 			questionTitle = getIntent().getStringExtra( "questionTitle" );
 		}
 		else if( type == 2 )
+		{
+			questionTitle = QuestionInfoActivity.entity.getQuestionTitle();
+		}
+		else if( type == 3 )
 		{
 			questionTitle = QuestionInfoActivity.entity.getQuestionTitle();
 		}
@@ -176,7 +183,7 @@ public class AddAnswerActivity extends Activity
 					{
 						dialog.dismiss();
 					}
-					showError( "编辑活动详情失败" );
+					showError( "编辑失败" );
 					break;
 				}
 			}
@@ -216,6 +223,10 @@ public class AddAnswerActivity extends Activity
 		{
 			textTitle.setText( "编辑活动" );
 		}
+		else if( type == 3 )
+		{
+			textTitle.setText( "编辑问题" );
+		}
 		
 		textQuestion = ( TextView ) findViewById( R.id.add_answer_question );
 		if( type == 0 || type == 1 )
@@ -233,6 +244,7 @@ public class AddAnswerActivity extends Activity
 		{
 			textQuestion.setText( "活动：" + questionTitle );
 		}
+		
 		if( type == 0 || type == 1 )
 		{
 			textInfo = ( EditText ) findViewById( R.id.add_answer_input );
@@ -244,6 +256,37 @@ public class AddAnswerActivity extends Activity
 		textInfo.setVisibility( View.VISIBLE );
 		inputTitle = ( EditText ) findViewById( R.id.add_answer_input_title );
 		inputTitle.setText( questionTitle );
+		
+		if( type == 3 )
+		{
+			inputTitle.setOnFocusChangeListener
+			(
+				new OnFocusChangeListener()
+				{
+					public void onFocusChange( View v, boolean hasFocus )
+					{
+						if( !hasFocus )
+						{
+							String title = inputTitle.getText().toString();
+							int length = title.length();
+							if( length > 0 )
+							{
+								if( title.indexOf( "?" ) == -1 && title.indexOf( "？" ) == -1 )
+								{
+									if( length < 36 ) title += "？";
+									else
+									{
+										title = title.substring( 0, title.length() - 1 ) + "？";
+									}
+								}
+							}
+							inputTitle.setText( title );
+						}
+					}
+				}
+			);
+		}
+		
 		line = ( View ) findViewById( R.id.add_answer_line1 );
 		if( type == 0 || type == 1 )
 		{
@@ -256,9 +299,13 @@ public class AddAnswerActivity extends Activity
 				textInfo.setHint( "写下你的活动总结" );
 			}
 		}
-		else
+		else if( type == 2 )
 		{
 			textInfo.setHint( "写下你的活动详情" );
+		}
+		else if( type == 3 )
+		{
+			textInfo.setHint( "写下你的问题详情" );
 		}
 		layout = ( RelativeLayout ) findViewById( R.id.add_answer_layout2 );
 		
@@ -356,7 +403,7 @@ public class AddAnswerActivity extends Activity
 				buttonPicture.setText( "" );
 			}
 		}
-		else if( type == 2 )
+		else if( type == 2 || type == 3 )
 		{
 			textInfo.setText( QuestionInfoActivity.entity.getQuestionInfo() );
 			LayoutParams params = new LayoutParams( LayoutParams.MATCH_PARENT, 0 );
@@ -381,7 +428,7 @@ public class AddAnswerActivity extends Activity
 			}
 		}
 		
-		if( type == 2 )
+		if( type == 2 || type == 3 )
 		{
 			textQuestion.setVisibility( View.GONE );
 		}
@@ -434,13 +481,25 @@ public class AddAnswerActivity extends Activity
 		{
 			if( pictureListBigNew.size() == index )
 			{
-				textView.setText( "正在编辑活动详情" );
+				textView.setText( "正在编辑活动" );
 			}
 			else
 			{
 				textView.setText( "正在上传第" + ( index + 1 + pictureListSmall.size() ) + "张照片" );
 			}
 		}
+		else if( type == 3 )
+		{
+			if( pictureListBigNew.size() == index )
+			{
+				textView.setText( "正在编辑问题" );
+			}
+			else
+			{
+				textView.setText( "正在上传第" + ( index + 1 + pictureListSmall.size() ) + "张照片" );
+			}
+		}
+		
 		new Thread
     	(
     		new Thread()
@@ -469,7 +528,7 @@ public class AddAnswerActivity extends Activity
 	    					doUploadImage();
 	    				}
     				}
-    				else if( type == 2 )
+    				else if( type == 2 || type == 3 )
     				{
     					if( pictureListBigNew.size() == index )
 	    				{
@@ -524,12 +583,22 @@ public class AddAnswerActivity extends Activity
 			}
 			startEdit();
 		}
-		else if( type == 2 )
+		else if( type == 2 || type == 3 )
 		{
 			questionTitle = inputTitle.getText().toString();
 			if( questionTitle.equals( "" ) )
 			{
-				showError( "请输入活动标题" );
+				showError( "请输入标题" );
+				return;
+			}
+			else if( type == 3 && questionTitle.indexOf( "?" ) == -1 && questionTitle.indexOf( "？" ) == -1 )
+			{
+				if( questionTitle.length() < 36 ) questionTitle += "？";
+				else
+				{
+					questionTitle = questionTitle.substring( 0, questionTitle.length() - 1 ) + "？";
+				}
+				showError( "标题必须包含问号且不能超过36字" );
 				return;
 			}
 			
@@ -939,6 +1008,14 @@ public class AddAnswerActivity extends Activity
 		if( entity.isInvisible() )
 		{
 			entity.setUserId( "" );
+		}
+		
+		if( type == 0 && questionType == 1 )
+		{
+			SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );
+			SharedPreferences.Editor editor = shared.edit();
+			editor.putString( "all_act_time", time );
+			editor.commit();
 		}
 		
 		MyDatabaseHelper.getInstance( this ).updateQuestion1( QuestionInfoActivity.entity.getId(), time );

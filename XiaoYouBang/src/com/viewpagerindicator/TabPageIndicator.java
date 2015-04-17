@@ -23,6 +23,8 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
@@ -142,7 +144,6 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
         }
     }
 
-    @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (mTabSelector != null) {
@@ -150,35 +151,33 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
         }
     }
 
-    private void addTab(int index, CharSequence text, int iconResId) {
-        final TabView tabView = new TabView(getContext());
+    private void addTab( int index, CharSequence text, int iconResId ) 
+    {
+        final TabView tabView = new TabView( getContext() );
         tabView.mIndex = index;
-        tabView.setFocusable(true);
-        tabView.setOnClickListener(mTabClickListener);
-        tabView.setText(text);
+        tabView.setFocusable( true );
+        tabView.setOnClickListener( mTabClickListener );
+        tabView.setText( text );
 
-        if (iconResId != 0) {
-            tabView.setCompoundDrawablesWithIntrinsicBounds(iconResId, 0, 0, 0);
-        }
-
-        mTabLayout.addView(tabView, new LinearLayout.LayoutParams(0, MATCH_PARENT, 1));
+        tabView.setCompoundDrawablesWithIntrinsicBounds( 0, 0, iconResId, 0);
+//        tabView.setCompoundDrawablePadding( -150 );
+        mTabLayout.addView(tabView, new LinearLayout.LayoutParams( 0, MATCH_PARENT, 1 ) );
     }
 
-    @Override
-    public void onPageScrollStateChanged(int arg0) {
-        if (mListener != null) {
-            mListener.onPageScrollStateChanged(arg0);
+    public void onPageScrollStateChanged( int arg0 ) 
+    {
+        if( mListener != null ) 
+        {
+            mListener.onPageScrollStateChanged( arg0 );
         }
     }
 
-    @Override
     public void onPageScrolled(int arg0, float arg1, int arg2) {
         if (mListener != null) {
             mListener.onPageScrolled(arg0, arg1, arg2);
         }
     }
 
-    @Override
     public void onPageSelected(int arg0) {
         setCurrentItem(arg0);
         if (mListener != null) {
@@ -186,7 +185,6 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
         }
     }
 
-    @Override
     public void setViewPager(ViewPager view) {
         if (mViewPager == view) {
             return;

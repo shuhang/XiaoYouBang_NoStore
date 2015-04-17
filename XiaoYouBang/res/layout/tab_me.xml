@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    
+   <RelativeLayout 
+	   android:layout_width="match_parent"
+	   android:layout_height="50dp"
+	   android:background="@color/bg_red"
+	   >
+
+	   <TextView 
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_centerInParent="true"
+		   android:text="@string/temp_text_19"
+		   android:textColor="@color/white"
+		   android:textSize="@dimen/text_size_1"
+		   />
+		    
+	</RelativeLayout>
+		
+	<com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/id_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_pager_bg" >
+    </com.viewpagerindicator.TabPageIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+</LinearLayout>

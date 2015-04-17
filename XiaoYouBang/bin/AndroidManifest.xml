@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="20" />
     
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -119,21 +119,10 @@
             >
         </activity>
         <activity
-            android:name="com.pku.xiaoyoubang.view.TabActivity2"
+            android:name="com.pku.xiaoyoubang.view.TabActivityMe"
             android:label="@string/app_name" 
             android:screenOrientation="portrait"
-            >
-        </activity>
-        <activity
-            android:name="com.pku.xiaoyoubang.view.TabActivity3"
-            android:label="@string/app_name" 
-            android:screenOrientation="portrait"
-            >
-        </activity>
-        <activity
-            android:name="com.pku.xiaoyoubang.view.TabActivity4"
-            android:label="@string/app_name" 
-            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
             >
         </activity>
         <activity

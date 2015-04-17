@@ -17,9 +17,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Message;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -44,10 +42,8 @@ import com.pku.xiaoyoubang.tool.MyApplication;
 import com.pku.xiaoyoubang.tool.MyDatabaseHelper;
 import com.pku.xiaoyoubang.view.StartActivity;
 import com.pku.xiaoyoubang.view.TabActivity1;
-import com.pku.xiaoyoubang.view.TabActivity2;
-import com.pku.xiaoyoubang.view.TabActivity3;
-import com.pku.xiaoyoubang.view.TabActivity4;
 import com.pku.xiaoyoubang.view.TabActivity5;
+import com.pku.xiaoyoubang.view.TabActivityMe;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
 import com.umeng.update.UmengDialogButtonListener;
@@ -64,13 +60,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 	private RadioButton radioButton1;
 	private RadioButton radioButton2;
 	private RadioButton radioButton3;
-	private RadioButton radioButton4;
-	private RadioButton radioButton5;
-	
-	private static TextView textNumber2;
-	private static TextView textNumber3;
-	private static TextView textNumber4;
-	
+
 	private Dialog dialog;
 	private static int nowState = 0;
 	
@@ -90,25 +80,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 			myService.startTab4();
 		}
 		public void onServiceDisconnected( ComponentName name ) {}
-	};
-	
-	public static Handler handler = new Handler()
-	{
-		public void handleMessage( Message message )
-		{
-			switch( message.what )
-			{
-			case 2 :
-				showNumber2( message.arg1 );
-				break;
-			case 3 :
-				showNumber3( message.arg1 );
-				break;
-			case 4 :
-				showNumber4( message.arg1 );
-				break;
-			}
-		}
 	};
 	
 	protected void onCreate( Bundle savedInstanceState )
@@ -225,14 +196,10 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
     	tabHost.setup();
         tabHost.addTab( tabHost.newTabSpec( "tab1" ).setContent( new Intent( this, TabActivity1.class ) )
         		.setIndicator( "tab1" ) );
-        tabHost.addTab( tabHost.newTabSpec( "tab2" ).setContent( new Intent( this, TabActivity2.class ) )
+        tabHost.addTab( tabHost.newTabSpec( "tab2" ).setContent( new Intent( this, TabActivityMe.class ) )
         		.setIndicator( "tab2" ) );
-        tabHost.addTab( tabHost.newTabSpec( "tab3" ).setContent( new Intent( this, TabActivity3.class ) )
+        tabHost.addTab( tabHost.newTabSpec( "tab3" ).setContent( new Intent( this, TabActivity5.class ) )
         		.setIndicator( "tab3" ) );
-        tabHost.addTab( tabHost.newTabSpec( "tab4" ).setContent( new Intent( this, TabActivity4.class ) )
-        		.setIndicator( "tab4" ) );
-        tabHost.addTab( tabHost.newTabSpec( "tab5" ).setContent( new Intent( this, TabActivity5.class ) )
-        		.setIndicator( "tab5" ) );
         tabHost.setCurrentTab( 0 );
         tabHost.setSelected( false ); 
         
@@ -242,71 +209,16 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
         radioButton2.setOnCheckedChangeListener( this );
         radioButton3 = ( RadioButton ) findViewById( R.id.main_tab_3 );
         radioButton3.setOnCheckedChangeListener( this );
-        radioButton4 = ( RadioButton ) findViewById( R.id.main_tab_4 );
-        radioButton4.setOnCheckedChangeListener( this );
-        radioButton5 = ( RadioButton ) findViewById( R.id.main_tab_5 );
-        radioButton5.setOnCheckedChangeListener( this );
-        
-        textNumber2 = ( TextView ) findViewById( R.id.main_tab_2_number );
-        textNumber3 = ( TextView ) findViewById( R.id.main_tab_3_number );
-        textNumber4 = ( TextView ) findViewById( R.id.main_tab_4_number );
         
         Intent intent = new Intent( this, MyService.class );
 		bindService( intent, connection, Context.BIND_AUTO_CREATE );
     }
 	
-	public static void showNumber2( int number )
-	{
-		if( nowState != 1 )
-		{
-			TabActivity2.shouldUpdate = true;
-			textNumber2.setVisibility( View.VISIBLE );
-			textNumber2.setText( "" + number );
-		}
-	}
-	
-	public void clearNumber2()
-	{
-		textNumber2.setVisibility( View.INVISIBLE );
-	}
-	
-	public static void showNumber3( int number )
-	{
-		if( nowState != 2 )
-		{
-			TabActivity3.shouldUpdate = true;
-			textNumber3.setVisibility( View.VISIBLE );
-			textNumber3.setText( "" + number );
-		}
-	}
-	
-	public void clearNumber3()
-	{
-		textNumber3.setVisibility( View.INVISIBLE );
-	}
-	
-	public static void showNumber4( int number )
-	{
-		if( nowState != 3 )
-		{
-			TabActivity4.shouldUpdate = true;
-			textNumber4.setVisibility( View.VISIBLE );
-			textNumber4.setText( "" + number );
-		}
-	}
-	
-	public void clearNumber4()
-	{
-		textNumber4.setVisibility( View.INVISIBLE );
-	}
-	
-	private void changeTextColor( int color1, int color2, int color3, int color4, int color5 )
+	private void changeTextColor( int color1, int color2, int color3 )
 	{
 		radioButton1.setTextColor( color1 );
 		radioButton2.setTextColor( color2 );
 		radioButton3.setTextColor( color3 );
-		radioButton4.setTextColor( color4 );
-		radioButton5.setTextColor( color5 );
 	}
 	
 	protected void onActivityResult( int requestCode, int resultCode, Intent data ) 
@@ -321,23 +233,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 			finish();
 		}
 	}
-	
-	/**
-	 * 退出
-	 */
-//	@Override
-//	public boolean dispatchKeyEvent(KeyEvent event) 
-//	{
-//		if( event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0 )
-//		{
-//			Log.e( "qqq", "wwww" );
-//			Intent intent = new Intent( Intent.ACTION_MAIN );  
-//			intent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );  
-//			intent.addCategory( Intent.CATEGORY_HOME );
-//			startActivity( intent );  
-//		}
-//		return super.dispatchKeyEvent(event);
-//	}
 	
 	public void onResume() 
 	{
@@ -496,38 +391,23 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
         radioButton1.setChecked( false );
         radioButton2.setChecked( false );
         radioButton3.setChecked( false );
-        radioButton4.setChecked( false );
-        radioButton5.setChecked( false );
- 
+
         switch( nowState ) 
         {
             case 0:
             	radioButton1.setChecked( true );
             	tabHost.setCurrentTabByTag( "tab1" );
-				changeTextColor( Color.WHITE, Color.BLACK, Color.BLACK, Color.BLACK, Color.BLACK );
+				changeTextColor( Color.WHITE, Color.BLACK, Color.BLACK );
                 break;
             case 1:
-            	clearNumber2();
             	radioButton2.setChecked( true );
 				tabHost.setCurrentTabByTag( "tab2" );
-				changeTextColor( Color.BLACK, Color.WHITE, Color.BLACK, Color.BLACK, Color.BLACK );
+				changeTextColor( Color.BLACK, Color.WHITE, Color.BLACK );
                 break;
             case 2:
-            	clearNumber3();
             	radioButton3.setChecked( true );
             	tabHost.setCurrentTabByTag( "tab3" );
-				changeTextColor( Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK, Color.BLACK );
-                break;
-            case 3:
-            	clearNumber4();
-            	radioButton4.setChecked( true );
-            	tabHost.setCurrentTabByTag( "tab4" );
-				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE, Color.BLACK );
-                break;
-            case 4:
-            	radioButton5.setChecked( true );
-            	tabHost.setCurrentTabByTag( "tab5" );
-				changeTextColor( Color.BLACK, Color.BLACK, Color.BLACK, Color.BLACK, Color.WHITE );
+				changeTextColor( Color.BLACK, Color.BLACK, Color.WHITE );
                 break;
             default:
                 break;
@@ -549,12 +429,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
             case R.id.main_tab_3:
                 switchState( 2 );
                 break;
-            case R.id.main_tab_4:
-                switchState( 3 );
-                break; 
-            case R.id.main_tab_5:
-                switchState( 4 );
-                break; 
             default:
                 break;
             }

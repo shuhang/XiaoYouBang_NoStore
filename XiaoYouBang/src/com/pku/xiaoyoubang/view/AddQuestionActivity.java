@@ -18,6 +18,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
 import android.os.Bundle;
@@ -334,6 +335,14 @@ public class AddQuestionActivity extends Activity
 		entity.setInvisible( false );
 		entity.setImageList( pictureListSmall );
 		entity.setType( type );
+		
+		if( type == 1 )
+		{
+			SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );
+			SharedPreferences.Editor editor = shared.edit();
+			editor.putString( "all_act_time", time );
+			editor.commit();
+		}
 		
 		Tool.deleteAllTempImage();
 		
