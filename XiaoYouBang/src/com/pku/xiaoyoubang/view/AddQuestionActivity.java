@@ -115,6 +115,7 @@ public class AddQuestionActivity extends Activity
 						dialog.dismiss();
 					}
 					showError( "发布失败" );
+					Tool.setHttpTag( buttonFinish.getId(), false );
 					break;
 				case 2 : //upload success
 					index ++;
@@ -178,6 +179,7 @@ public class AddQuestionActivity extends Activity
 			);
 			
 			buttonFinish = ( Button ) findViewById( R.id.add_question_button_finish );
+			Tool.setHttpTag( buttonFinish.getId(), false );
 			buttonFinish.setOnClickListener
 			(
 				new OnClickListener()
@@ -188,6 +190,11 @@ public class AddQuestionActivity extends Activity
 						{
 							return;
 						}
+						if( Tool.getHttpTag( buttonFinish.getId() ) )
+						{
+							return;
+						}
+						Tool.setHttpTag( buttonFinish.getId(), true );
 						judgeInput();
 					}
 				}

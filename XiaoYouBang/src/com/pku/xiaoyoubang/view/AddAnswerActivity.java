@@ -18,9 +18,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -151,6 +151,7 @@ public class AddAnswerActivity extends Activity
 						dialog.dismiss();
 					}
 					showError( "添加回答失败" );
+					Tool.setHttpTag( buttonFinish.getId(), false );
 					break;
 				case 2 : //add success
 					if( dialog != null )
@@ -165,6 +166,7 @@ public class AddAnswerActivity extends Activity
 						dialog.dismiss();
 					}
 					showError( "编辑回答失败" );
+					Tool.setHttpTag( buttonFinish.getId(), false );
 					break;
 				case 4 : //upload success
 					index ++;
@@ -184,6 +186,7 @@ public class AddAnswerActivity extends Activity
 						dialog.dismiss();
 					}
 					showError( "编辑失败" );
+					Tool.setHttpTag( buttonFinish.getId(), false );
 					break;
 				}
 			}
@@ -348,6 +351,7 @@ public class AddAnswerActivity extends Activity
 		);
 		
 		buttonFinish = ( Button ) findViewById( R.id.add_answer_button_finish );
+		Tool.setHttpTag( buttonFinish.getId(), false );
 		buttonFinish.setOnClickListener
 		(
 			new OnClickListener()
@@ -358,6 +362,11 @@ public class AddAnswerActivity extends Activity
 					{
 						return;
 					}
+					if( Tool.getHttpTag( buttonFinish.getId() ) )
+					{
+						return;
+					}
+					Tool.setHttpTag( buttonFinish.getId(), true ); 
 					judgeInput();
 				}
 			}
