@@ -18,9 +18,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -189,12 +189,7 @@ public class AddQuestionActivity extends Activity
 						if( Tool.isFastDoubleClick() )
 						{
 							return;
-						}
-						if( Tool.getHttpTag( buttonFinish.getId() ) )
-						{
-							return;
-						}
-						Tool.setHttpTag( buttonFinish.getId(), true );
+						}						
 						judgeInput();
 					}
 				}
@@ -431,6 +426,12 @@ public class AddQuestionActivity extends Activity
 		{
 			info = input;
 		}
+		
+		if( Tool.getHttpTag( buttonFinish.getId() ) )
+		{
+			return;
+		}
+		Tool.setHttpTag( buttonFinish.getId(), true );
 		
 		index = 0;
 		pictureList.clear();

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout 
+<RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
     android:background="@color/white"
-    android:orientation="vertical"
     >
     
     <RelativeLayout 
@@ -47,6 +46,16 @@
 	    android:cacheColorHint="#00000000"
 	    android:background="@color/white"
 	    android:divider="@null"
+	    android:layout_below="@+id/question_list_layout1"
+	    android:layout_above="@+id/question_list_temp1"
 		/>
+    
+    <View 
+        android:id="@+id/question_list_temp1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        />
 
-</LinearLayout>
+</RelativeLayout>

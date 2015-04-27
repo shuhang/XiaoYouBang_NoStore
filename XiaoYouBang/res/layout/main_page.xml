@@ -103,7 +103,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="top|right|center"
-                        android:paddingRight="5dp" 
+                        android:paddingRight="20dp" 
                         android:paddingTop="3dp">
  
                         <TextView

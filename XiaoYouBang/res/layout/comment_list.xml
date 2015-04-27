@@ -65,7 +65,7 @@
 	        android:textColor="@color/black"
 	        android:layout_alignTop="@+id/comment_list_master_head"
 	        android:layout_toRightOf="@+id/comment_list_master_head"
-	        android:layout_marginLeft="10dp"
+	        android:layout_marginLeft="20dp"
 	        />
         
         <TextView 
@@ -119,6 +119,7 @@
 		    android:layout_height="10dp"
 		    android:layout_below="@+id/comment_list_master_layout_2"
 		    android:background="@color/light_gray"
+		    android:layout_marginTop="10dp"
 		    />
         
     </RelativeLayout>

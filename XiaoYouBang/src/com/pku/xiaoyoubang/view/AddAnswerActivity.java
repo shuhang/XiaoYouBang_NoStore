@@ -361,12 +361,7 @@ public class AddAnswerActivity extends Activity
 					if( Tool.isFastDoubleClick() )
 					{
 						return;
-					}
-					if( Tool.getHttpTag( buttonFinish.getId() ) )
-					{
-						return;
-					}
-					Tool.setHttpTag( buttonFinish.getId(), true ); 
+					}					 
 					judgeInput();
 				}
 			}
@@ -581,10 +576,20 @@ public class AddAnswerActivity extends Activity
 		
 		if( type == 0 )
 		{	
+			if( Tool.getHttpTag( buttonFinish.getId() ) )
+			{
+				return;
+			}
+			Tool.setHttpTag( buttonFinish.getId(), true );
 			startAdd();
 		}
 		else if( type == 1 )
 		{
+			if( Tool.getHttpTag( buttonFinish.getId() ) )
+			{
+				return;
+			}
+			Tool.setHttpTag( buttonFinish.getId(), true );
 			final int count = AnswerInfoActivity.entity.getImageList().size();
 			for( int i = 0; i < count; i ++ )
 			{
@@ -616,6 +621,11 @@ public class AddAnswerActivity extends Activity
 			{
 				pictureList.add( QuestionInfoActivity.entity.getImageList().get( i ) );
 			}
+			if( Tool.getHttpTag( buttonFinish.getId() ) )
+			{
+				return;
+			}
+			Tool.setHttpTag( buttonFinish.getId(), true );
 			startEditQuestion();
 		}
 	}

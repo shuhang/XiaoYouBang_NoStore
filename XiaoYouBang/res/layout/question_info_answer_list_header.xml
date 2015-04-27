@@ -202,7 +202,7 @@
 		    android:layout_height="wrap_content"
 		    android:gravity="center|left"
 		    android:textSize="@dimen/text_size_2"
-		    android:textColor="@color/text_red"
+		    android:textColor="@color/gray"
 		    android:layout_marginLeft="15dp"
 		    android:layout_centerVertical="true"
 		    android:layout_marginTop="10dp"
@@ -271,7 +271,7 @@
         <View 
 	        android:id="@+id/question_info_answer_list_header_line_temp_big2"
 	        android:layout_width="match_parent"
-	        android:layout_height="70dp"
+	        android:layout_height="110dp"
 	        android:layout_below="@+id/question_info_answer_list_header_line_temp7"
 	        />
         
@@ -516,7 +516,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/question_info_answer_list_header_act_layout"
         android:clickable="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="3dp"
         >
          
         <View 

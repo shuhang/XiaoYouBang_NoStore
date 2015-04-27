@@ -17,7 +17,9 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Message;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -60,12 +62,15 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 	private RadioButton radioButton1;
 	private RadioButton radioButton2;
 	private RadioButton radioButton3;
+	
+	private static TextView textNumber;
 
 	private Dialog dialog;
 	private static int nowState = 0;
-	
+	public static String storeTime = "";
 	private boolean force = false;
 	
+	private static int nowCount = 0;
 	//Service
 	public static MyService myService = null;
 	private ServiceConnection connection = new ServiceConnection()
@@ -81,6 +86,43 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		}
 		public void onServiceDisconnected( ComponentName name ) {}
 	};
+	
+	public static Handler handler = new Handler()
+	{
+		public void handleMessage( Message message )
+		{
+			switch( message.what )
+			{
+			case 0 :
+				showNumber( message.arg1 );
+				break;
+			}
+		}
+	};
+	
+	public static void showNumber( int number )
+	{
+		if( nowState != 1 )
+		{
+			nowCount += number;
+			if( nowCount > 9 ) nowCount = 9;
+			textNumber.setVisibility( View.VISIBLE );
+			textNumber.setText( "" + nowCount );
+		}
+	}
+	
+	public void clearNumber()
+	{
+		nowCount = 0;
+		textNumber.setVisibility( View.INVISIBLE );
+		
+		SharedPreferences shared = getSharedPreferences( "whole2", Activity.MODE_PRIVATE );
+		SharedPreferences.Editor editor = shared.edit();
+		editor.putString( "tab2_update_count", storeTime );
+		editor.putString( "tab3_update_count", storeTime + " +08:00" );
+		editor.putString( "tab4_update_count", storeTime + " +08:00" );
+		editor.commit();
+	}
 	
 	protected void onCreate( Bundle savedInstanceState )
 	{
@@ -209,6 +251,8 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
         radioButton2.setOnCheckedChangeListener( this );
         radioButton3 = ( RadioButton ) findViewById( R.id.main_tab_3 );
         radioButton3.setOnCheckedChangeListener( this );
+        
+        textNumber = ( TextView ) findViewById( R.id.main_tab_2_number );
         
         Intent intent = new Intent( this, MyService.class );
 		bindService( intent, connection, Context.BIND_AUTO_CREATE );
@@ -400,6 +444,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 				changeTextColor( Color.WHITE, Color.BLACK, Color.BLACK );
                 break;
             case 1:
+            	clearNumber();
             	radioButton2.setChecked( true );
 				tabHost.setCurrentTabByTag( "tab2" );
 				changeTextColor( Color.BLACK, Color.WHITE, Color.BLACK );

@@ -25,6 +25,7 @@
 	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
 	<!--【可选】根据需要添加-->
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:allowBackup="true"
@@ -268,7 +269,7 @@
 		        <action android:name="com.pku.xiaoyoubang.intent.action.COCKROACH" />
 		    </intent-filter>
 		    <intent-filter>
-		        <action android:name="org.agoo.android.intent.action.PING" />
+		        <action android:name="org.agoo.android.intent.action.PING_V4" />
 		    </intent-filter>
 		</service>
 		<service
